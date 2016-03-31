@@ -1,0 +1,11 @@
+Release 14.7 par P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+ubuntu::  Thu Mar 31 11:10:37 2016
+
+par -w -intstyle ise -ol high -mt off sixteen_bits_adder_map.ncd
+sixteen_bits_adder.ncd sixteen_bits_adder.pcf 
+
+
+Constraints file: sixteen_bits_adder.pcf.
+Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/CPU-2016/src/top_CPU/tb_sixteen_bits_add_sub_isim_beh.exe" -prj "/home/ctnguyen/Works/CPU-2016/src/top_CPU/tb_sixteen_bits_add_sub_beh.prj" "work.tb_sixteen_bits_add_sub" 

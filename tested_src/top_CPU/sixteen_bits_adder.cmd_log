@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ctnguyen/Works/CPU-2016/src/top_CPU/sixteen_bits_adder.xst" -ofn "/home/ctnguyen/Works/CPU-2016/src/top_CPU/sixteen_bits_adder.syr" 
+xst -intstyle ise -ifn "/home/ctnguyen/Works/CPU-2016/src/top_CPU/sixteen_bits_adder.xst" -ofn "/home/ctnguyen/Works/CPU-2016/src/top_CPU/sixteen_bits_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 sixteen_bits_adder.ngc sixteen_bits_adder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o sixteen_bits_adder_map.ncd sixteen_bits_adder.ngd sixteen_bits_adder.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_bits_adder_map.ncd sixteen_bits_adder.ncd sixteen_bits_adder.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_bits_adder_map.ncd sixteen_bits_adder.ncd sixteen_bits_adder.pcf 
