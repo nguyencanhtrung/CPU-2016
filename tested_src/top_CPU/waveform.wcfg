@@ -11,7 +11,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/multiplicand" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">multiplicand[15:0]</obj_property>
       <obj_property name="ObjectShortName">multiplicand[15:0]</obj_property>
@@ -20,7 +20,7 @@
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/multiplier" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">multiplier[15:0]</obj_property>
       <obj_property name="ObjectShortName">multiplier[15:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/rst" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">rst</obj_property>
@@ -51,15 +51,20 @@
       <obj_property name="ElementShortName">clk_period</obj_property>
       <obj_property name="ObjectShortName">clk_period</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/alu_operand" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">alu_operand[15:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_operand[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/accumulator" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">accumulator[31:0]</obj_property>
       <obj_property name="ObjectShortName">accumulator[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/alu_operand" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_operand[15:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_operand[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/l_half_acc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">l_half_acc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">l_half_acc[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/alu_mode" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">alu_mode</obj_property>
@@ -68,10 +73,14 @@
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/alu_result" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">alu_result[15:0]</obj_property>
       <obj_property name="ObjectShortName">alu_result[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/pre_state" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">pre_state</obj_property>
       <obj_property name="ObjectShortName">pre_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_multiplier_module/uut/check_bits" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">check_bits[1:0]</obj_property>
+      <obj_property name="ObjectShortName">check_bits[1:0]</obj_property>
    </wvobject>
 </wave_config>

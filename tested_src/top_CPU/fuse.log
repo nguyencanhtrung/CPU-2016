@@ -12,7 +12,7 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoin
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 37764 KB
-Fuse CPU Usage: 1400 ms
+Fuse CPU Usage: 2020 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -25,6 +25,6 @@ Compiling architecture behavior of entity tb_fixedpoint_multiplier_module
 Time Resolution for simulation is 1ps.
 Compiled 14 VHDL Units
 Built simulation executable /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_multiplier_module_isim_beh.exe
-Fuse Memory Usage: 50380 KB
-Fuse CPU Usage: 1510 ms
-GCC CPU Usage: 380 ms
+Fuse Memory Usage: 50384 KB
+Fuse CPU Usage: 2200 ms
+GCC CPU Usage: 700 ms

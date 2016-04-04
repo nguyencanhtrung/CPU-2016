@@ -99,8 +99,8 @@ BEGIN
 		wait for clk_period * 10;
 		rst <= '0';
 		
-      multiplicand <= x"0011";
-      multiplier <= x"0011";
+      multiplicand <= x"0003";
+      multiplier <= x"0003";
       start <= '1';	
 		wait for clk_period;
 		start <= '0';

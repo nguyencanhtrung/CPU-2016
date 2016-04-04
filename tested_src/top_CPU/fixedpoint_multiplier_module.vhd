@@ -43,91 +43,100 @@ end fixedpoint_multiplier_module;
 
 architecture Behavioral of fixedpoint_multiplier_module is
 signal accumulator:	std_logic_vector(31 downto 0);
+signal l_half_acc	:	std_logic_vector(15 downto 0);
 signal ALU_operand:	std_logic_vector(15 downto 0);
 signal ALU_mode	:	std_logic;
 signal ALU_result :	std_logic_vector(15 downto 0);
 signal ALU_c_out_dummy, ALU_over_flow_dummy : std_logic;
+signal check_bits	:	std_logic_vector(1 downto 0);
 
-
-Type state_type is (init, check, wait_state, collect_ALU_result, shift_right, complete);
+Type state_type is (idle, init, update_checkbit, check, wait_state, collect_ALU_result, shift_right, complete);
 signal nx_state, pre_state: state_type;
 begin
 ALU_block: entity work.sixteen_bits_add_sub
 		port map	(
-				operand_a 		=> accumulator(31 downto 16),
+				operand_a 		=> l_half_acc,
 				operand_b 		=> ALU_operand,
 				result 			=>	ALU_result,
 				carry_out 		=>	ALU_c_out_dummy,
 				over_flow		=> ALU_over_flow_dummy,
 				mode				=>	ALU_mode);	
 
-sequential_block: process(clk, rst)
+sequential_block: process(clk, rst, start)
 Begin
 	if rising_edge(clk) then
 		if (rst = '1') then
-			pre_state <= init;
+			pre_state <= idle;
 		else
-			pre_state <= nx_state;
+			if(start = '1') then
+				pre_state <= init;
+			else
+				pre_state <= nx_state;
+			end if;
 		end if;
 	end if;
 End process sequential_block;
 
-combinational_block: process(pre_state, start)
+combinational_block: process(pre_state)
 variable iteration_counter	:	integer;
-variable check_bits	:	std_logic_vector(1 downto 0);
+--variable check_bits	:	std_logic_vector(1 downto 0);
 Begin
 	case pre_state is
-		when init =>
-			if (start = '1') then
-				check_bits 	:= "00";
-				accumulator <= x"0000" & multiplier;
-				nx_state 	<= check;
-				iteration_counter := 0;
-			else
-				nx_state 	<= init;
-			end if;
-			done <= '0';
-		
-		when check =>
-			check_bits 	:= accumulator(0) & check_bits(1);
+		when idle 					=>
+			nx_state 			<= idle;
+			done 					<= '0';
+			l_half_acc			<= x"0000";
+			
+		when init 					=>
+			check_bits 			<= "00";
+			accumulator 		<= x"0000" & multiplier;
+			nx_state 			<= update_checkbit;
+			iteration_counter := 0;
+			
+		when update_checkbit 	=>
+			l_half_acc			<= accumulator(31 downto 16);
+			check_bits 			<= accumulator(0) & check_bits(1);
+			nx_state 			<= check;
+			
+		when check 					=>
 			case check_bits is
-				when "00" =>		-- do nothing
+				when "00" 	=>		-- do nothing
 					ALU_mode 	<= '0';
 					ALU_operand <= x"0000";
-				when "01" =>		-- add Multiplicand
+				when "01" 	=>		-- add Multiplicand
 					ALU_mode 	<= '0';
 					ALU_operand <= multiplicand;
-				when "10" =>		-- sub Multiplicand
+				when "10" 	=>		-- sub Multiplicand
 					ALU_mode 	<= '1';
 					ALU_operand <= multiplicand;
-				when "11" =>		-- do nothing
+				when "11" 	=>		-- do nothing
 					ALU_mode 	<= '0';
 					ALU_operand <= x"0000";
 				when others =>
 					null;
 			end case;
-			nx_state <= wait_state;
+			nx_state 			<= wait_state;
 		
-		when wait_state =>
-			nx_state <= collect_ALU_result;
+		when wait_state 			=>
+			nx_state 			<= collect_ALU_result;
 		
 		when collect_ALU_result =>
-			accumulator(31 downto 16) <= ALU_result;
-			nx_state <= shift_right;
+			accumulator(31 downto 16) 	<= ALU_result;
+			nx_state 			<= shift_right;
 			
-		when shift_right =>
-			accumulator <= to_stdlogicvector(to_bitvector(accumulator) sra 1);
+		when shift_right 			=>
+			accumulator 		<= to_stdlogicvector(to_bitvector(accumulator) sra 1);
 			iteration_counter := iteration_counter + 1;
-			if(iteration_counter = 17) then 
-				nx_state <= complete;
+			if(iteration_counter = 16) then 
+				nx_state 		<= complete;
 			else
-				nx_state <= check;
+				nx_state 		<= update_checkbit;
 			end if;
 			
-		when complete =>
-			done <= '1';
-			product <= accumulator;
-			nx_state <= init;
+		when complete 				=>
+			done 					<= '1';
+			product 				<= accumulator;
+			nx_state 			<= idle;
 	end case;
 End process combinational_block;
 end Behavioral;
