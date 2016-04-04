@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -7,16 +7,17 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/multiplier_module - Behavioral |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|multiplier_module.vhd/adder_sub - sixteen_bits_add_sub - Behavioral/adder - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/sixteen_bits_add_sub - Behavioral |home|ctnguyen|Works|CPU-2016|src|top_CPU|sixteen_bits_add_sub.vhd/adder - sixteen_bits_adder - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>sixteen_bits_add_sub - Behavioral (/home/ctnguyen/Works/CPU-2016/src/top_CPU/sixteen_bits_add_sub.vhd)</SelectedItem>
+         <SelectedItem>multiplier_module - Behavioral (/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/multiplier_module.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>sixteen_bits_add_sub - Behavioral (/home/ctnguyen/Works/CPU-2016/src/top_CPU/sixteen_bits_add_sub.vhd)</CurrentItem>
+      <CurrentItem>multiplier_module - Behavioral (/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/multiplier_module.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -24,13 +25,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -41,7 +42,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000025c000000040101000100000000000000000000000064ffffffff0000008100000000000000040000005100000001000000000000002900000001000000000000008400000001000000000000015e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>carry_look_ahead_block.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -66,14 +67,61 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+         <SelectedItem>Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Check Syntax</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001510000012001000000060100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/multiplier_module - Behavioral |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|multiplier_module.vhd</ClosedNode>
+         <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|tb_carry_look_ahead_block.vhd</ClosedNode>
+         <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|tb_fixedpoint_multiplier_module.vhd/uut - fixedpoint_multiplier_module - Behavioral</ClosedNode>
+         <ClosedNode>/tb_four_bits_CLA_adder - behavior |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|tb_four_bits_CLA_adder.vhd</ClosedNode>
+         <ClosedNode>/tb_multiplier_module - behavior |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|tb_multiplier_module.vhd/uut - multiplier_module - Behavioral</ClosedNode>
+         <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|tb_sixteen_bits_add_sub.vhd/uut - sixteen_bits_add_sub - Behavioral/adder - sixteen_bits_adder - Behavioral</ClosedNode>
+         <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|CPU-2016|tested_src|top_CPU|tb_sixteen_bits_adder.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tb_fixedpoint_multiplier_module - behavior (/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_multiplier_module.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000275000000020000000000000000000000000200000064ffffffff000000810000000300000002000002750000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>tb_fixedpoint_multiplier_module - behavior (/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_multiplier_module.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000001510000012001000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000010000000100000000000000000000000064ffffffff000000810000000000000001000001300000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>

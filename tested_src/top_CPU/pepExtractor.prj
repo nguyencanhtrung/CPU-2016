@@ -1,4 +1,5 @@
 work	"carry_look_ahead_block.vhd"
+work	"fixedpoint_multiplier_module.vhd"
 work	"four_bits_CLA_adder.vhd"
 work	"sixteen_bits_add_sub.vhd"
 work	"sixteen_bits_adder.vhd"

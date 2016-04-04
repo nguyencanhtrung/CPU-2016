@@ -1,0 +1,10 @@
+Command line:
+   tb_fixedpoint_multiplier_module_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44113
+
+Mon Apr  4 12:40:59 2016
+
+
+ Elaboration Time: 0.07 sec

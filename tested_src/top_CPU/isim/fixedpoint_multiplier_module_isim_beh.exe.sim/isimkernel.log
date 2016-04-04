@@ -1,0 +1,28 @@
+Command line:
+   fixedpoint_multiplier_module_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55102
+
+Mon Apr  4 12:32:11 2016
+
+
+ Elaboration Time: 0.1 sec
+
+ Current Memory Usage: 132.78 Meg
+
+ Total Signals          : 73
+ Total Nets             : 215
+ Total Signal Drivers   : 84
+ Total Blocks           : 10
+ Total Primitive Blocks : 7
+ Total Processes        : 78
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 698
+
+ Total Simulation Time: 0.11 sec
+
+ Current Memory Usage: 142.221 Meg
+
+Mon Apr  4 12:32:15 2016
+
