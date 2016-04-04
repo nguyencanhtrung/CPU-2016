@@ -2,23 +2,23 @@ Command line:
    tb_fixedpoint_multiplier_module_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  46206
+     -socket  37563
 
-Mon Apr  4 16:01:35 2016
+Mon Apr  4 16:23:11 2016
 
 
- Elaboration Time: 0.07 sec
+ Elaboration Time: 0.09 sec
 
  Current Memory Usage: 132.772 Meg
 
- Total Signals          : 83
- Total Nets             : 233
- Total Signal Drivers   : 91
+ Total Signals          : 81
+ Total Nets             : 232
+ Total Signal Drivers   : 90
  Total Blocks           : 11
  Total Primitive Blocks : 7
  Total Processes        : 80
  Total Traceable Variables  : 14
- Total Scalar Nets and Variables : 717
+ Total Scalar Nets and Variables : 716
 
 ** Failure:Simulation Successful
 User(VHDL) Code Called Simulation Stop
@@ -26,9 +26,9 @@ In process tb_fixedpoint_multiplier_module.vhd:stim_proc
  
 
 
- Total Simulation Time: 0.21 sec
+ Total Simulation Time: 0.18 sec
 
  Current Memory Usage: 142.213 Meg
 
-Mon Apr  4 16:03:55 2016
+Mon Apr  4 16:24:33 2016
 

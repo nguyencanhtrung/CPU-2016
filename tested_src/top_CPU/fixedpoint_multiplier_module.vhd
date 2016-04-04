@@ -1,18 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
+-- TU Kaiserslautern
 -- Engineer: Trung C. Nguyen
 -- 
--- Create Date:    09:51:19 04/04/2016 
--- Design Name: 
+-- Create Date:    09:51:19 04/04/2016 - Ending of semester 3
+-- Design Name: 	 ALU unit
 -- Module Name:    fixedpoint_multiplier_module - Behavioral 
--- Project Name: 
+-- Project Name: 	 Pipeline CPU_2016
 -- Target Devices: 
--- Tool versions: 
--- Description: Booth 2-bit Multiplier
---
--- Dependencies: 
---
--- Revision: 
+-- Description: 	
+--			Input : 16-bit signed number (2's complement form)
+--			Output: 32-bit signed number (2's complement form)
+--			Using Booth method with 2 bits check;
 -- Revision 0.01 - File Created
 -- Additional Comments: 
 --
@@ -20,15 +18,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity fixedpoint_multiplier_module is
     Port ( multiplicand : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -37,22 +27,23 @@ entity fixedpoint_multiplier_module is
 			  clk				: in  STD_LOGIC;
 			  start			: in 	STD_LOGIC;
 			  done			: out STD_LOGIC;
-           product 		: out  STD_LOGIC_VECTOR (31 downto 0);
-           over_flow 	: out  STD_LOGIC);
+           product 		: out STD_LOGIC_VECTOR (31 downto 0)
+			  );  	
 end fixedpoint_multiplier_module;
 
 architecture Behavioral of fixedpoint_multiplier_module is
-signal accumulator:	std_logic_vector(31 downto 0);
-signal l_half_acc	:	std_logic_vector(15 downto 0);
-signal ALU_operand:	std_logic_vector(15 downto 0);
-signal ALU_mode	:	std_logic;
-signal ALU_result :	std_logic_vector(15 downto 0);
+signal accumulator		:	std_logic_vector(31 downto 0);
+signal check_bits			:	std_logic_vector(1 downto 0);
+	-- ALU signals for addition and subtraction
+signal l_half_acc			:	std_logic_vector(15 downto 0);
+signal ALU_operand		:	std_logic_vector(15 downto 0);
+signal ALU_mode			:	std_logic;
+signal ALU_result 		:	std_logic_vector(15 downto 0);
 signal ALU_c_out_dummy, ALU_over_flow_dummy : std_logic;
-signal check_bits	:	std_logic_vector(1 downto 0);
-
+	-- State signals
 Type state_type is (idle, init, update_checkbit, check, wait_state, collect_ALU_result, shift_right, complete);
 signal nx_state, pre_state: state_type;
-begin
+BEGIN
 ALU_block: entity work.sixteen_bits_add_sub
 		port map	(
 				operand_a 		=> l_half_acc,

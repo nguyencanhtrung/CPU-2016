@@ -47,8 +47,7 @@ ARCHITECTURE behavior OF tb_fixedpoint_multiplier_module IS
          clk : IN  std_logic;
          start : IN  std_logic;
          done : OUT  std_logic;
-         product : OUT  std_logic_vector(31 downto 0);
-         over_flow : OUT  std_logic
+         product : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -63,7 +62,6 @@ ARCHITECTURE behavior OF tb_fixedpoint_multiplier_module IS
  	--Outputs
    signal done 			: std_logic;
    signal product 		: std_logic_vector(31 downto 0);
-   signal over_flow 		: std_logic;
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -78,8 +76,7 @@ BEGIN
           clk 				=> clk,
           start 			=> start,
           done 			=> done,
-          product 		=> product,
-          over_flow 		=> over_flow
+          product 		=> product
         );
 
    -- Clock process definitions
