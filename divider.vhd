@@ -36,7 +36,7 @@ entity divider is
            result : out  STD_LOGIC_VECTOR (15 downto 0);
            ovf : out  STD_LOGIC;
            start : in  STD_LOGIC;
-           done : in  STD_LOGIC;
+           done : out  STD_LOGIC;
            rst : in  STD_LOGIC;
            clk : in  STD_LOGIC);
 end divider;
