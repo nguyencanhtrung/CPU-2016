@@ -23,7 +23,7 @@ use work.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -36,7 +36,7 @@ entity divider is
            result : out  STD_LOGIC_VECTOR (15 downto 0);
            ovf : out  STD_LOGIC;
            start : in  STD_LOGIC;
-           done : in  STD_LOGIC;
+           done : out  STD_LOGIC;
            rst : in  STD_LOGIC;
            clk : in  STD_LOGIC);
 end divider;
@@ -54,7 +54,7 @@ signal	operation_signal		: std_logic;
 
 
 		--state machine signals
-type		state_type is (wait_state ,shift_left_remainder,subtract_divisor,wait_state_sub,test_remainder,remiander_postive,remainder_negative,counter_check,done_state);
+type		state_type is (wait_state ,shift_left_remainder,subtract_divisor,wait_state_sub,test_remainder,remainder_positive,remainder_negative,counter_check,done_state);
 signal 	state 					: state_type;
 
 begin
@@ -78,7 +78,7 @@ add_sub_instance: entity add_sub_module
 				remainder									<= (others =>'0');
 				divisor										<= (others => '0');
 				trans_divisor								<= (others => '0');
-				trans_ramiander							<= (others => '0');
+				trans_remainder							<= (others => '0');
 				subtraction_result						<= (others => '0');
 				dummy_carry_out							<= '0';
 				operation_signal							<= '0';
@@ -99,7 +99,7 @@ add_sub_instance: entity add_sub_module
 						remainder							<= to_stdlogicvector(to_bitvector(remainder) sll 1);
 						state 								<= subtract_divisor;
 					when subtract_divisor			=>
-						trans_remiander					<= remainder (31 downto 16);		--only 16 bit
+						trans_remainder					<= remainder (31 downto 16);		--only 16 bit
 						state 								<= wait_state_sub;
 					when wait_state_sub				=>
 						state									<= test_remainder;
@@ -111,7 +111,7 @@ add_sub_instance: entity add_sub_module
 							remainder (31 downto 16) 	<=	subtraction_result;
 							state								<= remainder_positive;
 						end if;
-					when remainder_postive			=>
+					when remainder_positive			=>
 							remainder						<= to_stdlogicvector(to_bitvector(remainder) sll 1);
 							remainder(0)					<= '1';
 							state								<= counter_check;
