@@ -14,9 +14,10 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 12565045 ns : File "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_multiplier_module.vhd" Line 90
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 20358550 ns : File "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_multiplier_module.vhd" Line 88
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_fixedpoint_multiplier_module.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# exit 0

@@ -136,7 +136,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459806146" xil_pn:in_ck="2752260820163526236" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1459806146">
+    <transform xil_pn:end_ts="1459810888" xil_pn:in_ck="2752260820163526236" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1459810888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
@@ -164,7 +164,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459806146" xil_pn:in_ck="2752260820163526236" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1459806146">
+    <transform xil_pn:end_ts="1459810888" xil_pn:in_ck="2752260820163526236" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1459810888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
@@ -180,11 +180,9 @@
       <outfile xil_pn:name="tb_sixteen_bits_add_sub.vhd"/>
       <outfile xil_pn:name="tb_sixteen_bits_adder.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1459806151" xil_pn:in_ck="2752260820163526236" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5634030542970740528" xil_pn:start_ts="1459806146">
+    <transform xil_pn:end_ts="1459810892" xil_pn:in_ck="2752260820163526236" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5634030542970740528" xil_pn:start_ts="1459810888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -192,7 +190,7 @@
       <outfile xil_pn:name="tb_fixedpoint_multiplier_module_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1459806151" xil_pn:in_ck="-1078068778549284646" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3020423971825822915" xil_pn:start_ts="1459806151">
+    <transform xil_pn:end_ts="1459810892" xil_pn:in_ck="-1078068778549284646" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3020423971825822915" xil_pn:start_ts="1459810892">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="isim.cmd"/>

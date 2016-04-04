@@ -92,9 +92,18 @@ Begin
 			accumulator 		<= x"0000" & multiplier;
 			nx_state 			<= update_checkbit;
 			iteration_counter := 0;
+			done 					<= '0';
 			
 		when update_checkbit 	=>
-			l_half_acc			<= accumulator(31 downto 16);
+				-- Need l_half_acc since ALU_add_sub is combinational circuit
+				-- If using accumulator(31 downto 16) directly as ALU's operand
+				-- and update the ALU_result into it; It may cause wrong result;
+				-- Example: initially, acc(31 downto 16) = 1 is fed to ALU doing addition
+				--          			  other ALU_operand = 3; get ALU_result = 4
+				-- 			then, put ALU_result back to acc(31 downto 16) = 4
+				--          since, ALU is combinational => it will immediately perform another 
+				--          addition, result would be 4 + 3 = 6, and the final result is wrong.
+			l_half_acc			<= accumulator(31 downto 16);		
 			check_bits 			<= accumulator(0) & check_bits(1);
 			nx_state 			<= check;
 			

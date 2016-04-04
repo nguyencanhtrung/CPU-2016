@@ -30,7 +30,7 @@ USE ieee.std_logic_1164.ALL;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+USE ieee.numeric_std.ALL;
  
 ENTITY tb_fixedpoint_multiplier_module IS
 END tb_fixedpoint_multiplier_module;
@@ -54,16 +54,16 @@ ARCHITECTURE behavior OF tb_fixedpoint_multiplier_module IS
     
 
    --Inputs
-   signal multiplicand : std_logic_vector(15 downto 0) := (others => '0');
-   signal multiplier : std_logic_vector(15 downto 0) := (others => '0');
-   signal rst : std_logic := '0';
-   signal clk : std_logic := '0';
-   signal start : std_logic := '0';
+   signal multiplicand 	: std_logic_vector(15 downto 0) := (others => '0');
+   signal multiplier 	: std_logic_vector(15 downto 0) := (others => '0');
+   signal rst 				: std_logic := '0';
+   signal clk 				: std_logic := '0';
+   signal start 			: std_logic := '0';
 
  	--Outputs
-   signal done : std_logic;
-   signal product : std_logic_vector(31 downto 0);
-   signal over_flow : std_logic;
+   signal done 			: std_logic;
+   signal product 		: std_logic_vector(31 downto 0);
+   signal over_flow 		: std_logic;
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -72,14 +72,14 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: fixedpoint_multiplier_module PORT MAP (
-          multiplicand => multiplicand,
-          multiplier => multiplier,
-          rst => rst,
-          clk => clk,
-          start => start,
-          done => done,
-          product => product,
-          over_flow => over_flow
+          multiplicand 	=> multiplicand,
+          multiplier 	=> multiplier,
+          rst 				=> rst,
+          clk 				=> clk,
+          start 			=> start,
+          done 			=> done,
+          product 		=> product,
+          over_flow 		=> over_flow
         );
 
    -- Clock process definitions
@@ -94,30 +94,28 @@ BEGIN
 
     -- Stimulus process
    stim_proc: process
+	variable counter	: integer;
    begin		
-		rst <= '1';
+		rst 					<= '1';
 		wait for clk_period * 10;
-		rst <= '0';
+		rst 					<= '0';
+		counter 				:= 0;
+		multiplicand 		<= x"FF0A";
+		multiplier 			<= x"F0B0";
+		wait for 10 * clk_period;
 		
-      multiplicand <= x"0003";
-      multiplier <= x"0003";
-      start <= '1';	
-		wait for clk_period;
-		start <= '0';
-		while(done = '0') loop
+		while (counter <= 50) loop
+			multiplicand 	<= std_logic_vector(to_signed((to_integer(signed(multiplicand)) + 17),16));
+			multiplier 		<= std_logic_vector(to_signed((to_integer(signed(multiplier)) + 13), 16));
+			start 			<= '1';	
 			wait for clk_period;
+			start 			<= '0';
+			while(done = '0') loop
+				wait for clk_period;
+			end loop;
+			counter := counter + 1;
 		end loop;
-		
-		multiplicand <= x"FFFD";
-      multiplier <= x"0003";
-      start <= '1';	
-		wait for clk_period;
-		start <= '0';
-		while(done = '0') loop
-			wait for clk_period;
-		end loop;
-
-      wait;
+		assert false report "Simulation Successful" severity failure;
    end process;
 
 END;
