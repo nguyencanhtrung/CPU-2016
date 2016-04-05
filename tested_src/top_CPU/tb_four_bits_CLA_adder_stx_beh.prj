@@ -1,2 +1,0 @@
-vhdl isim_temp "four_bits_CLA_adder.vhd"
-vhdl isim_temp "tb_four_bits_CLA_adder.vhd"
