@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2016-04-05T16:05:20</DateModified>
+=======
+  <DateModified>2016-04-06T02:48:46</DateModified>
+>>>>>>> a71c0a61546d3e69127c198ccbbc70ef03d4d677
   <ModuleName>fixedpoint_multiplier_module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/iseconfig/fixedpoint_multiplier_module.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/iseconfig/fixedpoint_multiplier_module.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/</ImplementationReportsDirectory>
   <DateInitialized>2016-04-04T16:45:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
