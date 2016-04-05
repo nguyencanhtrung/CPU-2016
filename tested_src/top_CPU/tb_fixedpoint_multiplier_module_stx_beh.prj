@@ -1,6 +1,0 @@
-vhdl isim_temp "four_bits_CLA_adder.vhd"
-vhdl isim_temp "carry_look_ahead_block.vhd"
-vhdl isim_temp "sixteen_bits_adder.vhd"
-vhdl isim_temp "sixteen_bits_add_sub.vhd"
-vhdl isim_temp "fixedpoint_multiplier_module.vhd"
-vhdl isim_temp "tb_fixedpoint_multiplier_module.vhd"
