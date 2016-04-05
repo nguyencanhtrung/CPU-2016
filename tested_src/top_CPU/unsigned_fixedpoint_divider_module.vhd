@@ -129,6 +129,7 @@ begin
 							quotient 						<= remainder (15 downto 0);
 							rem_out							<=	to_stdlogicvector(to_bitvector(remainder(31 downto 16)) srl 1);
 							done								<= '1';
+							state								<= wait_state;
 					when others 						=> null;
 				end case;
 		end if;
