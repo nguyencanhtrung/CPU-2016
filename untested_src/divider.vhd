@@ -69,7 +69,7 @@ add_sub_instance: entity add_sub_module
 				);
 	divide_process: process (clk, rst)
 	variable counter 						: integer:=0;
-	variable	remainder_in_integer		: integer :=0;
+--	variable	remainder_is_negative	: std_logic;
 	
 	begin
 		if rising_edge(clk) then
@@ -79,7 +79,6 @@ add_sub_instance: entity add_sub_module
 				divisor										<= (others => '0');
 				trans_divisor								<= (others => '0');
 				trans_remainder							<= (others => '0');
-				subtraction_result						<= (others => '0');
 				dummy_carry_out							<= '0';
 				operation_signal							<= '0';
 				operation_signal							<=	'1';		--by default subtract
@@ -104,8 +103,8 @@ add_sub_instance: entity add_sub_module
 					when wait_state_sub				=>
 						state									<= test_remainder;
 					when test_remainder				=>
-						remainder_in_integer	:= to_unsigned (subtraction_result);
-						if remainder_in_integer < 0 then
+						--remainder_is_negative			:= subtraction_result(15);
+						if subtraction_result(15) = '1' then
 							state								<=	remainder_negative;
 						else 
 							remainder (31 downto 16) 	<=	subtraction_result;
