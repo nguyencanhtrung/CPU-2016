@@ -20,3 +20,4 @@ User(VHDL) Code Called Simulation Stop
 In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
  
 INFO: Simulator is stopped.
+# exit 0
