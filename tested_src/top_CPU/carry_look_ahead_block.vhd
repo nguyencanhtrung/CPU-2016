@@ -1,15 +1,15 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- TU Kaiserslautern
+-- Student:  Trung C. Nguyen
 -- 
 -- Create Date:    03:23:56 03/30/2016 
--- Design Name: 
+-- Design Name: 	 ALU module
 -- Module Name:    carry_look_ahead_block - Behavioral 
--- Project Name: 
+-- Project Name: 	 Pipeline CPU 2016
 -- Target Devices: 
 -- Tool versions: 
--- Description: 
---
+-- Description: 	Block calculates carry-in(s) which is fed into current stage
+--						based on generate and propagate signals of previous stages
 -- Dependencies: 
 --
 -- Revision: 
@@ -19,15 +19,6 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity carry_look_ahead_block is
     Port ( c_in 		: in  	STD_LOGIC;

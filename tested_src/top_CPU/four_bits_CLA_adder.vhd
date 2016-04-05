@@ -1,15 +1,19 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- TU Kaiserslautern 
+-- Student: Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    02:37:43 03/30/2016 
--- Design Name: 	 
+-- Design Name: 	 ALU module
 -- Module Name:    four_bits_CLA_adder - Behavioral 
--- Project Name: 
+-- Project Name:   Pipeline CPU 2016
 -- Target Devices: 
 -- Tool versions: 
--- Description: Using Carry Look Ahead Adder
---
+-- Description: 
+-- 	Input	: two 4-bit signed number (2's complement form)
+--				  1-bit carry in
+--		Output: 4-bit signed number (result)
+--				  1- bit 4bitgroup generate and 1-bit 4bitgroup propagate (Hierarchy solution)
+--		Using Carry Look Ahead Adder technique
 -- Dependencies: 
 --
 -- Revision: 
@@ -19,15 +23,6 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity four_bits_CLA_adder is
     Port ( a 			: in  	STD_LOGIC_VECTOR (3 downto 0);
@@ -40,7 +35,7 @@ end four_bits_CLA_adder;
 
 architecture Behavioral of four_bits_CLA_adder is
 signal g, p : std_logic_vector(3 downto 0);    	-- generation and propagation
-signal c: std_logic_vector(4 downto 1);			-- carry
+signal c		: std_logic_vector(4 downto 1);		-- carry
 begin
 	-- ** internal 
 	-- generation signals

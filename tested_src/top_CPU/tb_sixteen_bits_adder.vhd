@@ -41,12 +41,12 @@ ARCHITECTURE behavior OF tb_sixteen_bits_adder IS
  
     COMPONENT sixteen_bits_adder
     PORT(
-         operand_a : IN  std_logic_vector(15 downto 0);
-         operand_b : IN  std_logic_vector(15 downto 0);
-         sum : OUT  std_logic_vector(15 downto 0);
-         over_flow : OUT  std_logic;
-         carry_in : IN  std_logic;
-         carry_out : OUT  std_logic
+         operand_a 	: IN  std_logic_vector(15 downto 0);
+         operand_b 	: IN  std_logic_vector(15 downto 0);
+         sum 			: INOUT  std_logic_vector(15 downto 0);
+         over_flow 	: OUT  std_logic;
+         carry_in 	: IN  std_logic;
+         carry_out 	: OUT  std_logic
         );
     END COMPONENT;
     

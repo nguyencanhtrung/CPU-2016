@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- TU Kaiserslautern
+-- Student: Trung C. Nguyen
 --
 -- Create Date:   11:10:44 04/04/2016
 -- Design Name:   
