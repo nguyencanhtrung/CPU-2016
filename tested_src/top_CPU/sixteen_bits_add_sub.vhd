@@ -5,9 +5,9 @@
 -- Create Date:    04:24:23 03/30/2016 
 -- Design Name: 	 ALU unit
 -- Module Name:    sixteen_bits_add_sub - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
+-- Project Name: 	 Pipeline CPU 2016
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7
 -- Description: 
 --
 -- Dependencies: 

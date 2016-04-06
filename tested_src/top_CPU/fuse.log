@@ -9,13 +9,13 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/sixteen_bits
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/unsigned_fixedpoint_divider_module.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_divider_module.vhd" into library work
-WARNING:HDLCompiler:946 - "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_divider_module.vhd" Line 105: Actual for formal port operand_a is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_divider_module.vhd" Line 113: Actual for formal port operand_a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_divider_module.vhd" Line 107: Actual for formal port operand_a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_divider_module.vhd" Line 115: Actual for formal port operand_a is neither a static name nor a globally static expression
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 37768 KB
-Fuse CPU Usage: 1490 ms
+Fuse CPU Usage: 1430 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -30,5 +30,5 @@ Time Resolution for simulation is 1ps.
 Compiled 16 VHDL Units
 Built simulation executable /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module_isim_beh.exe
 Fuse Memory Usage: 50452 KB
-Fuse CPU Usage: 1620 ms
-GCC CPU Usage: 600 ms
+Fuse CPU Usage: 1550 ms
+GCC CPU Usage: 520 ms

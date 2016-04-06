@@ -5,9 +5,9 @@
 -- Create Date:    02:37:43 03/30/2016 
 -- Design Name: 	 ALU module
 -- Module Name:    four_bits_CLA_adder - Behavioral 
--- Project Name:   Pipeline CPU 2016
--- Target Devices: 
--- Tool versions: 
+-- Project Name: 	 Pipeline CPU 2016
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7 
 -- Description: 
 -- 	Input	: two 4-bit signed number (2's complement form)
 --				  1-bit carry in

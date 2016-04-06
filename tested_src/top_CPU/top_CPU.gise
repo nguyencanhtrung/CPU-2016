@@ -30,6 +30,7 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_fixedpoint_divider_module_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_fixedpoint_divider_module_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_fixedpoint_divider_module_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_fixedpoint_multiplier_module_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
@@ -38,11 +39,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459966881" xil_pn:in_ck="-5671658138276844667" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1459966880">
+    <transform xil_pn:end_ts="1459973487" xil_pn:in_ck="4227842082760438208" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1459973486">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="../../untested_src/logic_module.vhd"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="fixedpoint_multiplier_module.vhd"/>
@@ -58,11 +58,11 @@
       <outfile xil_pn:name="tb_unsigned_fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="unsigned_fixedpoint_divider_module.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1459966063" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4633226700346102512" xil_pn:start_ts="1459966063">
+    <transform xil_pn:end_ts="1459973286" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4633226700346102512" xil_pn:start_ts="1459973286">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459966063" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3333466080590753042" xil_pn:start_ts="1459966063">
+    <transform xil_pn:end_ts="1459973286" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3333466080590753042" xil_pn:start_ts="1459973286">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -70,10 +70,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1459966881" xil_pn:in_ck="-5671658138276844667" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1459966881">
+    <transform xil_pn:end_ts="1459973487" xil_pn:in_ck="4227842082760438208" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1459973487">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="../../untested_src/logic_module.vhd"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="fixedpoint_multiplier_module.vhd"/>
@@ -89,13 +89,9 @@
       <outfile xil_pn:name="tb_unsigned_fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="unsigned_fixedpoint_divider_module.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1459966884" xil_pn:in_ck="-5671658138276844667" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1941013285952554256" xil_pn:start_ts="1459966881">
+    <transform xil_pn:end_ts="1459973490" xil_pn:in_ck="4227842082760438208" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1941013285952554256" xil_pn:start_ts="1459973487">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -103,11 +99,9 @@
       <outfile xil_pn:name="tb_fixedpoint_divider_module_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1459966885" xil_pn:in_ck="-9210827880599900599" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5908217342086379043" xil_pn:start_ts="1459966884">
+    <transform xil_pn:end_ts="1459973490" xil_pn:in_ck="-2804915910526294478" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5908217342086379043" xil_pn:start_ts="1459973490">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_fixedpoint_divider_module_isim_beh.wdb"/>
