@@ -36,10 +36,13 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1459966058" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1459966058">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1459966881" xil_pn:in_ck="-5671658138276844667" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1459966880">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="fixedpoint_multiplier_module.vhd"/>
@@ -70,6 +73,7 @@
     <transform xil_pn:end_ts="1459966881" xil_pn:in_ck="-5671658138276844667" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1459966881">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="fixedpoint_multiplier_module.vhd"/>
@@ -88,6 +92,8 @@
     <transform xil_pn:end_ts="1459966884" xil_pn:in_ck="-5671658138276844667" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1941013285952554256" xil_pn:start_ts="1459966881">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -100,6 +106,8 @@
     <transform xil_pn:end_ts="1459966885" xil_pn:in_ck="-9210827880599900599" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5908217342086379043" xil_pn:start_ts="1459966884">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_fixedpoint_divider_module_isim_beh.wdb"/>
