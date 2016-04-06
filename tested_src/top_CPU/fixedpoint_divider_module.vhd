@@ -85,7 +85,7 @@ begin
 		-- MUX 2: 1
 	udiv_dividend 	<= dividend 	when sign_dividend = '0'
 							else not(onecmp_dividend);
-	udiv_divisor 	<= divisor 	when sign_dividend = '0'
+	udiv_divisor 	<= divisor 	when sign_divisor = '0'
 							else not(onecmp_divisor);	
 		-- Usigned divider
 	unsigned_divider: entity work.unsigned_fixedpoint_divider_module

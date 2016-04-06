@@ -101,7 +101,6 @@ begin
 							if (operand_b = zeros) then
 								state							<= invalidOp_state;				
 							else
-								--done								<= '0';
 								remainder(2*BIT_WIDTH - 1 downto BIT_WIDTH)	<= (others => '0');
 								remainder(BIT_WIDTH -1 downto 0)					<= operand_a;
 								divisor													<= operand_b;	
@@ -110,7 +109,7 @@ begin
 						else
 							state 													<= wait_state;
 						end if;
-						done								<= '0';			
+						done															<= '0';			
 						counter														:=  0;   -- Trung C. Nguyen
 						
 					when shift_left_remainder 		=>						

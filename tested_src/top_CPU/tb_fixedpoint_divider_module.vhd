@@ -101,7 +101,7 @@ BEGIN
 		rst 					<= '0';
 		counter 				:= 0;
 			-- need to change when changing BIT_WIDTH
-		dividend 			<= x"0001"; -- dividend
+		dividend 			<= x"FF95"; -- dividend
 		divisor 				<= x"0001"; -- divisor
 			-- Untouched
 		wait for 10 * clk_period;
