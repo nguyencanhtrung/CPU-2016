@@ -18,6 +18,7 @@ User(VHDL) Code Called Simulation Stop
 In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
  
 INFO: Simulator is stopped.
+<<<<<<< HEAD
 # restart
 # run all
 Simulator is doing circuit initialization process.
@@ -78,3 +79,5 @@ In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc
 INFO: Simulator is stopped.
 # run all
 INFO: Simulator is stopped.
+=======
+>>>>>>> 50be90eb18743ca81544fa82c9d8fcb65d004889
