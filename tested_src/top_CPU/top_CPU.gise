@@ -43,6 +43,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="fixedpoint_divider_module.vhd"/>
       <outfile xil_pn:name="fixedpoint_multiplier_module.vhd"/>
