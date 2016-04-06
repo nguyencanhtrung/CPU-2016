@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module_beh.prj tb_fixedpoint_divider_module 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
@@ -16,6 +17,23 @@ Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 37768 KB
 Fuse CPU Usage: 1470 ms
+=======
+Running: /home/waseemh/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe -prj /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_beh.prj work.tb_unsigned_fixedpoint_divider_module 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/four_bits_CLA_adder.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/unsigned_fixedpoint_divider_module.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96632 KB
+Fuse CPU Usage: 1240 ms
+>>>>>>> 70751addb79fe91a7675662962ad26b9a7a939e0
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -24,6 +42,7 @@ Compiling architecture behavioral of entity carry_look_ahead_block [carry_look_a
 Compiling architecture behavioral of entity sixteen_bits_adder [sixteen_bits_adder_default]
 Compiling architecture behavioral of entity sixteen_bits_add_sub [sixteen_bits_add_sub_default]
 Compiling architecture behavioral of entity unsigned_fixedpoint_divider_module [unsigned_fixedpoint_divider_modu...]
+<<<<<<< HEAD
 Compiling architecture behavioral of entity fixedpoint_divider_module [\fixedpoint_divider_module(16)\]
 Compiling architecture behavior of entity tb_fixedpoint_divider_module
 Time Resolution for simulation is 1ps.
@@ -32,3 +51,12 @@ Built simulation executable /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_
 Fuse Memory Usage: 50452 KB
 Fuse CPU Usage: 1590 ms
 GCC CPU Usage: 520 ms
+=======
+Compiling architecture behavior of entity tb_unsigned_fixedpoint_divider_m...
+Time Resolution for simulation is 1ps.
+Compiled 14 VHDL Units
+Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe
+Fuse Memory Usage: 668548 KB
+Fuse CPU Usage: 1370 ms
+GCC CPU Usage: 630 ms
+>>>>>>> 70751addb79fe91a7675662962ad26b9a7a939e0

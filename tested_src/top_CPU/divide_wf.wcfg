@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_unsigned_fixedpoint_divider_module" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/operand_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operand_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_a[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/quotient" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">quotient[15:0]</obj_property>
+      <obj_property name="ObjectShortName">quotient[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/rem_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rem_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rem_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/uut/trans_remainder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">trans_remainder[15:0]</obj_property>
+      <obj_property name="ObjectShortName">trans_remainder[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/operand_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operand_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_b[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/uut/subtraction_result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">subtraction_result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">subtraction_result[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/uut/remainder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">remainder[31:0]</obj_property>
+      <obj_property name="ObjectShortName">remainder[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_unsigned_fixedpoint_divider_module/uut/state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+</wave_config>

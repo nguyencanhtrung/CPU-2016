@@ -107,8 +107,13 @@ BEGIN
 		wait for 10 * clk_period;
 		
 		while (counter <= 50) loop
+<<<<<<< HEAD
 			operand_a  		<= std_logic_vector(to_signed((to_integer(signed(operand_a)) * 3),BIT_WIDTH ));
 			operand_b  		<= std_logic_vector(to_signed((to_integer(signed(operand_b)) * 2),BIT_WIDTH));
+=======
+			operand_a  		<= std_logic_vector(to_signed((to_integer(signed(operand_a)) + 49),16));
+			operand_b  		<= std_logic_vector(to_signed((to_integer(signed(operand_b)) + 5), 16));
+>>>>>>> 70751addb79fe91a7675662962ad26b9a7a939e0
 			start 			<= '1';	
 			wait for clk_period;
 			start 			<= '0';
