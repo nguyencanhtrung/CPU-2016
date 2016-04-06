@@ -8,7 +8,6 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd&quot; into library work</arg>
 </msg>
 
@@ -25,9 +24,6 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/unsigned_fixedpoint_divider_module.vhd&quot; into library work</arg>
-=======
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/unsigned_fixedpoint_divider_module.vhd&quot; into library work</arg>
->>>>>>> 50be90eb18743ca81544fa82c9d8fcb65d004889
 </msg>
 
 </messages>

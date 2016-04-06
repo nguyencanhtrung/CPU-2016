@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-06T02:48:46</DateModified>
+  <DateModified>2016-04-06T10:47:58</DateModified>
   <ModuleName>fixedpoint_multiplier_module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/iseconfig/fixedpoint_multiplier_module.xreport</SavedFilePath>
