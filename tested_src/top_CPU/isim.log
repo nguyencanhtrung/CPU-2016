@@ -1,5 +1,6 @@
 ISim log file
 Running: /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim2.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -17,4 +18,6 @@ Finished circuit initialization process.
 User(VHDL) Code Called Simulation Stop
 In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
  
+INFO: Simulator is stopped.
+# run all
 INFO: Simulator is stopped.

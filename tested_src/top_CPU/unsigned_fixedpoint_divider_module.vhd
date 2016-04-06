@@ -78,12 +78,13 @@ begin
 			end if;
 				case state is
 					when wait_state				 	=>
-						if start = '1' then
-							done								<= '0';
+						if start = '1' then						
 							remainder						<= x"0000" & operand_a;
 							divisor							<= operand_b;	
 							state 							<= shift_left_remainder;
 						else
+							done								<= '0';
+							counter							:=  0;							
 							state 							<= wait_state;
 						end if;
 						
