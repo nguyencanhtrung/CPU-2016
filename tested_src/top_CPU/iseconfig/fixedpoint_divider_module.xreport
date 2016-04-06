@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2016-04-06T10:25:46</DateModified>
   <ModuleName>fixedpoint_divider_module</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/iseconfig/fixedpoint_divider_module.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/</ImplementationReportsDirectory>
+=======
+  <DateModified>2016-04-06T22:39:35</DateModified>
+  <ModuleName>fixedpoint_divider_module</ModuleName>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/iseconfig/fixedpoint_divider_module.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/</ImplementationReportsDirectory>
+>>>>>>> 77b412f6b40a29f060e3d06ccc86aed2783551d0
   <DateInitialized>2016-04-06T04:48:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

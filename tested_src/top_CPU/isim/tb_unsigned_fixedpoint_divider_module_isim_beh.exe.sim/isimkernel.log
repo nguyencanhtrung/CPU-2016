@@ -2,14 +2,14 @@ Command line:
    tb_unsigned_fixedpoint_divider_module_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49432
+     -socket  38082
 
-Wed Apr  6 04:52:44 2016
+Wed Apr  6 22:54:20 2016
 
 
- Elaboration Time: 0.43 sec
+ Elaboration Time: 0.01 sec
 
- Current Memory Usage: 132.78 Meg
+ Current Memory Usage: 196.043 Meg
 
  Total Signals          : 83
  Total Nets             : 230
@@ -19,16 +19,12 @@ Wed Apr  6 04:52:44 2016
  Total Processes        : 79
  Total Traceable Variables  : 17
  Total Scalar Nets and Variables : 732
+Total Line Count : 148
+Total Line Count : 148
 
-** Failure:Simulation Successful
-User(VHDL) Code Called Simulation Stop
-In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
- 
+ Total Simulation Time: 93.13 sec
 
+ Current Memory Usage: 271.544 Meg
 
- Total Simulation Time: 0.49 sec
-
- Current Memory Usage: 142.221 Meg
-
-Wed Apr  6 04:53:25 2016
+Wed Apr  6 22:56:00 2016
 
