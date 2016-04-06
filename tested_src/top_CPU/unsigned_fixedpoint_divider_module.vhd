@@ -96,6 +96,7 @@ begin
 						state									<= wait_state;
 					
 					when wait_state				 	=>
+<<<<<<< HEAD
 						invalidOp							<= '0';
 						if start = '1' then
 							if (operand_b = zeros) then
@@ -109,6 +110,16 @@ begin
 							end if;
 						else
 							state 													<= wait_state;
+=======
+						if start = '1' then						
+							remainder						<= x"0000" & operand_a;
+							divisor							<= operand_b;	
+							state 							<= shift_left_remainder;
+						else
+							done								<= '0';
+							counter							:=  0;							
+							state 							<= wait_state;
+>>>>>>> 044dbb23f7147da40c823851bc3cd54132651774
 						end if;
 						counter														:=  0;   -- Trung C. Nguyen
 						

@@ -32,8 +32,12 @@ Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsi
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 96632 KB
+<<<<<<< HEAD
 Fuse CPU Usage: 1240 ms
 >>>>>>> 70751addb79fe91a7675662962ad26b9a7a939e0
+=======
+Fuse CPU Usage: 1030 ms
+>>>>>>> 044dbb23f7147da40c823851bc3cd54132651774
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -57,6 +61,11 @@ Time Resolution for simulation is 1ps.
 Compiled 14 VHDL Units
 Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe
 Fuse Memory Usage: 668548 KB
+<<<<<<< HEAD
 Fuse CPU Usage: 1370 ms
 GCC CPU Usage: 630 ms
 >>>>>>> 70751addb79fe91a7675662962ad26b9a7a939e0
+=======
+Fuse CPU Usage: 1140 ms
+GCC CPU Usage: 570 ms
+>>>>>>> 044dbb23f7147da40c823851bc3cd54132651774
