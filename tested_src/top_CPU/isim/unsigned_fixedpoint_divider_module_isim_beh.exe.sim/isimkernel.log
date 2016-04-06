@@ -1,0 +1,29 @@
+Command line:
+   unsigned_fixedpoint_divider_module_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35050
+
+Wed Apr  6 15:59:20 2016
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 196.039 Meg
+
+ Total Signals          : 74
+ Total Nets             : 245
+ Total Signal Drivers   : 86
+ Total Blocks           : 10
+ Total Primitive Blocks : 7
+ Total Processes        : 77
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 728
+Total Line Count : 120
+
+ Total Simulation Time: 0.07 sec
+
+ Current Memory Usage: 271.54 Meg
+
+Wed Apr  6 16:04:46 2016
+

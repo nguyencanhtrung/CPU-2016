@@ -118,7 +118,7 @@ begin
 							
 					when counter_check				=>
 							counter 							:= counter + 1;
-							if counter >17 then
+							if counter >15 then
 								state							<=	done_state;
 							--	remainder (31 downto 16)	<= to_stdlogicvector(to_bitvector(remainder(31 downto 16)) srl 1);
 							else 
