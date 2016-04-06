@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.wdb 
+Running: /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -13,39 +13,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run all
-at 8120 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 9880 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 11640 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 12520 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 13400 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 13520 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 13580 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 13640 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 13760 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 13940 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14060 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14120 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14180 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14240 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14300 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14360 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14420 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14480 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14540 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14600 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14660 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14720 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 14960 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 15080 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 15140 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 15200 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 15380 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-at 15440 ns, Instance /tb_unsigned_fixedpoint_divider_module/ : Warning: NUMERIC_STD.TO_SIGNED: vector truncated
-
-** Failure:Simulation Successful
-User(VHDL) Code Called Simulation Stop
-In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
- 
-INFO: Simulator is stopped.
-# exit 0
