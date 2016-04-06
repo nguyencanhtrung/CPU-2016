@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Student:  Waseen Hassan, Trung C. Nguyen
+-- Student:  Waseen Hassan and Trung C. Nguyen
 -- 
 -- Create Date:    22:21:56 04/04/2016 
 -- Design Name: 	 ALU unit

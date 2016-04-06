@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Student: Trung C. Nguyen
+-- Student: Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    18:50:51 04/05/2016 
 -- Design Name: 	 ALU unit
@@ -15,7 +15,8 @@
 -- Revision: 
 -- Revision 0.01 - File Created
 -- Additional Comments: 
---
+-- Revision 1.0: Waseem Hassan
+-- 			Fix MUX 2:1,  sign_divisor instead of sign_dividend
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -85,7 +86,7 @@ begin
 		-- MUX 2: 1
 	udiv_dividend 	<= dividend 	when sign_dividend = '0'
 							else not(onecmp_dividend);
-	udiv_divisor 	<= divisor 	when sign_divisor = '0'
+	udiv_divisor 	<= divisor 	when sign_divisor = '0' 		-- Waseem Hassan
 							else not(onecmp_divisor);	
 		-- Usigned divider
 	unsigned_divider: entity work.unsigned_fixedpoint_divider_module
