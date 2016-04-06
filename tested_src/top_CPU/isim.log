@@ -1,12 +1,10 @@
 ISim log file
-Running: /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.wdb 
+Running: /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
-----------------------------------------------------------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -20,4 +18,63 @@ User(VHDL) Code Called Simulation Stop
 In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
  
 INFO: Simulator is stopped.
-# exit 0
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run 1.00us
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+** Failure:Simulation Successful
+User(VHDL) Code Called Simulation Stop
+In process tb_unsigned_fixedpoint_divider_module.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
