@@ -110,11 +110,6 @@ BEGIN
 			operand_a  		<= std_logic_vector(to_signed((to_integer(signed(operand_a)) * 3),BIT_WIDTH ));
 			operand_b  		<= std_logic_vector(to_signed((to_integer(signed(operand_b)) * 2),BIT_WIDTH));
 			wait for 5*clk_period;
-<<<<<<< HEAD
-			operand_a  		<= std_logic_vector(to_signed((to_integer(signed(operand_a)) + 5),16));
-			operand_b  		<= std_logic_vector(to_signed((to_integer(signed(operand_b)) + 9), 16));
-=======
->>>>>>> a9ac26f647c25f2a0796ad23695960370578c7d3
 			start 			<= '1';	
 			wait for clk_period;
 			start 			<= '0';
