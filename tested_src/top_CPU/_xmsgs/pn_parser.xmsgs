@@ -8,18 +8,28 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<<<<<<< HEAD
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module.vhd&quot; into library work</arg>
-=======
-<<<<<<< HEAD
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/ALU_module.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/ALU_module.vhd</arg>&quot; Line <arg fmt="%d" index="2">36</arg>. <arg fmt="%s" index="3">Syntax error near &quot;;&quot;.</arg>
-=======
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_divider_module.vhd&quot; into library work</arg>
->>>>>>> b557f3a837f8979c122138cc9c3aa09365ef308a
->>>>>>> dd2420faf7667770b9c4c8b3f4f14dd8c162c3d2
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/fixedpoint_multiplier_module.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/four_bits_CLA_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/unsigned_fixedpoint_divider_module.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/untested_src/logic_module.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
