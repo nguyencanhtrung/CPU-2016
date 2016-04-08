@@ -1,21 +1,23 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Student: Trung C. Nguyen
+-- Student: Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    18:50:51 04/05/2016 
 -- Design Name: 	 ALU unit
 -- Module Name:    fixedpoint_divider_module - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
+-- Project Name: 	 Pipeline CPU 2016
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7
 -- Description: 
 --					Input: two signed 16-bit numbers
+--					Output: signed quotient 16-bit and signed remainder 16-bit
 -- Dependencies: 
 --
 -- Revision: 
 -- Revision 0.01 - File Created
 -- Additional Comments: 
---
+-- Revision 1.0 by Waseem Hassan
+-- 			Fixing MUX 2:1,  sign_divisor instead of sign_dividend
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -85,7 +87,7 @@ begin
 		-- MUX 2: 1
 	udiv_dividend 	<= dividend 	when sign_dividend = '0'
 							else not(onecmp_dividend);
-	udiv_divisor 	<= divisor 	when sign_dividend = '0'
+	udiv_divisor 	<= divisor 	when sign_divisor = '0' 		-- Waseem Hassan
 							else not(onecmp_divisor);	
 		-- Usigned divider
 	unsigned_divider: entity work.unsigned_fixedpoint_divider_module
@@ -148,6 +150,7 @@ begin
 				when enable_udiv			=>
 					udiv_start_en		<= '1';
 					state					<= collect_result;
+					
 				when collect_result		=>
 					udiv_start_en		<= '0';
 					if (udiv_done = '1') then
@@ -155,6 +158,7 @@ begin
 					else
 						state				<= collect_result;
 					end if;
+					
 				when complete			   =>
 					case sign_check is
 						when "00"	=>			-- both dividend and divisor are positive

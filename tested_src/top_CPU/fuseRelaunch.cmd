@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_isim_beh.exe" -prj "/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_unsigned_fixedpoint_divider_module_beh.prj" "work.tb_unsigned_fixedpoint_divider_module" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_isim_beh.exe" -prj "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_beh.prj" "work.tb_regFile" 

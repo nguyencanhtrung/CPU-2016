@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Student:  Trung C. Nguyen
+-- Student:  Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    03:23:56 03/30/2016 
 -- Design Name: 	 ALU module
 -- Module Name:    carry_look_ahead_block - Behavioral 
 -- Project Name: 	 Pipeline CPU 2016
--- Target Devices: 
--- Tool versions: 
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7
 -- Description: 	Block calculates carry-in(s) which is fed into current stage
 --						based on generate and propagate signals of previous stages
 -- Dependencies: 

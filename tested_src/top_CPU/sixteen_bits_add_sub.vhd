@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- TU Kaiserslautern
+-- Students: Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    04:24:23 03/30/2016 
--- Design Name: 
+-- Design Name: 	 ALU unit
 -- Module Name:    sixteen_bits_add_sub - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
+-- Project Name: 	 Pipeline CPU 2016
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7
 -- Description: 
 --
 -- Dependencies: 
@@ -20,14 +20,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity sixteen_bits_add_sub is
     Port ( operand_a 	: in  STD_LOGIC_VECTOR (15 downto 0);

@@ -6,8 +6,8 @@
 -- Design Name: 	 ALU module
 -- Module Name:    sixteen_bits_adder - Behavioral 
 -- Project Name: 	 Pipeline CPU 2016
--- Target Devices: 
--- Tool versions: 
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7
 -- Description: 
 -- 	Input	: two 16-bit signed number (2's complement form)
 --				  1-bit carry in
