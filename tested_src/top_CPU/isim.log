@@ -16,3 +16,4 @@ Finished circuit initialization process.
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 Stopped at time : 7550295 ns : File "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile.vhd" Line 84
+# exit 0
