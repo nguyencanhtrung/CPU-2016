@@ -1,12 +1,13 @@
 ----------------------------------------------------------------------------------
 -- TU Kaiserslautern
--- Engineer: Trung C. Nguyen
+-- Engineer: Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    09:51:19 04/04/2016 - Ending of semester 3
 -- Design Name: 	 ALU unit
 -- Module Name:    fixedpoint_multiplier_module - Behavioral 
--- Project Name: 	 Pipeline CPU_2016
--- Target Devices: 
+-- Project Name: 	 Pipeline CPU 2016
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7 
 -- Description: 	
 --			Input : 16-bit signed number (2's complement form)
 --			Output: 32-bit signed number (2's complement form)
@@ -21,29 +22,31 @@ use work.all;
 use IEEE.NUMERIC_STD.ALL;
 
 entity fixedpoint_multiplier_module is
-    Port ( multiplicand : in  STD_LOGIC_VECTOR (15 downto 0);
-           multiplier 	: in  STD_LOGIC_VECTOR (15 downto 0);
+	 Generic (BIT_WIDTH 	: integer := 16);
+    Port ( multiplicand : in  STD_LOGIC_VECTOR (BIT_WIDTH - 1 downto 0);
+           multiplier 	: in  STD_LOGIC_VECTOR (BIT_WIDTH - 1 downto 0);
 			  rst				: in  STD_LOGIC;
 			  clk				: in  STD_LOGIC;
 			  start			: in 	STD_LOGIC;
 			  done			: out STD_LOGIC;
-           product 		: out STD_LOGIC_VECTOR (31 downto 0)
+           product 		: out STD_LOGIC_VECTOR (2 * BIT_WIDTH - 1 downto 0)
 			  );  	
 end fixedpoint_multiplier_module;
 
 architecture Behavioral of fixedpoint_multiplier_module is
-signal accumulator		:	std_logic_vector(31 downto 0);
+signal accumulator		:	std_logic_vector(2 * BIT_WIDTH - 1 downto 0);
 signal check_bits			:	std_logic_vector(1 downto 0);
 	-- ALU signals for addition and subtraction
-signal l_half_acc			:	std_logic_vector(15 downto 0);
-signal ALU_operand		:	std_logic_vector(15 downto 0);
+signal l_half_acc			:	std_logic_vector(BIT_WIDTH - 1 downto 0);
+signal ALU_operand		:	std_logic_vector(BIT_WIDTH - 1 downto 0);
 signal ALU_mode			:	std_logic;
-signal ALU_result 		:	std_logic_vector(15 downto 0);
+signal ALU_result 		:	std_logic_vector(BIT_WIDTH - 1 downto 0);
 signal ALU_c_out_dummy, ALU_over_flow_dummy : std_logic;
 	-- State signals
 Type state_type is (idle, init, update_checkbit, check, wait_state, collect_ALU_result, shift_right, complete);
 signal nx_state, pre_state: state_type;
 BEGIN
+	-- one need to change if changing BIT_WIDTH
 ALU_block: entity work.sixteen_bits_add_sub
 		port map	(
 				operand_a 		=> l_half_acc,
@@ -52,7 +55,7 @@ ALU_block: entity work.sixteen_bits_add_sub
 				carry_out 		=>	ALU_c_out_dummy,
 				over_flow		=> ALU_over_flow_dummy,
 				mode				=>	ALU_mode);	
-
+	-- UNTOUCHED part
 sequential_block: process(clk, rst, start)
 Begin
 	if rising_edge(clk) then
@@ -70,17 +73,17 @@ End process sequential_block;
 
 combinational_block: process(pre_state)
 variable iteration_counter	:	integer;
---variable check_bits	:	std_logic_vector(1 downto 0);
 Begin
 	case pre_state is
 		when idle 					=>
 			nx_state 			<= idle;
 			done 					<= '0';
-			l_half_acc			<= x"0000";
+			l_half_acc			<= (others => '0');
 			
 		when init 					=>
 			check_bits 			<= "00";
-			accumulator 		<= x"0000" & multiplier;
+			accumulator(2 * BIT_WIDTH - 1 downto BIT_WIDTH) <= (others => '0');
+			accumulator(BIT_WIDTH - 1 downto 0)					<= multiplier;
 			nx_state 			<= update_checkbit;
 			iteration_counter := 0;
 			done 					<= '0';
@@ -94,7 +97,7 @@ Begin
 				-- 			then, put ALU_result back to acc(31 downto 16) = 4
 				--          since, ALU is combinational => it will immediately perform another 
 				--          addition, result would be 4 + 3 = 6, and the final result is wrong.
-			l_half_acc			<= accumulator(31 downto 16);		
+			l_half_acc			<= accumulator(2 * BIT_WIDTH - 1 downto BIT_WIDTH);		
 			check_bits 			<= accumulator(0) & check_bits(1);
 			nx_state 			<= check;
 			
@@ -121,13 +124,13 @@ Begin
 			nx_state 			<= collect_ALU_result;
 		
 		when collect_ALU_result =>
-			accumulator(31 downto 16) 	<= ALU_result;
+			accumulator(2 * BIT_WIDTH - 1 downto BIT_WIDTH) 	<= ALU_result;
 			nx_state 			<= shift_right;
 			
 		when shift_right 			=>
 			accumulator 		<= to_stdlogicvector(to_bitvector(accumulator) sra 1);
 			iteration_counter := iteration_counter + 1;
-			if(iteration_counter = 16) then 
+			if(iteration_counter = BIT_WIDTH) then 
 				nx_state 		<= complete;
 			else
 				nx_state 		<= update_checkbit;
