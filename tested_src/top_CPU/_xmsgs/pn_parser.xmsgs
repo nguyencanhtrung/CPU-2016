@@ -9,6 +9,7 @@
 
 <messages>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd&quot; into library work</arg>
 </msg>
 
@@ -45,5 +46,7 @@
 </msg>
 
 >>>>>>> fce072ca1f21329eca2afd3ad5ab6a59d174e63e
+=======
+>>>>>>> 6730ae0f00b8b7a43fe303b4a407d54dea5f76c7
 </messages>
 

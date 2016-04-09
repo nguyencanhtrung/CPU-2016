@@ -1,23 +1,23 @@
-Running: /home/waseemh/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_isim_beh.exe -prj /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_beh.prj work.tb_regFile 
+Running: /home/waseemh/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_isim_beh.exe -prj /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_beh.prj work.tb_updated_reg_file 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/register_file.vhd" into library work
-Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 96740 KB
-Fuse CPU Usage: 1030 ms
+Fuse Memory Usage: 96736 KB
+Fuse CPU Usage: 1100 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture behavioral of entity register_file [register_file_default]
-Compiling architecture behavior of entity tb_regfile
+Compiling architecture behavior of entity tb_updated_reg_file
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
-Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_isim_beh.exe
-Fuse Memory Usage: 668280 KB
-Fuse CPU Usage: 1120 ms
-GCC CPU Usage: 220 ms
+Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_isim_beh.exe
+Fuse Memory Usage: 668300 KB
+Fuse CPU Usage: 1190 ms
+GCC CPU Usage: 250 ms
