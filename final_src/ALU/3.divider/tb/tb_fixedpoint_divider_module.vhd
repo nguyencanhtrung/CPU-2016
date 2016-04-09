@@ -2,15 +2,15 @@
 -- TU Kaiserslautern
 -- Student: Trung C. Nguyen
 --
--- Create Date:   11:10:44 04/04/2016
+-- Create Date:   04:13:14 04/06/2016
 -- Design Name:   
--- Module Name:   /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_multiplier_module.vhd
+-- Module Name:   /home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/tb_fixedpoint_divider_module.vhd
 -- Project Name:  top_CPU
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: fixedpoint_multiplier_module
+-- VHDL Test Bench Created by ISE for module: fixedpoint_divider_module
 -- 
 -- Dependencies:
 -- 
@@ -27,41 +27,43 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 USE ieee.numeric_std.ALL;
  
-ENTITY tb_fixedpoint_multiplier_module IS
-END tb_fixedpoint_multiplier_module;
+ENTITY tb_fixedpoint_divider_module IS
+	Generic (BIT_WIDTH : integer := 16);
+END tb_fixedpoint_divider_module;
  
-ARCHITECTURE behavior OF tb_fixedpoint_multiplier_module IS 
+ARCHITECTURE behavior OF tb_fixedpoint_divider_module IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT fixedpoint_multiplier_module
+    COMPONENT fixedpoint_divider_module
     PORT(
-         multiplicand : IN  std_logic_vector(15 downto 0);
-         multiplier : IN  std_logic_vector(15 downto 0);
+         dividend : IN  std_logic_vector(15 downto 0);
+         divisor : IN  std_logic_vector(15 downto 0);
          rst : IN  std_logic;
          clk : IN  std_logic;
          start : IN  std_logic;
+         quotient : OUT  std_logic_vector(15 downto 0);
+         remainder : OUT  std_logic_vector(15 downto 0);
          done : OUT  std_logic;
-         product : OUT  std_logic_vector(31 downto 0)
+         invalidOp : OUT  std_logic
         );
     END COMPONENT;
     
 
    --Inputs
-   signal multiplicand 	: std_logic_vector(15 downto 0) := (others => '0');
-   signal multiplier 	: std_logic_vector(15 downto 0) := (others => '0');
-   signal rst 				: std_logic := '0';
-   signal clk 				: std_logic := '0';
-   signal start 			: std_logic := '0';
+   signal dividend : std_logic_vector(15 downto 0) := (others => '0');
+   signal divisor : std_logic_vector(15 downto 0) := (others => '0');
+   signal rst : std_logic := '0';
+   signal clk : std_logic := '0';
+   signal start : std_logic := '0';
 
  	--Outputs
-   signal done 			: std_logic;
-   signal product 		: std_logic_vector(31 downto 0);
+   signal quotient : std_logic_vector(15 downto 0);
+   signal remainder : std_logic_vector(15 downto 0);
+   signal done : std_logic;
+   signal invalidOp : std_logic;
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -69,14 +71,16 @@ ARCHITECTURE behavior OF tb_fixedpoint_multiplier_module IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: fixedpoint_multiplier_module PORT MAP (
-          multiplicand 	=> multiplicand,
-          multiplier 	=> multiplier,
-          rst 				=> rst,
-          clk 				=> clk,
-          start 			=> start,
-          done 			=> done,
-          product 		=> product
+   uut: fixedpoint_divider_module PORT MAP (
+          dividend => dividend,
+          divisor => divisor,
+          rst => rst,
+          clk => clk,
+          start => start,
+          quotient => quotient,
+          remainder => remainder,
+          done => done,
+          invalidOp => invalidOp
         );
 
    -- Clock process definitions
@@ -89,21 +93,22 @@ BEGIN
    end process;
  
 
-    -- Stimulus process
-   stim_proc: process
-	variable counter	: integer;
-   begin		
+   stim_proc: process	
+   variable counter	: integer;
+   begin
 		rst 					<= '1';
 		wait for clk_period * 10;
 		rst 					<= '0';
 		counter 				:= 0;
-		multiplicand 		<= x"FF0A";
-		multiplier 			<= x"F0B0";
+			-- need to change when changing BIT_WIDTH
+		dividend 			<= x"FDF1"; -- dividend
+		divisor 				<= x"FF81"; -- divisor
+			-- Untouched
 		wait for 10 * clk_period;
 		
 		while (counter <= 50) loop
-			multiplicand 	<= std_logic_vector(to_signed((to_integer(signed(multiplicand)) + 17),16));
-			multiplier 		<= std_logic_vector(to_signed((to_integer(signed(multiplier)) + 13), 16));
+			dividend  		<= std_logic_vector(to_signed((to_integer(signed(dividend)) + 28), BIT_WIDTH ));
+			divisor  		<= std_logic_vector(to_signed((to_integer(signed(divisor)) + 17),BIT_WIDTH));
 			start 			<= '1';	
 			wait for clk_period;
 			start 			<= '0';

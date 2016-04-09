@@ -1,14 +1,19 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- TU Kaiserslautern
+-- Engineer: Trung C. Nguyen and Waseem Hassan
 -- 
 -- Create Date:    03:58:33 03/30/2016 
--- Design Name: 
+-- Design Name: 	 ALU module
 -- Module Name:    sixteen_bits_adder - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
+-- Project Name: 	 Pipeline CPU 2016
+-- Target Devices: General Platform
+-- Tool versions:  Xilinx ISE 14.7
 -- Description: 
+-- 	Input	: two 16-bit signed number (2's complement form)
+--				  1-bit carry in
+--		Output: 16-bit signed number (result)
+--				  1- bit carry out and 1-bit overflow
+--		Using Carry Look Ahead Adder technique
 --
 -- Dependencies: 
 --
@@ -20,14 +25,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity sixteen_bits_adder is
     Port ( operand_a : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -75,7 +72,7 @@ begin
 					p_group 	=> p_group,
 					g_group 	=> g_group,
 					C_OUT 	=> c_group);
-	-- carry out of 16-bit adder
+		-- carry out of 16-bit adder
 	carry_out <= c_group(4);
 	over_flow <= (not(operand_a(15)) and not(operand_b(15)) and sum(15)) 
 					or (operand_a(15) and operand_b(15) and not(sum(15)));
