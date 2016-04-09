@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_isim_beh.exe" -prj "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_beh.prj" "work.tb_updated_reg_file" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_tb_isim_beh.exe" -prj "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_tb_beh.prj" "work.ALU_tb" 
