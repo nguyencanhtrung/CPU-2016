@@ -8,6 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd&quot; into library work</arg>
 </msg>
 
@@ -39,5 +40,10 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/untested_src/logic_module.vhd&quot; into library work</arg>
 </msg>
 
+=======
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/register_file.vhd&quot; into library work</arg>
+</msg>
+
+>>>>>>> fce072ca1f21329eca2afd3ad5ab6a59d174e63e
 </messages>
 
