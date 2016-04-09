@@ -66,11 +66,6 @@ writeback_process: process
 
 	end process writeback_process;
 
---maybe need one more process for reg_num because shared between deocde and write back...
---reg_num_select_process: process
---	begin
-
---	end process reg_num_select_process;
 
 
 end Behavioral;

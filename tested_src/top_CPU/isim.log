@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile_isim_beh.wdb 
+Running: /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -11,9 +11,4 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 7550295 ns : File "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_regFile.vhd" Line 84
 # exit 0

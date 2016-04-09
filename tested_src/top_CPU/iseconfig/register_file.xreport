@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-09T22:01:24</DateModified>
+  <DateModified>2016-04-09T22:23:07</DateModified>
   <ModuleName>register_file</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-04-09T22:17:50</SummaryTimeStamp>
   <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/iseconfig/register_file.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/</ImplementationReportsDirectory>
   <DateInitialized>2016-04-08T03:17:01</DateInitialized>
