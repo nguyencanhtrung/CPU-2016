@@ -12,3 +12,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /alu_tb/uut/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
+# exit 0

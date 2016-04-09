@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="alu_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/alu_tb/operand_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operand_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_a[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/operand_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operand_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_b[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/lessthan" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lessthan</obj_property>
+      <obj_property name="ObjectShortName">lessthan</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/ovf" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ovf</obj_property>
+      <obj_property name="ObjectShortName">ovf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>
