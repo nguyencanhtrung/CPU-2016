@@ -45,36 +45,37 @@ architecture Behavioral of register_file is
 type data_reg is array (0 to 31) of std_logic_vector(15 downto 0); --32 registers, each 16 bit wide
 signal regFile : data_reg;
 begin
-read_a_process: process (clk, rst)
-begin
-	if falling_edge (clk) then
-		if clk ='1' then
-			if rst ='1' then
-				data_out_a <= (others=>'0');		--make output of this process '0'
-			else
-					data_out_a 										<= regFile(to_integer(unsigned(read_reg_a)));
-			end if;
-		end if;
-	end if;
-end process read_a_process;
-
-read_b_process: process (clk, rst)
-begin
-	if falling_edge (clk) then
-		if clk ='1' then
-			if rst ='1' then
-				data_out_b <= (others=>'0');		--make output of this process '0'
-			else
-					data_out_b 										<= regFile(to_integer(unsigned(read_reg_b)));
-			end if;
-		end if;
-	end if;
-end process read_b_process;
+--read_a_process: process (clk, rst)
+--begin
+--	if falling_edge (clk) then
+--		if clk ='0' then
+--			if rst ='1' then
+--				data_out_a <= (others=>'0');		--make output of this process '0'
+--			else
+--					data_out_a 										<= regFile(to_integer(unsigned(read_reg_a)));
+--			end if;
+--		end if;
+--	end if;
+--end process read_a_process;
+data_out_a 										<= regFile(to_integer(unsigned(read_reg_a)));
+data_out_b 										<= regFile(to_integer(unsigned(read_reg_b)));
+--read_b_process: process (clk, rst)
+--begin
+--	if falling_edge (clk) then
+--		if clk ='0' then
+--			if rst ='1' then
+--				data_out_b <= (others=>'0');		--make output of this process '0'
+--			else
+--					data_out_b 										<= regFile(to_integer(unsigned(read_reg_b)));
+--			end if;
+--		end if;
+--	end if;
+--end process read_b_process;
 
 write_reg_process: process (clk, rst)
 begin
 	if falling_edge (clk) then
-		if clk ='1' then
+		if clk ='0' then
 			if rst ='1' then
 				regFile <= (others => (others=>'0'));		--synch reset
 			else

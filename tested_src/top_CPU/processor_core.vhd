@@ -41,8 +41,8 @@ architecture Behavioral of processor_core is
 
 -----------------piepline_registers--------------
 
-signal IF_ID	:std_logic_vector (31 downto 0);
-signal ID_EXE	:std_logic_vector (43 downto 0);
+signal IF_ID	:std_logic_vector (47 downto 0);
+signal ID_EXE	:std_logic_vector (85 downto 0);
 signal EXE_MEM	:std_logic_vector (43 downto 0);
 signal MEM_WB	:std_logic_vector (43 downto 0);
 --------------------------------------------------
@@ -77,19 +77,6 @@ mem_data: entity work.data_memory_simulation
 				mem_write=>	DM_writeCtrl,
 				clk 		=>	clk,
 				data_out =>	DM_read_data);
----------------------------------------
---regsiter_file
-regFile: entity work.register_file 
-	port map (
-			data_in 		=> write_data,			--data to be written
-         read_reg_a 	=> read_register_1,	--reg no. 1 to be read
-         read_reg_b 	=> read_register_2,	--reg no. 2 to be  read
-         reg_write	=> write_register,	--reg no. to be written
-         write_data 	=> Regwrite,			--write enable signal
-         clk 			=>	clk,
-         rst 			=> rst,
-         data_out_a 	=>	read_data_1,		--read data 1
-			data_out_b 	=>	read_data_2);		--read data 2
 ---------------------------------------
 --------------------------------------------------
 fetch_process: process(clk)

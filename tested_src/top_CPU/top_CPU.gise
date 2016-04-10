@@ -125,6 +125,11 @@
     <transform xil_pn:end_ts="1460321332" xil_pn:in_ck="3284512984737227389" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1460321332">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../untested_src/ALU_module.vhd"/>
       <outfile xil_pn:name="../../untested_src/ALU_tb.vhd"/>
       <outfile xil_pn:name="../../untested_src/data_memory_simulation.vhd"/>
@@ -161,7 +166,11 @@
     <transform xil_pn:end_ts="1460321350" xil_pn:in_ck="3284512984737227389" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460321350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../untested_src/ALU_module.vhd"/>
       <outfile xil_pn:name="../../untested_src/ALU_tb.vhd"/>
       <outfile xil_pn:name="../../untested_src/data_memory_simulation.vhd"/>
@@ -185,9 +194,11 @@
     <transform xil_pn:end_ts="1460321354" xil_pn:in_ck="3284512984737227389" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2170677057272533068" xil_pn:start_ts="1460321350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
