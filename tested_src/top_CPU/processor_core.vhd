@@ -49,7 +49,7 @@ signal MEM_WB	:std_logic_vector (43 downto 0);
 begin
 ------------------portmaps------------------------
 --ALU
-ALU.entity work.ALU_module 
+ALU: entity work.ALU_module 
 	port map (
 				operand_a	=>	ALU_oprndA,		--we can put pipeline registers direcctyl....
 				operand_b	=> ALU_oprndB,
@@ -61,7 +61,7 @@ ALU.entity work.ALU_module
 ---------------------------------------
 --instrt_memory
 
-mem_instr.entity work.instr_memory_simulation 
+mem_instr: entity work.instr_memory_simulation 
 	port map (
 				address 	=> IM_addr,
 				mem_read => IM_readCtrl,
@@ -69,7 +69,7 @@ mem_instr.entity work.instr_memory_simulation
 				data_out	=> IM_read_data);
 ---------------------------------------
 --data_memory
-mem_data.entity work.data_memory_simulation 
+mem_data: entity work.data_memory_simulation 
 	port map (
 				address 	=>	DM_addr,
 				data_in 	=>	DM_write_data,
@@ -79,7 +79,7 @@ mem_data.entity work.data_memory_simulation
 				data_out =>	DM_read_data);
 ---------------------------------------
 --regsiter_file
-regFile.entity work.register_file 
+regFile: entity work.register_file 
 	port map (
 			data_in 		=> write_data,			--data to be written
          read_reg_a 	=> read_register_1,	--reg no. 1 to be read
@@ -92,27 +92,27 @@ regFile.entity work.register_file
 			data_out_b 	=>	read_data_2);		--read data 2
 ---------------------------------------
 --------------------------------------------------
-fetch_process: process
+fetch_process: process(clk)
 	begin
-
+		--if 
 	end process fetch_process;
 
-decode_process: process
+decode_process: process (clk)
 	begin
 
 	end process decode_process;
 
-execute_process: process
+execute_process: process (clk)
 	begin
 
 	end process execute_process;
 
-memory_access_process: process
+memory_access_process: process(clk)
 	begin
 
 	end process memory_access_process;
 
-writeback_process: process
+writeback_process: process(clk)
 	begin
 
 	end process writeback_process;
