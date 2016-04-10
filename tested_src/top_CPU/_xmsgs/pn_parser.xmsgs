@@ -53,6 +53,7 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/processor_core.vhd&quot; into library work</arg>
 </msg>
 
+<<<<<<< HEAD
 <msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/processor_core.vhd</arg>&quot; Line <arg fmt="%d" index="2">52</arg>. <arg fmt="%s" index="3">Syntax error near &quot;entity&quot;.</arg>
 </msg>
 
@@ -84,5 +85,7 @@
 </msg>
 
 >>>>>>> e6ed5b1c26a4c1816eddcc7a4e21fd078b154de4
+=======
+>>>>>>> 76d8cbcd1d5a32247e61f6a388804747535fb283
 </messages>
 
