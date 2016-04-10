@@ -56,6 +56,7 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/decode_stage.vhd&quot; into library work</arg>
 </msg>
 
+<<<<<<< HEAD
 <msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/decode_stage.vhd</arg>&quot; Line <arg fmt="%d" index="2">92</arg>. <arg fmt="%s" index="3">Syntax error near &quot;end&quot;.</arg>
 </msg>
 
@@ -97,5 +98,7 @@
 >>>>>>> e6ed5b1c26a4c1816eddcc7a4e21fd078b154de4
 =======
 >>>>>>> 76d8cbcd1d5a32247e61f6a388804747535fb283
+=======
+>>>>>>> c764269899118d9315bca759b7786658ec6fb679
 </messages>
 

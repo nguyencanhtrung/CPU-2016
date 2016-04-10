@@ -40,6 +40,24 @@ entity decode_stage is
 end decode_stage;
 
 architecture Behavioral of decode_stage is
+--------instruction and their opcodes---------------
+constant	add_op 		: std_logic_vector(4 downto 0):="00000";
+constant	addi_op 		: std_logic_vector(4 downto 0):="00001";
+constant	sub_op 		: std_logic_vector(4 downto 0):="00010";
+constant	nor_op		: std_logic_vector(4 downto 0):="00011";
+constant	or_op			: std_logic_vector(4 downto 0):="00100";
+constant	xor_op		: std_logic_vector(4 downto 0):="00101";
+constant	and_op		: std_logic_vector(4 downto 0):="00110";
+constant	sll_op	 	: std_logic_vector(4 downto 0):="00111";
+constant	srl_op		: std_logic_vector(4 downto 0):="01000";
+constant	sw_op 		: std_logic_vector(4 downto 0):="01001";
+constant	lw_op		 	: std_logic_vector(4 downto 0):="01010";
+constant	beq_op 		: std_logic_vector(4 downto 0):="01011";
+constant	bne_op 		: std_logic_vector(4 downto 0):="01100";
+constant	slt_op 		: std_logic_vector(4 downto 0):="01101";
+constant	slti_op 		: std_logic_vector(4 downto 0):="01110";
+constant	jmp_op 		: std_logic_vector(4 downto 0):="01111";
+--------------------------------------------------------
 
 ---details of dec_exe register------------------
 --	0 to 4 	=> instr(11-15)/rd as reg_write
@@ -88,8 +106,39 @@ update_dec_exe_process: process (clk)
 				dec_exe(58 downto 73) 	<=	IF_ID (47 downto 32);	
 					--signals changing wiht instruction
 				dec_exe(78 downto 74)	<= IF_ID (30 downto 26);		--i.e. opcode field without MSB	
-				dec_exe(79)					<= '0' when			--i.e. ALUsrc 				
-		end if;
+					--ALUsrc Signal MUX 
+				dec_exe(79)					<= '1' when IF_ID (30 downto 26)=addi_op	
+															or	IF_ID (30 downto 26)=lw_op		
+															or	IF_ID (30 downto 26)=sw_op
+															or	IF_ID (30 downto 26)=beq_op
+															or	IF_ID (30 downto 26)=bne_op
+															or	IF_ID (30 downto 26)=slti_op
+													else '0';
+						--RegDst Signal MUX						
+				dec_exe(80)					<= '1' when IF_ID (30 downto 26)=addi_op	
+															or	IF_ID (30 downto 26)=lw_op		
+															or	IF_ID (30 downto 26)=sw_op
+															or	IF_ID (30 downto 26)=beq_op
+															or	IF_ID (30 downto 26)=bne_op
+															or	IF_ID (30 downto 26)=slti_op
+													else '0';
+													
+				dec_exe(81)					<= '1' when IF_ID (30 downto 26)=lw_op	
+													else '0';
+				dec_exe(82)					<= '1' when IF_ID (30 downto 26)=sw_op	
+													else '0';
+				dec_exe(83)					<= '1' when IF_ID (30 downto 26)=beq_op
+															or	IF_ID (30 downto 26)=bne_op
+													else '0';
+				dec_exe(84)					<= '0' when IF_ID (30 downto 26)=sw_op
+															or IF_ID (30 downto 26)=beq_op
+															or	IF_ID (30 downto 26)=bne_op
+													else '1';
+				dec_exe(85)					<= '1' when IF_ID (30 downto 26)=lw_op	
+													else '0';
+													
+				
+			end if;
 	end process update_dec_exe_process;
 
 end Behavioral;
