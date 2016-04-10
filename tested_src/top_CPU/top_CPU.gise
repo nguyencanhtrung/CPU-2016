@@ -34,9 +34,7 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALU_module_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_module_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALU_module_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALU_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="data_memory_simulation.cmd_log"/>
@@ -51,6 +49,18 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="data_memory_simulation_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="data_memory_simulation_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="data_memory_simulation_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="dual_edge_check.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="dual_edge_check.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="dual_edge_check.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="dual_edge_check.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dual_edge_check.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="dual_edge_check.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="dual_edge_check.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="dual_edge_check.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="dual_edge_check_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="dual_edge_check_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dual_edge_check_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="dual_edge_check_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="instr_memory_simulation.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="instr_memory_simulation.lso"/>
@@ -89,6 +99,10 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="register_file_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="register_file_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="register_file_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_dual_edge_check_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_dual_edge_check_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_dual_edge_check_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_dual_edge_check_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_regFile_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_regFile_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_regFile_isim_beh.wdb"/>
@@ -108,17 +122,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460242700" xil_pn:in_ck="-1086888917579896832" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1460242699">
+    <transform xil_pn:end_ts="1460321332" xil_pn:in_ck="3284512984737227389" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1460321332">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../untested_src/ALU_module.vhd"/>
       <outfile xil_pn:name="../../untested_src/ALU_tb.vhd"/>
+      <outfile xil_pn:name="../../untested_src/data_memory_simulation.vhd"/>
+      <outfile xil_pn:name="../../untested_src/dual_edge_check.vhd"/>
+      <outfile xil_pn:name="../../untested_src/instr_mem_simulatio.vhd"/>
       <outfile xil_pn:name="../../untested_src/shift_module.vhd"/>
+      <outfile xil_pn:name="../../untested_src/tb_dual_edge_check.vhd"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="four_bits_CLA_adder.vhd"/>
       <outfile xil_pn:name="logic_module.vhd"/>
@@ -132,30 +145,28 @@
       <outfile xil_pn:name="tb_sixteen_bits_adder.vhd"/>
       <outfile xil_pn:name="tb_updated_reg_file.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1460242703" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="36840029423170029" xil_pn:start_ts="1460242703">
+    <transform xil_pn:end_ts="1460321350" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="194938383827895682" xil_pn:start_ts="1460321350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460242703" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3023067580697766043" xil_pn:start_ts="1460242703">
+    <transform xil_pn:end_ts="1460321350" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8886202550614990064" xil_pn:start_ts="1460321350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460242389" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2707560972398767709" xil_pn:start_ts="1460242389">
+    <transform xil_pn:end_ts="1460321155" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="251803023509710893" xil_pn:start_ts="1460321155">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1460242703" xil_pn:in_ck="-1086888917579896832" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460242703">
+    <transform xil_pn:end_ts="1460321350" xil_pn:in_ck="3284512984737227389" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460321350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../untested_src/ALU_module.vhd"/>
       <outfile xil_pn:name="../../untested_src/ALU_tb.vhd"/>
+      <outfile xil_pn:name="../../untested_src/data_memory_simulation.vhd"/>
+      <outfile xil_pn:name="../../untested_src/dual_edge_check.vhd"/>
+      <outfile xil_pn:name="../../untested_src/instr_mem_simulatio.vhd"/>
       <outfile xil_pn:name="../../untested_src/shift_module.vhd"/>
+      <outfile xil_pn:name="../../untested_src/tb_dual_edge_check.vhd"/>
       <outfile xil_pn:name="carry_look_ahead_block.vhd"/>
       <outfile xil_pn:name="four_bits_CLA_adder.vhd"/>
       <outfile xil_pn:name="logic_module.vhd"/>
@@ -169,74 +180,66 @@
       <outfile xil_pn:name="tb_sixteen_bits_adder.vhd"/>
       <outfile xil_pn:name="tb_updated_reg_file.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1460242705" xil_pn:in_ck="-1086888917579896832" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8844870553801841150" xil_pn:start_ts="1460242703">
+    <transform xil_pn:end_ts="1460321354" xil_pn:in_ck="3284512984737227389" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2170677057272533068" xil_pn:start_ts="1460321350">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ALU_tb_beh.prj"/>
-      <outfile xil_pn:name="ALU_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_dual_edge_check_beh.prj"/>
+      <outfile xil_pn:name="tb_dual_edge_check_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1460242706" xil_pn:in_ck="8427359080954815023" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5702724154190550417" xil_pn:start_ts="1460242705">
+    <transform xil_pn:end_ts="1460321354" xil_pn:in_ck="-8781843613149750966" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9083586581335839719" xil_pn:start_ts="1460321354">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ALU_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_dual_edge_check_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1460240411" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1460240411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8989518023665669949" xil_pn:start_ts="1460246618">
+    <transform xil_pn:end_ts="1460319889" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2658237695647624152" xil_pn:start_ts="1460319889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3063725486316806690" xil_pn:start_ts="1460246618">
+    <transform xil_pn:end_ts="1460319889" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="251803023509710893" xil_pn:start_ts="1460319889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1460246618">
+    <transform xil_pn:end_ts="1460319889" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1460319889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8736455463356783153" xil_pn:start_ts="1460246618">
+    <transform xil_pn:end_ts="1460319889" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1310593574866464954" xil_pn:start_ts="1460319889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7853421013291527525" xil_pn:start_ts="1460246618">
+    <transform xil_pn:end_ts="1460319889" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7853421013291527525" xil_pn:start_ts="1460319889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4622866766165455404" xil_pn:start_ts="1460246618">
+    <transform xil_pn:end_ts="1460319889" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4329573094121353673" xil_pn:start_ts="1460319889">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460246654" xil_pn:in_ck="8236112464873980875" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-8728328150399310806" xil_pn:start_ts="1460246646">
+    <transform xil_pn:end_ts="1460321133" xil_pn:in_ck="-8552635463423439798" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="3895639704596428789" xil_pn:start_ts="1460321124">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="instr_memory_simulation.lso"/>
-      <outfile xil_pn:name="instr_memory_simulation.ngc"/>
-      <outfile xil_pn:name="instr_memory_simulation.ngr"/>
-      <outfile xil_pn:name="instr_memory_simulation.prj"/>
-      <outfile xil_pn:name="instr_memory_simulation.stx"/>
-      <outfile xil_pn:name="instr_memory_simulation.syr"/>
-      <outfile xil_pn:name="instr_memory_simulation.xst"/>
-      <outfile xil_pn:name="instr_memory_simulation_xst.xrpt"/>
+      <outfile xil_pn:name="dual_edge_check.lso"/>
+      <outfile xil_pn:name="dual_edge_check.ngc"/>
+      <outfile xil_pn:name="dual_edge_check.ngr"/>
+      <outfile xil_pn:name="dual_edge_check.prj"/>
+      <outfile xil_pn:name="dual_edge_check.stx"/>
+      <outfile xil_pn:name="dual_edge_check.syr"/>
+      <outfile xil_pn:name="dual_edge_check.xst"/>
+      <outfile xil_pn:name="dual_edge_check_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>

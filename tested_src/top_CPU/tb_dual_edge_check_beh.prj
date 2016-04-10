@@ -1,0 +1,2 @@
+vhdl work "../../untested_src/dual_edge_check.vhd"
+vhdl work "../../untested_src/tb_dual_edge_check.vhd"

@@ -1,0 +1,10 @@
+Command line:
+   tb_dual_edge_check_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48026
+
+Sun Apr 10 22:49:18 2016
+
+
+ Elaboration Time: 0.05 sec

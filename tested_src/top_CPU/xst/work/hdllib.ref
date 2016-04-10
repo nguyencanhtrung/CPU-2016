@@ -2,6 +2,8 @@ EN carry_look_ahead_block NULL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top
 EN sixteen_bits_add_sub NULL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd sub00/vhpl08 1460243276
 EN four_bits_cla_adder NULL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/four_bits_CLA_adder.vhd sub00/vhpl02 1460243270
 EN shift_module NULL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/shift_module.vhd sub00/vhpl10 1460243280
+EN dual_edge_check NULL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd sub00/vhpl18 1460321129
+AR dual_edge_check behavioral /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd sub00/vhpl19 1460321130
 EN logic_module NULL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/logic_module.vhd sub00/vhpl00 1460243278
 EN sixteen_bits_adder NULL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd sub00/vhpl06 1460243274
 AR instr_memory_simulation behavioral /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/instr_mem_simulatio.vhd sub00/vhpl17 1460246651

@@ -1,4 +1,4 @@
-V3 34
+V3 37
 FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd 2016/04/07.01:15:13 P.20131013
 EN work/carry_look_ahead_block 1460243272 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd \
@@ -50,6 +50,13 @@ EN work/data_memory_simulation 1460246421 \
 AR work/data_memory_simulation/Behavioral 1460246422 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/data_memory_simulation.vhd \
       EN work/data_memory_simulation 1460246421
+FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd 2016/04/10.22:45:22 P.20131013
+EN work/dual_edge_check 1460321129 \
+      FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/dual_edge_check/Behavioral 1460321130 \
+      FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd \
+      EN work/dual_edge_check 1460321129
 FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/instr_mem_simulatio.vhd 2016/04/10.02:04:04 P.20131013
 EN work/instr_memory_simulation 1460246650 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/instr_mem_simulatio.vhd \
