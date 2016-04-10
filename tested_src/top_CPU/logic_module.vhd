@@ -33,16 +33,17 @@ entity logic_module is
     Port ( operand_a 	: in  STD_LOGIC_VECTOR (15 downto 0);
            operand_b 	: in  STD_LOGIC_VECTOR (15 downto 0);
            result 		: out  STD_LOGIC_VECTOR (15 downto 0);
-           operation 	: in  STD_LOGIC_VECTOR (1 downto 0));
+           operation 	: in  STD_LOGIC_VECTOR (2 downto 0));
 end logic_module;
 
 architecture Behavioral of logic_module is
 
 begin
-	result <= 		operand_a nand operand_b	when operation="00"
-				else 	operand_a nor 	operand_b 	when operation="01" 
-				else 	operand_a xor 	operand_b 	when operation="10"
-				else 	operand_a or 	operand_b 	when operation="11";  
+	result <= 		operand_a nor operand_b	when operation="011"
+				else 	operand_a or 	operand_b 	when operation="100" 
+				else 	operand_a xor 	operand_b 	when operation="101"
+				else 	operand_a and 	operand_b 	when operation="110"
+				else	x"0000";  
 
 end Behavioral;
 

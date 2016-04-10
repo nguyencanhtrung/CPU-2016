@@ -1,0 +1,414 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: ALU_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU_module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU_module"
+Output Format                      : NGC
+Target Device                      : xc5vlx20t-2-ff323
+
+---- Source Options
+Top Module Name                    : ALU_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/four_bits_CLA_adder.vhd" in Library work.
+Architecture behavioral of Entity four_bits_cla_adder is up to date.
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd" in Library work.
+Architecture behavioral of Entity carry_look_ahead_block is up to date.
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd" in Library work.
+Architecture behavioral of Entity sixteen_bits_adder is up to date.
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd" in Library work.
+Architecture behavioral of Entity sixteen_bits_add_sub is up to date.
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/logic_module.vhd" in Library work.
+Architecture behavioral of Entity logic_module is up to date.
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/shift_module.vhd" in Library work.
+Architecture behavioral of Entity shift_module is up to date.
+Compiling vhdl file "/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/ALU_module.vhd" in Library work.
+Entity <alu_module> compiled.
+Entity <alu_module> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU_module> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sixteen_bits_add_sub> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <logic_module> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <shift_module> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <sixteen_bits_adder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <four_bits_CLA_adder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <carry_look_ahead_block> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU_module> in library <work> (Architecture <behavioral>).
+Entity <ALU_module> analyzed. Unit <ALU_module> generated.
+
+Analyzing Entity <sixteen_bits_add_sub> in library <work> (Architecture <Behavioral>).
+Entity <sixteen_bits_add_sub> analyzed. Unit <sixteen_bits_add_sub> generated.
+
+Analyzing Entity <sixteen_bits_adder> in library <work> (Architecture <Behavioral>).
+Entity <sixteen_bits_adder> analyzed. Unit <sixteen_bits_adder> generated.
+
+Analyzing Entity <four_bits_CLA_adder> in library <work> (Architecture <Behavioral>).
+Entity <four_bits_CLA_adder> analyzed. Unit <four_bits_CLA_adder> generated.
+
+Analyzing Entity <carry_look_ahead_block> in library <work> (Architecture <Behavioral>).
+Entity <carry_look_ahead_block> analyzed. Unit <carry_look_ahead_block> generated.
+
+Analyzing Entity <logic_module> in library <work> (Architecture <Behavioral>).
+Entity <logic_module> analyzed. Unit <logic_module> generated.
+
+Analyzing Entity <shift_module> in library <work> (Architecture <Behavioral>).
+Entity <shift_module> analyzed. Unit <shift_module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <logic_module>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/logic_module.vhd".
+    Found 16-bit xor2 for signal <result$xor0000> created at line 42.
+Unit <logic_module> synthesized.
+
+
+Synthesizing Unit <shift_module>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/shift_module.vhd".
+WARNING:Xst:647 - Input <operand_b> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <operation> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit shifter logical left for signal <result$shift0001> created at line 43.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <shift_module> synthesized.
+
+
+Synthesizing Unit <four_bits_CLA_adder>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/four_bits_CLA_adder.vhd".
+WARNING:Xst:1780 - Signal <c<4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit xor2 for signal <sum>.
+    Found 4-bit xor2 for signal <p>.
+Unit <four_bits_CLA_adder> synthesized.
+
+
+Synthesizing Unit <carry_look_ahead_block>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd".
+Unit <carry_look_ahead_block> synthesized.
+
+
+Synthesizing Unit <sixteen_bits_adder>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd".
+Unit <sixteen_bits_adder> synthesized.
+
+
+Synthesizing Unit <sixteen_bits_add_sub>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd".
+Unit <sixteen_bits_add_sub> synthesized.
+
+
+Synthesizing Unit <ALU_module>.
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/ALU_module.vhd".
+WARNING:Xst:1780 - Signal <ovf_dummy> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ALU_c_out_dummy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <lessthan>.
+Unit <ALU_module> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Logic shifters                                       : 1
+ 16-bit shifter logical left                           : 1
+# Xors                                                 : 34
+ 1-bit xor2                                            : 33
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Logic shifters                                       : 1
+ 16-bit shifter logical left                           : 1
+# Xors                                                 : 34
+ 1-bit xor2                                            : 33
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU_module> ...
+
+Optimizing unit <sixteen_bits_adder> ...
+
+Optimizing unit <sixteen_bits_add_sub> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU_module, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU_module.ngr
+Top Level Output File Name         : ALU_module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 57
+
+Cell Usage :
+# BELS                             : 113
+#      LUT2                        : 10
+#      LUT3                        : 4
+#      LUT4                        : 11
+#      LUT5                        : 13
+#      LUT6                        : 73
+#      MUXF7                       : 2
+# IO Buffers                       : 57
+#      IBUF                        : 38
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx20tff323-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  111  out of  12480     0%  
+    Number used as Logic:               111  out of  12480     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    111
+   Number with an unused Flip Flop:     111  out of    111   100%  
+   Number with an unused LUT:             0  out of    111     0%  
+   Number of fully used LUT-FF pairs:     0  out of    111     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          57
+ Number of bonded IOBs:                  57  out of    172    33%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.211ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1769 / 19
+-------------------------------------------------------------------------
+Delay:               9.211ns (Levels of Logic = 10)
+  Source:            opcode<1> (PAD)
+  Destination:       result<14> (PAD)
+
+  Data Path: opcode<1> to result<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   0.694   0.927  opcode_1_IBUF (opcode_1_IBUF)
+     LUT5:I0->O            4   0.086   0.613  add_sub/adder/first_4bits/c_2_or00001 (add_sub/adder/first_4bits/c<2>)
+     LUT6:I3->O            5   0.086   0.680  add_sub/adder/CLA_block/C_OUT_1_or0000 (add_sub/adder/c_group<1>)
+     LUT6:I2->O            3   0.086   0.671  add_sub/adder/CLA_block/C_OUT_2_or0000 (add_sub/adder/c_group<2>)
+     LUT6:I2->O            3   0.086   0.671  add_sub/adder/third_4bits/c_2_or00001 (add_sub/adder/third_4bits/c<2>)
+     LUT6:I2->O            3   0.086   0.671  add_sub/adder/CLA_block/C_OUT_3_or0000 (add_sub/adder/c_group<3>)
+     LUT6:I2->O            4   0.086   0.675  add_sub/adder/fourth_4bits/c_2_or00001 (add_sub/adder/fourth_4bits/c<2>)
+     LUT4:I0->O            2   0.086   0.491  add_sub/adder/fourth_4bits/Mxor_sum<2>_Result1 (addsub_result<14>)
+     LUT6:I4->O            1   0.086   0.286  result<14>183 (result_14_OBUF)
+     OBUF:I->O                 2.144          result_14_OBUF (result<14>)
+    ----------------------------------------
+    Total                      9.211ns (3.526ns logic, 5.685ns route)
+                                       (38.3% logic, 61.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.58 secs
+ 
+--> 
+
+
+Total memory usage is 558368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

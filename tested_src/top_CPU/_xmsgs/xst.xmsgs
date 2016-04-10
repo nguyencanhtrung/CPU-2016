@@ -5,10 +5,172 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3019" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">512</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">regFile</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">read_en</arg>&gt; in unit &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt; has a constant value of <arg fmt="%s" index="3">1</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="3019" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">512</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">regFile</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">data_in</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">write_en</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">IF_DEC</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2474" delta="new" >Clock and clock enable of register &lt;<arg fmt="%s" index="1">data_out</arg>&gt; are driven by the same logic. The clock enable is removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2111" delta="new" >Clock of counter &lt;<arg fmt="%s" index="1">data_value_dummy</arg>&gt; seems to be also used in the data or control logic of that element.
+</msg>
+
+<msg type="warning" file="Xst" num="2475" delta="new" >Clock and clock enable of counter &lt;<arg fmt="%s" index="1">addr_int</arg>&gt; are driven by the same logic. The clock enable is removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2474" delta="new" >Clock and clock enable of register &lt;<arg fmt="%s" index="1">addr</arg>&gt; are driven by the same logic. The clock enable is removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_value_dummy_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">addr_int_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">dual_edge_check</arg>&gt;.
 </msg>
 
 </messages>

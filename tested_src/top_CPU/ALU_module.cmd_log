@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/ALU_module.syr" 

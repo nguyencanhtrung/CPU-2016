@@ -47,7 +47,7 @@ signal regFile : data_reg;
 begin
 read_a_process: process (clk, rst)
 begin
-	if rising_edge (clk) then
+	if falling_edge (clk) then
 		if clk ='1' then
 			if rst ='1' then
 				data_out_a <= (others=>'0');		--make output of this process '0'
@@ -60,7 +60,7 @@ end process read_a_process;
 
 read_b_process: process (clk, rst)
 begin
-	if rising_edge (clk) then
+	if falling_edge (clk) then
 		if clk ='1' then
 			if rst ='1' then
 				data_out_b <= (others=>'0');		--make output of this process '0'
@@ -73,7 +73,7 @@ end process read_b_process;
 
 write_reg_process: process (clk, rst)
 begin
-	if rising_edge (clk) then
+	if falling_edge (clk) then
 		if clk ='1' then
 			if rst ='1' then
 				regFile <= (others => (others=>'0'));		--synch reset
