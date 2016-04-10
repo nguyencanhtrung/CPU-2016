@@ -39,7 +39,31 @@
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALU_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="data_memory_simulation.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="data_memory_simulation.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="data_memory_simulation.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="data_memory_simulation.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="data_memory_simulation.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="data_memory_simulation.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="data_memory_simulation.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="data_memory_simulation.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="data_memory_simulation_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="data_memory_simulation_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="data_memory_simulation_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="data_memory_simulation_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="instr_memory_simulation.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="instr_memory_simulation.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="instr_memory_simulation.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="instr_memory_simulation.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="instr_memory_simulation.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="instr_memory_simulation.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="instr_memory_simulation.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="instr_memory_simulation.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="instr_memory_simulation_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="instr_memory_simulation_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="instr_memory_simulation_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="instr_memory_simulation_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
@@ -89,6 +113,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../untested_src/ALU_module.vhd"/>
@@ -118,6 +143,7 @@
     <transform xil_pn:end_ts="1460242389" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2707560972398767709" xil_pn:start_ts="1460242389">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1460242703" xil_pn:in_ck="-1086888917579896832" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460242703">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -172,44 +198,43 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243265" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7547596451458964072" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8989518023665669949" xil_pn:start_ts="1460246618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243265" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2707560972398767709" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3063725486316806690" xil_pn:start_ts="1460246618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243265" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1460246618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243265" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6279911625570639594" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8736455463356783153" xil_pn:start_ts="1460246618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243265" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7853421013291527525" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7853421013291527525" xil_pn:start_ts="1460246618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243265" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6395298288805488167" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246618" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4622866766165455404" xil_pn:start_ts="1460246618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460243276" xil_pn:in_ck="-6466810069158815071" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="3530384832168712421" xil_pn:start_ts="1460243265">
+    <transform xil_pn:end_ts="1460246654" xil_pn:in_ck="8236112464873980875" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-8728328150399310806" xil_pn:start_ts="1460246646">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ALU_module.lso"/>
-      <outfile xil_pn:name="ALU_module.ngc"/>
-      <outfile xil_pn:name="ALU_module.ngr"/>
-      <outfile xil_pn:name="ALU_module.prj"/>
-      <outfile xil_pn:name="ALU_module.stx"/>
-      <outfile xil_pn:name="ALU_module.syr"/>
-      <outfile xil_pn:name="ALU_module.xst"/>
-      <outfile xil_pn:name="ALU_module_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="logic_module.ngr"/>
+      <outfile xil_pn:name="instr_memory_simulation.lso"/>
+      <outfile xil_pn:name="instr_memory_simulation.ngc"/>
+      <outfile xil_pn:name="instr_memory_simulation.ngr"/>
+      <outfile xil_pn:name="instr_memory_simulation.prj"/>
+      <outfile xil_pn:name="instr_memory_simulation.stx"/>
+      <outfile xil_pn:name="instr_memory_simulation.syr"/>
+      <outfile xil_pn:name="instr_memory_simulation.xst"/>
+      <outfile xil_pn:name="instr_memory_simulation_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>

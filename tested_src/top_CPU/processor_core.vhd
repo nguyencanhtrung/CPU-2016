@@ -19,7 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use work.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -39,8 +39,59 @@ end processor_core;
 
 architecture Behavioral of processor_core is
 
-begin
+-----------------piepline_registers--------------
 
+signal IF_ID	:std_logic_vector (31 downto 0);
+signal ID_EXE	:std_logic_vector (43 downto 0);
+signal EXE_MEM	:std_logic_vector (43 downto 0);
+signal MEM_WB	:std_logic_vector (43 downto 0);
+--------------------------------------------------
+begin
+------------------portmaps------------------------
+--ALU
+ALU.entity work.ALU_module 
+	port map (
+				operand_a	=>	ALU_oprndA,		--we can put pipeline registers direcctyl....
+				operand_b	=> ALU_oprndB,
+				result		=> ALU_result,
+				opcode 		=>	ALU_opcode,
+				zero 			=>	ALU_zero,
+				lessthan 	=>	ALU_lessthan,
+				ovf			=>	ALU_ovf);
+---------------------------------------
+--instrt_memory
+
+mem_instr.entity work.instr_memory_simulation 
+	port map (
+				address 	=> IM_addr,
+				mem_read => IM_readCtrl,
+				clk 		=> clk,
+				data_out	=> IM_read_data);
+---------------------------------------
+--data_memory
+mem_data.entity work.data_memory_simulation 
+	port map (
+				address 	=>	DM_addr,
+				data_in 	=>	DM_write_data,
+				mem_read =>	DM_readCtrl,
+				mem_write=>	DM_writeCtrl,
+				clk 		=>	clk,
+				data_out =>	DM_read_data);
+---------------------------------------
+--regsiter_file
+regFile.entity work.register_file 
+	port map (
+			data_in 		=> write_data,			--data to be written
+         read_reg_a 	=> read_register_1,	--reg no. 1 to be read
+         read_reg_b 	=> read_register_2,	--reg no. 2 to be  read
+         reg_write	=> write_register,	--reg no. to be written
+         write_data 	=> Regwrite,			--write enable signal
+         clk 			=>	clk,
+         rst 			=> rst,
+         data_out_a 	=>	read_data_1,		--read data 1
+			data_out_b 	=>	read_data_2);		--read data 2
+---------------------------------------
+--------------------------------------------------
 fetch_process: process
 	begin
 
