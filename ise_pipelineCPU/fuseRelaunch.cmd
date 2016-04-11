@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_decode_stage_isim_beh.exe" -prj "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_decode_stage_beh.prj" "work.tb_decode_stage" 

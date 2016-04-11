@@ -145,12 +145,12 @@ update_dec_exe_process: process (clk)
 	begin
 		if rising_edge(clk)	then	--write pipeline register
 					--fixed signals; do NOT changes with instruction type
-				dec_exe(4 downto 0) 		<=	IF_ID (15 downto 11);
-				dec_exe(9 downto 5) 		<=	IF_ID (20 downto 16);
-				dec_exe(25 downto 10) 	<=	IF_ID (15 downto 0);	
-				dec_exe(41 downto 26) 	<=	read_data_2;	
-				dec_exe(57 downto 42) 	<=	read_data_1;
-				dec_exe(73 downto 58) 	<=	IF_ID (47 downto 32);	
+				dec_exe(4 downto 0) 		<=	IF_ID (15 downto 11);		--rd no.
+				dec_exe(9 downto 5) 		<=	IF_ID (20 downto 16);		--rt no.
+				dec_exe(25 downto 10) 	<=	IF_ID (15 downto 0);			--immediate value
+				dec_exe(41 downto 26) 	<=	read_data_2;					--rt value
+				dec_exe(57 downto 42) 	<=	read_data_1;					--rs value
+				dec_exe(73 downto 58) 	<=	IF_ID (47 downto 32);		--pc value	
 					--signals changing wiht instruction
 				dec_exe(78 downto 74)	<= IF_ID (30 downto 26);		--i.e. opcode field without MSB	
 					--ALUsrc Signal MUX 
