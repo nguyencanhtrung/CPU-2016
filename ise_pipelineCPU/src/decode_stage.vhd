@@ -31,9 +31,9 @@ use work.ALL;
 
 entity decode_stage is
     Port ( IF_ID		 		: in  STD_LOGIC_VECTOR (47 downto 0);
-           write_register 	: in  STD_LOGIC_VECTOR (4 downto 0);
-           write_data 		: in  STD_LOGIC_VECTOR (15 downto 0);
-           RegWrite 			: in  STD_LOGIC;
+           write_register 	: in  STD_LOGIC_VECTOR (4 downto 0);	--reg no. to be written
+           write_data 		: in  STD_LOGIC_VECTOR (15 downto 0);	--data to be written
+           RegWrite 			: in  STD_LOGIC;								--write enable control signal
            clk 				: in  STD_LOGIC;
            rst 				: in  STD_LOGIC;			  
            dec_exe 			: out  STD_LOGIC_VECTOR (85 downto 0));
