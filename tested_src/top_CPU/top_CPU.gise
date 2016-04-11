@@ -49,6 +49,18 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="data_memory_simulation_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="data_memory_simulation_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="data_memory_simulation_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="decode_stage.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="decode_stage.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="decode_stage.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="decode_stage.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decode_stage.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="decode_stage.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="decode_stage.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="decode_stage.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="decode_stage_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="decode_stage_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decode_stage_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="decode_stage_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="dual_edge_check.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="dual_edge_check.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="dual_edge_check.ngc"/>
@@ -221,6 +233,47 @@
     <transform xil_pn:end_ts="1460240411" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1460240411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460330210" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7877732370242376232" xil_pn:start_ts="1460330210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460330210" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2302317525861937517" xil_pn:start_ts="1460330210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460330210" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1460330210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460330210" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4955879965222901766" xil_pn:start_ts="1460330210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460330210" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-7853421013291527525" xil_pn:start_ts="1460330210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460330210" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3141952975901736009" xil_pn:start_ts="1460330210">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460331745" xil_pn:in_ck="-6363429137975302903" xil_pn:name="TRANEXT_xstsynthesize_virtex5" xil_pn:prop_ck="-4117741292257347467" xil_pn:start_ts="1460331735">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="decode_stage.lso"/>
+      <outfile xil_pn:name="decode_stage.ngc"/>
+      <outfile xil_pn:name="decode_stage.ngr"/>
+      <outfile xil_pn:name="decode_stage.prj"/>
+      <outfile xil_pn:name="decode_stage.stx"/>
+      <outfile xil_pn:name="decode_stage.syr"/>
+      <outfile xil_pn:name="decode_stage.xst"/>
+      <outfile xil_pn:name="decode_stage_xst.xrpt"/>
+      <outfile xil_pn:name="register_file.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 

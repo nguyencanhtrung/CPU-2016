@@ -1,4 +1,4 @@
-V3 37
+V3 44
 FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd 2016/04/07.01:15:13 P.20131013
 EN work/carry_look_ahead_block 1460243272 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd \
@@ -20,6 +20,13 @@ EN work/logic_module 1460243278 \
 AR work/logic_module/Behavioral 1460243279 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/logic_module.vhd \
       EN work/logic_module 1460243278
+FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/register_file.vhd 2016/04/10.23:40:03 P.20131013
+EN work/register_file 1460331739 \
+      FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/register_file.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/register_file/Behavioral 1460331740 \
+      FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/register_file.vhd \
+      EN work/register_file 1460331739
 FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd 2016/04/07.01:15:13 P.20131013
 EN work/sixteen_bits_adder 1460243274 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd \
@@ -50,6 +57,13 @@ EN work/data_memory_simulation 1460246421 \
 AR work/data_memory_simulation/Behavioral 1460246422 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/data_memory_simulation.vhd \
       EN work/data_memory_simulation 1460246421
+FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/decode_stage.vhd 2016/04/11.01:42:13 P.20131013
+EN work/decode_stage 1460331741 \
+      FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/decode_stage.vhd \
+      PB ieee/std_logic_1164 1381692176 LB work
+AR work/decode_stage/Behavioral 1460331742 \
+      FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/decode_stage.vhd \
+      EN work/decode_stage 1460331741 CP work/register_file
 FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd 2016/04/10.22:45:22 P.20131013
 EN work/dual_edge_check 1460321129 \
       FL /home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd \
