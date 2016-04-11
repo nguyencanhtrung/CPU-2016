@@ -1,2 +1,0 @@
-vhdl isim_temp "../../untested_src/dual_edge_check.vhd"
-vhdl isim_temp "../../untested_src/tb_dual_edge_check.vhd"

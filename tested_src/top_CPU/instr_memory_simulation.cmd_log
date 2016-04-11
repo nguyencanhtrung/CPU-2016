@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/instr_memory_simulation.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/instr_memory_simulation.syr" 
-xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/instr_memory_simulation.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/instr_memory_simulation.syr" 
-xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/instr_memory_simulation.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/instr_memory_simulation.syr" 
