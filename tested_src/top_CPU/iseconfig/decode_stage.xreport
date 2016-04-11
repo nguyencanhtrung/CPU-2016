@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-11T01:16:47</DateModified>
+  <DateModified>2016-04-11T22:30:54</DateModified>
   <ModuleName>decode_stage</ModuleName>
-  <SummaryTimeStamp>2016-04-10T22:45:33</SummaryTimeStamp>
-  <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/iseconfig/instr_memory_simulation.xreport</SavedFilePath>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/iseconfig/decode_stage.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU</ImplementationReportsDirectory>
-  <DateInitialized>2016-04-11T01:16:47</DateInitialized>
+  <DateInitialized>2016-04-11T22:30:53</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

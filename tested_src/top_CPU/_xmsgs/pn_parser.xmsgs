@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd&quot; into library work</arg>
 </msg>
 
@@ -27,10 +28,25 @@
 <<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd&quot; into library work</arg>
 =======
+=======
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/carry_look_ahead_block.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/four_bits_CLA_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/logic_module.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/processor_core.vhd&quot; into library work</arg>
+</msg>
+
+>>>>>>> 1bcce3c5c6c0f5594d193a68511bd71decbd7be9
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/register_file.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_add_sub.vhd&quot; into library work</arg>
+<<<<<<< HEAD
 >>>>>>> 278c62796d1923a7161562de2a5c2f859c803d42
 </msg>
 
@@ -100,5 +116,45 @@
 >>>>>>> 76d8cbcd1d5a32247e61f6a388804747535fb283
 =======
 >>>>>>> c764269899118d9315bca759b7786658ec6fb679
+=======
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/sixteen_bits_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_carry_look_ahead_block.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_four_bits_CLA_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_sixteen_bits_add_sub.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_sixteen_bits_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/tested_src/top_CPU/tb_updated_reg_file.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/ALU_module.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/data_memory_simulation.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/decode_stage.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/dual_edge_check.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/instr_mem_simulatio.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/untested_src/shift_module.vhd&quot; into library work</arg>
+</msg>
+
+>>>>>>> 1bcce3c5c6c0f5594d193a68511bd71decbd7be9
 </messages>
 
