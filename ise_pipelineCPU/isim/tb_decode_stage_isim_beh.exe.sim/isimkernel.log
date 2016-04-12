@@ -1,0 +1,10 @@
+Command line:
+   tb_decode_stage_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53834
+
+Tue Apr 12 00:17:35 2016
+
+
+ Elaboration Time: 0.01 sec
