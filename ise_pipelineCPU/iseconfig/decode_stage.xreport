@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-12T06:40:20</DateModified>
+  <DateModified>2016-04-12T08:18:51</DateModified>
   <ModuleName>decode_stage</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/iseconfig/decode_stage.xreport</SavedFilePath>
