@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_four_bits_CLA_adder_isim_beh.exe" -prj "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_four_bits_CLA_adder_beh.prj" "work.tb_four_bits_CLA_adder" 

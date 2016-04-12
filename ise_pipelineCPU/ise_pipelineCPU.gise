@@ -34,13 +34,126 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="decode_stage_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="decode_stage_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="decode_stage_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_four_bits_CLA_adder_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_four_bits_CLA_adder_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_four_bits_CLA_adder_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1460398109" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398109" xil_pn:in_ck="349216357448128472" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="src/ALU_module.vhd"/>
+      <outfile xil_pn:name="src/carry_look_ahead_block.vhd"/>
+      <outfile xil_pn:name="src/data_memory_simulation.vhd"/>
+      <outfile xil_pn:name="src/decode_stage.vhd"/>
+      <outfile xil_pn:name="src/dual_edge_check.vhd"/>
+      <outfile xil_pn:name="src/fixedpoint_divider_module.vhd"/>
+      <outfile xil_pn:name="src/fixedpoint_multiplier_module.vhd"/>
+      <outfile xil_pn:name="src/four_bits_CLA_adder.vhd"/>
+      <outfile xil_pn:name="src/instr_mem_simulatio.vhd"/>
+      <outfile xil_pn:name="src/logic_module.vhd"/>
+      <outfile xil_pn:name="src/processor_core.vhd"/>
+      <outfile xil_pn:name="src/register_file.vhd"/>
+      <outfile xil_pn:name="src/shift_module.vhd"/>
+      <outfile xil_pn:name="src/sixteen_bits_add_sub.vhd"/>
+      <outfile xil_pn:name="src/sixteen_bits_adder.vhd"/>
+      <outfile xil_pn:name="src/tb/ALU_tb.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_carry_look_ahead_block.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_dual_edge_check.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_fixedpoint_divider_module.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_fixedpoint_multiplier_module.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_four_bits_CLA_adder.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_regFile.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_sixteen_bits_add_sub.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_sixteen_bits_adder.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_unsigned_fixedpoint_divider_module.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_updated_reg_file.vhd"/>
+      <outfile xil_pn:name="src/unsigned_fixedpoint_divider_module.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398109" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7746715405722559866" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398109" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="814704512966418788" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398109" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5189637653235708768" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398109" xil_pn:in_ck="349216357448128472" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="src/ALU_module.vhd"/>
+      <outfile xil_pn:name="src/carry_look_ahead_block.vhd"/>
+      <outfile xil_pn:name="src/data_memory_simulation.vhd"/>
+      <outfile xil_pn:name="src/decode_stage.vhd"/>
+      <outfile xil_pn:name="src/dual_edge_check.vhd"/>
+      <outfile xil_pn:name="src/fixedpoint_divider_module.vhd"/>
+      <outfile xil_pn:name="src/fixedpoint_multiplier_module.vhd"/>
+      <outfile xil_pn:name="src/four_bits_CLA_adder.vhd"/>
+      <outfile xil_pn:name="src/instr_mem_simulatio.vhd"/>
+      <outfile xil_pn:name="src/logic_module.vhd"/>
+      <outfile xil_pn:name="src/processor_core.vhd"/>
+      <outfile xil_pn:name="src/register_file.vhd"/>
+      <outfile xil_pn:name="src/shift_module.vhd"/>
+      <outfile xil_pn:name="src/sixteen_bits_add_sub.vhd"/>
+      <outfile xil_pn:name="src/sixteen_bits_adder.vhd"/>
+      <outfile xil_pn:name="src/tb/ALU_tb.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_carry_look_ahead_block.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_dual_edge_check.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_fixedpoint_divider_module.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_fixedpoint_multiplier_module.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_four_bits_CLA_adder.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_regFile.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_sixteen_bits_add_sub.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_sixteen_bits_adder.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_unsigned_fixedpoint_divider_module.vhd"/>
+      <outfile xil_pn:name="src/tb/tb_updated_reg_file.vhd"/>
+      <outfile xil_pn:name="src/unsigned_fixedpoint_divider_module.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398116" xil_pn:in_ck="349216357448128472" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6653301675991739780" xil_pn:start_ts="1460398109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="tb_four_bits_CLA_adder_beh.prj"/>
+      <outfile xil_pn:name="tb_four_bits_CLA_adder_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1460398117" xil_pn:in_ck="-1963739094024795841" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6610627405240943177" xil_pn:start_ts="1460398116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="tb_four_bits_CLA_adder_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1460397709" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1460397708">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1460397709" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1305738749248832856" xil_pn:start_ts="1460397709">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -70,6 +183,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="decode_stage.lso"/>
       <outfile xil_pn:name="decode_stage.ngc"/>

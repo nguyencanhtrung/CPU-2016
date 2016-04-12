@@ -1,0 +1,2 @@
+work	"src/decode_stage.vhd"
+work	"src/register_file.vhd"

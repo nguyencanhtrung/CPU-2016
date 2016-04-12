@@ -1,0 +1,2 @@
+vhdl work "src/four_bits_CLA_adder.vhd"
+vhdl work "src/tb/tb_four_bits_CLA_adder.vhd"
