@@ -45,7 +45,7 @@ signal mem_cell : data_mem;
 begin
 memory_process: process (clk)
 begin
-	if falling_edge (clk) then
+	if falling_edge (clk) then	--synch read write!
 		if clk ='0' then
 			if mem_read ='1' then
 				data_out <= mem_cell(to_integer(unsigned(address)));	

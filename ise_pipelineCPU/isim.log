@@ -21,4 +21,5 @@ at 0 ps, Instance /tb_decode_stage/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGE
 at 0 ps, Instance /tb_decode_stage/uut/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 at 820 ns, Instance /tb_decode_stage/ : Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
-Stopped at time : 5615435 ns : File "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd" Line 161
+Stopped at time : 4824420 ns : File "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd" Line 146
+# exit 0

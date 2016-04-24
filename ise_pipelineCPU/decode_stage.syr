@@ -1,18 +1,18 @@
-Release 14.7 - xst P.20131013 (lin)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: decode_stage.prj
@@ -108,10 +108,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/register_file.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/register_file.vhd" into library work
 Parsing entity <register_file>.
 Parsing architecture <Behavioral> of entity <register_file>.
-Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/cpu_package.vhd" into library work
+Parsing package <cpu_package>.
+Parsing package body <cpu_package>.
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd" into library work
 Parsing entity <decode_stage>.
 Parsing architecture <Behavioral> of entity <decode_stage>.
 
@@ -128,16 +131,15 @@ Elaborating entity <register_file> (architecture <Behavioral>) from library <wor
 =========================================================================
 
 Synthesizing Unit <decode_stage>.
-    Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd".
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd".
 WARNING:Xst:647 - Input <IF_ID<31:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 86-bit register for signal <dec_exe>.
     Summary:
 	inferred  86 D-type flip-flop(s).
-	inferred   2 Multiplexer(s).
 Unit <decode_stage> synthesized.
 
 Synthesizing Unit <register_file>.
-    Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/register_file.vhd".
+    Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/register_file.vhd".
     Found 16-bit register for signal <regFile<1>>.
     Found 16-bit register for signal <regFile<2>>.
     Found 16-bit register for signal <regFile<3>>.
@@ -186,8 +188,7 @@ Macro Statistics
 # Registers                                            : 33
  16-bit register                                       : 32
  86-bit register                                       : 1
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 2
  16-bit 32-to-1 multiplexer                            : 2
 
 =========================================================================
@@ -203,8 +204,7 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Registers                                            : 598
  Flip-Flops                                            : 598
-# Multiplexers                                         : 34
- 1-bit 2-to-1 multiplexer                              : 2
+# Multiplexers                                         : 32
  1-bit 32-to-1 multiplexer                             : 32
 
 =========================================================================
@@ -217,18 +217,14 @@ INFO:Xst:2261 - The FF/Latch <dec_exe_1> in Unit <decode_stage> is equivalent to
 INFO:Xst:2261 - The FF/Latch <dec_exe_2> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_23> 
 INFO:Xst:2261 - The FF/Latch <dec_exe_3> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_24> 
 INFO:Xst:2261 - The FF/Latch <dec_exe_4> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_25> 
-INFO:Xst:2261 - The FF/Latch <dec_exe_81> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_85> 
 
 Optimizing unit <decode_stage> ...
-INFO:Xst:2261 - The FF/Latch <dec_exe_79> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_80> 
 
 Optimizing unit <register_file> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block decode_stage, actual ratio is 1.
-FlipFlop dec_exe_81 has been replicated 1 time(s) to handle iob=true attribute.
-FlipFlop dec_exe_79 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop dec_exe_4 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop dec_exe_3 has been replicated 1 time(s) to handle iob=true attribute.
 FlipFlop dec_exe_2 has been replicated 1 time(s) to handle iob=true attribute.
@@ -265,10 +261,10 @@ Top Level Output File Name         : decode_stage.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 392
+# BELS                             : 394
 #      LUT2                        : 1
 #      LUT3                        : 2
-#      LUT5                        : 37
+#      LUT5                        : 39
 #      LUT6                        : 320
 #      MUXF7                       : 32
 # FlipFlops/Latches                : 598
@@ -288,14 +284,14 @@ Selected Device : 7a100tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             544  out of  126800     0%  
- Number of Slice LUTs:                  360  out of  63400     0%  
-    Number used as Logic:               360  out of  63400     0%  
+ Number of Slice LUTs:                  362  out of  63400     0%  
+    Number used as Logic:               362  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    852
-   Number with an unused Flip Flop:     308  out of    852    36%  
-   Number with an unused LUT:           492  out of    852    57%  
-   Number of fully used LUT-FF pairs:    52  out of    852     6%  
+ Number of LUT Flip Flop pairs used:    853
+   Number with an unused Flip Flop:     309  out of    853    36%  
+   Number with an unused LUT:           491  out of    853    57%  
+   Number of fully used LUT-FF pairs:    53  out of    853     6%  
    Number of unique control sets:        33
 
 IO Utilization: 
@@ -397,15 +393,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 86 / 86
 -------------------------------------------------------------------------
 Offset:              0.640ns (Levels of Logic = 1)
-  Source:            dec_exe_81_1 (FF)
+  Source:            dec_exe_85 (FF)
   Destination:       dec_exe<85> (PAD)
   Source Clock:      clk rising
 
-  Data Path: dec_exe_81_1 to dec_exe<85>
+  Data Path: dec_exe_85 to dec_exe<85>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.361   0.279  dec_exe_81_1 (dec_exe_81_1)
+     FD:C->Q               1   0.361   0.279  dec_exe_85 (dec_exe_85)
      OBUF:I->O                 0.000          dec_exe_85_OBUF (dec_exe<85>)
     ----------------------------------------
     Total                      0.640ns (0.361ns logic, 0.279ns route)
@@ -428,14 +424,14 @@ clk            |         |    1.962|         |         |
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.30 secs
+Total CPU time to Xst completion: 11.99 secs
  
 --> 
 
 
-Total memory usage is 203152 kilobytes
+Total memory usage is 514260 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    9 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

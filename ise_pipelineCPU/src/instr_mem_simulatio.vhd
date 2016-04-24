@@ -30,8 +30,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity instr_memory_simulation is
-    Port ( 	address 	: in  STD_LOGIC_VECTOR (10 downto 0);
-				mem_read : in  STD_LOGIC;
+    Port ( 	address 	: in  STD_LOGIC_VECTOR (15 downto 0);	--more than 1024 !!! error output
 				clk 		: in  STD_LOGIC;
 				data_out	: out STD_LOGIC_VECTOR (31 downto 0));
 end instr_memory_simulation;
@@ -44,13 +43,7 @@ begin
 memory_process: process (clk)
 begin
 	if falling_edge (clk) then
-		if clk ='0' then
-			if mem_read ='1' then
-				data_out <= mem_cell(to_integer(unsigned(address)));	
-			else
-				null;
-			end if;
-		end if;
+		data_out <= mem_cell(to_integer(unsigned(address)));	
 	end if;
 end process memory_process;
 

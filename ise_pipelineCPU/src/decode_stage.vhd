@@ -20,6 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.ALL;
+use work.cpu_package;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -40,27 +41,6 @@ entity decode_stage is
 end decode_stage;
 
 architecture Behavioral of decode_stage is
---------instruction and their opcodes---------------
-constant	add_op 		: std_logic_vector(4 downto 0):="00000";
-constant	addi_op 		: std_logic_vector(4 downto 0):="00001";
-constant	sub_op 		: std_logic_vector(4 downto 0):="00010";
-constant	nor_op		: std_logic_vector(4 downto 0):="00011";
-constant	or_op			: std_logic_vector(4 downto 0):="00100";
-constant	xor_op		: std_logic_vector(4 downto 0):="00101";
-constant	and_op		: std_logic_vector(4 downto 0):="00110";
-constant	sll_op	 	: std_logic_vector(4 downto 0):="00111";
-constant	srl_op		: std_logic_vector(4 downto 0):="01000";
-constant	sw_op 		: std_logic_vector(4 downto 0):="01001";
-constant	lw_op		 	: std_logic_vector(4 downto 0):="01010";
-constant	beq_op 		: std_logic_vector(4 downto 0):="01011";
-constant	bne_op 		: std_logic_vector(4 downto 0):="01100";
-constant	slt_op 		: std_logic_vector(4 downto 0):="01101";
-constant	slti_op 		: std_logic_vector(4 downto 0):="01110";
-constant	jmp_op 		: std_logic_vector(4 downto 0):="01111";
-constant	one 			: std_logic:='1';
-constant	zero 			: std_logic:='0';
---------------------------------------------------------
-
 ---details of dec_exe register------------------
 --	0 to 4 	=> instr(11-15)/rd as reg_write
 --	5 to 9 	=> instrc(16-20)/rt as reg_write
@@ -112,34 +92,34 @@ regFile: entity work.register_file
 ----------concurrent part--------------
 read_register_1 	<=	IF_ID(25 downto 21);
 read_register_2 	<=	IF_ID(20 downto 16);
-ALUsrc					<= '1' when IF_ID (30 downto 26)=addi_op else	
-								'1' when	IF_ID (30 downto 26)=lw_op else		
-								'1' when	IF_ID (30 downto 26)=sw_op else
-								'1' when	IF_ID (30 downto 26)=beq_op else
-								'1' when	IF_ID (30 downto 26)=bne_op else
-								'1' when	IF_ID (30 downto 26)=slti_op
+ALUsrc					<= '1' when IF_ID (30 downto 26)=work.cpu_package.addi_op 	
+								or			IF_ID (30 downto 26)=work.cpu_package.lw_op 		
+								or			IF_ID (30 downto 26)=work.cpu_package.sw_op 
+								or			IF_ID (30 downto 26)=work.cpu_package.beq_op 
+								or			IF_ID (30 downto 26)=work.cpu_package.bne_op 
+								or			IF_ID (30 downto 26)=work.cpu_package.slti_op
+								else '0';		-- 1 for all I type instructions.....
+RegDst					<= '0' when IF_ID (30 downto 26)=work.cpu_package.addi_op	
+								or			IF_ID (30 downto 26)=work.cpu_package.lw_op		
+								or			IF_ID (30 downto 26)=work.cpu_package.sw_op
+								or			IF_ID (30 downto 26)=work.cpu_package.beq_op
+								or			IF_ID (30 downto 26)=work.cpu_package.bne_op
+								or			IF_ID (30 downto 26)=work.cpu_package.slti_op
+								else '1';		--1 for all R type operations....
+ReadMem					<= '1' when IF_ID (30 downto 26)=work.cpu_package.lw_op	
 								else '0';
-RegDst					<= '1' when IF_ID (30 downto 26)=addi_op	
-								or	IF_ID (30 downto 26)=lw_op		
-								or	IF_ID (30 downto 26)=sw_op
-								or	IF_ID (30 downto 26)=beq_op
-								or	IF_ID (30 downto 26)=bne_op
-								or	IF_ID (30 downto 26)=slti_op
+WriteMem					<= '1' when IF_ID (30 downto 26)=work.cpu_package.sw_op	
 								else '0';
-ReadMem					<= '1' when IF_ID (30 downto 26)=lw_op	
-									else '0';
-WriteMem					<= '1' when IF_ID (30 downto 26)=sw_op	
+Branch					<= '1' when IF_ID (30 downto 26)=work.cpu_package.beq_op
+								or	IF_ID (30 downto 26)=work.cpu_package.bne_op
 								else '0';
-Branch					<= '1' when IF_ID (30 downto 26)=beq_op
-								or	IF_ID (30 downto 26)=bne_op
-								else '0';
-Reg_Write					<= '0' when IF_ID (30 downto 26)=sw_op
-											or IF_ID (30 downto 26)=beq_op
-											or	IF_ID (30 downto 26)=bne_op
-									else '1';
+Reg_Write					<= '0' when IF_ID (30 downto 26)=work.cpu_package.sw_op
+										 or 	IF_ID (30 downto 26)=work.cpu_package.beq_op
+										 or	IF_ID (30 downto 26)=work.cpu_package.bne_op
+										 else '1';
 
-Mem2Reg					<= '1' when IF_ID (30 downto 26)=lw_op	
-									else '0';
+Mem2Reg					<= '0' when IF_ID (30 downto 26)=work.cpu_package.lw_op	
+									else '1';		--0 for lw operation else always 1 i.e. use ALU result
 ------------------------------------------
 update_dec_exe_process: process (clk)
 	begin
@@ -151,24 +131,17 @@ update_dec_exe_process: process (clk)
 				dec_exe(41 downto 26) 	<=	read_data_2;					--rt value
 				dec_exe(57 downto 42) 	<=	read_data_1;					--rs value
 				dec_exe(73 downto 58) 	<=	IF_ID (47 downto 32);		--pc value	
-					--signals changing wiht instruction
-				dec_exe(78 downto 74)	<= IF_ID (30 downto 26);		--i.e. opcode field without MSB	
-					--ALUsrc Signal MUX 
-				dec_exe(79)					<= ALUsrc;
-						--RegDst Signal MUX						
+					--DEC/EXE signals
+				dec_exe(78 downto 74)	<= IF_ID (30 downto 26);		--i.e. opcode field without MSB	 
+				dec_exe(79)					<= ALUsrc;						
 				dec_exe(80)					<=RegDst;
-													
+					--EXE/MEM signals								
 				dec_exe(81)					<= ReadMem;
-				
 				dec_exe(82)					<= WriteMem;
-				
 				dec_exe(83)					<= Branch;
-				
+					--MEM/WB signals
 				dec_exe(84)					<= Reg_Write;
-				
 				dec_exe(85)					<= Mem2Reg;
-													
-				
 			end if;
 	end process update_dec_exe_process;
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-11T23:09:19</DateModified>
+  <DateModified>2016-04-23T23:13:03</DateModified>
   <ModuleName>decode_stage</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/iseconfig/decode_stage.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/</ImplementationReportsDirectory>
   <DateInitialized>2016-04-11T23:09:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
