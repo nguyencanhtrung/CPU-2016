@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_decode_stage_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_decode_stage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_decode_stage/if_id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">if_id[47:0]</obj_property>
+      <obj_property name="ObjectShortName">if_id[47:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/dec_exe" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dec_exe[85:0]</obj_property>
+      <obj_property name="ObjectShortName">dec_exe[85:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/one" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">one</obj_property>
+      <obj_property name="ObjectShortName">one</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/alusrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alusrc</obj_property>
+      <obj_property name="ObjectShortName">alusrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/regdst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">regdst</obj_property>
+      <obj_property name="ObjectShortName">regdst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/readmem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readmem</obj_property>
+      <obj_property name="ObjectShortName">readmem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/writemem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writemem</obj_property>
+      <obj_property name="ObjectShortName">writemem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/branch" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">branch</obj_property>
+      <obj_property name="ObjectShortName">branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/read_register_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_register_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">read_register_2[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/read_register_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_register_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">read_register_1[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_stage/uut/mem2reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem2reg</obj_property>
+      <obj_property name="ObjectShortName">mem2reg</obj_property>
+   </wvobject>
+</wave_config>

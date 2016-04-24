@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_four_bits_CLA_adder_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_four_bits_CLA_adder_beh.prj work.tb_four_bits_CLA_adder 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/tb/tb_four_bits_CLA_adder.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 38380 KB
+Fuse CPU Usage: 1470 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package numeric_std
+Compiling architecture behavioral of entity four_bits_CLA_adder [four_bits_cla_adder_default]
+Compiling architecture behavior of entity tb_four_bits_cla_adder
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_four_bits_CLA_adder_isim_beh.exe
+Fuse Memory Usage: 53076 KB
+Fuse CPU Usage: 1650 ms
+GCC CPU Usage: 3810 ms
+=======
 Running: /home/waseemh/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_decode_stage_isim_beh.exe -prj /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_decode_stage_beh.prj work.tb_decode_stage 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
@@ -23,3 +48,4 @@ Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/t
 Fuse Memory Usage: 668468 KB
 Fuse CPU Usage: 1250 ms
 GCC CPU Usage: 450 ms
+>>>>>>> 1c058c99adf7987cf3bd05504fe0c35e39fc914c

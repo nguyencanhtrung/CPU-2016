@@ -1,10 +1,19 @@
 --------------------------------------------------------------------------------
+<<<<<<< HEAD
+--	TU Kaiserslautern	
+-- Students Trung C. Nguyen and Waseem Hassan
+--
+-- Create Date:   11:15:56 04/11/2016
+-- Design Name:   
+-- Module Name:   /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/tb/tb_decode_stage.vhd
+=======
 -- Company: 
 -- Engineer:
 --
 -- Create Date:   23:27:30 04/11/2016
 -- Design Name:   
 -- Module Name:   /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/tb/tb_decode_stage.vhd
+>>>>>>> 1c058c99adf7987cf3bd05504fe0c35e39fc914c
 -- Project Name:  ise_pipelineCPU
 -- Target Device:  
 -- Tool versions:  
@@ -27,15 +36,21 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+<<<<<<< HEAD
+=======
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
+>>>>>>> 1c058c99adf7987cf3bd05504fe0c35e39fc914c
 USE ieee.numeric_std.ALL;
  
 ENTITY tb_decode_stage IS
 END tb_decode_stage;
  
 ARCHITECTURE behavior OF tb_decode_stage IS 
+<<<<<<< HEAD
+ 
+=======
  --------instruction and their opcodes---------------
 constant	add_op 		: std_logic_vector(5 downto 0):="000000";
 constant	addi_op 		: std_logic_vector(5 downto 0):="000001";
@@ -56,6 +71,7 @@ constant	jmp_op 		: std_logic_vector(5 downto 0):="001111";
 constant	one 			: std_logic:='1';
 constant	zero 			: std_logic:='0';
 --------------------------------------------------------
+>>>>>>> 1c058c99adf7987cf3bd05504fe0c35e39fc914c
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT decode_stage
@@ -89,6 +105,15 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: decode_stage PORT MAP (
+<<<<<<< HEAD
+          IF_ID 				=> IF_ID,
+          write_register 	=> write_register,
+          write_data 		=> write_data,
+          RegWrite 			=> RegWrite,
+          clk 					=> clk,
+          rst 					=> rst,
+          dec_exe 			=> dec_exe
+=======
           IF_ID => IF_ID,
           write_register => write_register,
           write_data => write_data,
@@ -96,6 +121,7 @@ BEGIN
           clk => clk,
           rst => rst,
           dec_exe => dec_exe
+>>>>>>> 1c058c99adf7987cf3bd05504fe0c35e39fc914c
         );
 
    -- Clock process definitions
@@ -110,6 +136,21 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
+<<<<<<< HEAD
+	variable counter	:	integer := 0;
+   begin		
+		rst 	<= '1';
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
+		rst 	<= '0';
+      wait for clk_period*10;
+			-- Filling the register file
+		report "Filling the RegFile";
+		while (counter < 32) loop
+			
+		end loop;
+      -- insert stimulus here 
+=======
    begin		
 		rst						<='1';
       -- hold reset state for 100 ns.
@@ -148,6 +189,7 @@ BEGIN
 		IF_ID(31 downto 0)	<=	slt_op & "11100" & "11101" & "11110" & "00000000000";	--slt
 		wait for clk_period*5;
 
+>>>>>>> 1c058c99adf7987cf3bd05504fe0c35e39fc914c
 
       wait;
    end process;
