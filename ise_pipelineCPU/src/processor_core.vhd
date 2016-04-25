@@ -43,7 +43,7 @@ architecture Behavioral of processor_core is
 -----------------piepline_registers--------------
 
 signal IF_ID	:	std_logic_vector (47 downto 0);
-signal ID_EXE	:	std_logic_vector (5 downto 0);
+signal ID_EXE	:	std_logic_vector (85 downto 0);
 signal EXE_MEM	:	std_logic_vector (58 downto 0);
 signal MEM_WB	:	std_logic_vector (38 downto 0);
 						--details
@@ -58,7 +58,7 @@ signal MEM_WB	:	std_logic_vector (38 downto 0);
 --	26 to 41 => operand_b
 --	42 to 57 => operand_a
 --	58 to 73 => pc_next
---	74 to 78 => ALU MUX 	i.e. EXE stage signal
+--	74 to 78 => ALU_opcode 	i.e. EXE stage signal
 --		79 	=> ALUsrc	i.e. EXE stage signal
 --		80		=> RegDst	i.e. EXE stage signal	
 --		81		=> MemRead	i.e. MEM stage signal	
@@ -92,24 +92,34 @@ signal pc_current			:	std_logic_vector (15 downto 0);
 signal instruction		:	std_logic_vector (31 downto 0);
 signal pc_next				:	std_logic_vector (15 downto 0);	--send in IF_ID reg
 signal ovf_pc_dummy		:	std_logic;
-signal cin_pc_dummy		:	std_logic :=0;
+signal cin_pc_dummy		:	std_logic;
 signal cout_pc_dummy		:	std_logic;
 --signals for decode stage portmap
 signal wb_output			: std_logic_vector(15 downto 0);
 --signals for exe stage portmap
 signal branch_addr		: std_logic_vector (15 downto 0); 
 signal ovf_exe_dummy		: std_logic;
-signal cin_exe_dummy		: std_logic :=0;
+signal cin_exe_dummy		: std_logic;
 signal cout_exe_dummy	: std_logic;
-signal dst_reg				: std_logic_vector (4 downto 0);	--RegDst MUX singal
+signal RegDst				: std_logic;	--RegDst MUX singal
 signal ALU_rslt			: std_logic_vector (15 downto 0);	--ALU output signal
 signal ALU_oprndB			: std_logic_vector (15 downto 0);
 signal ALU_oprndA			: std_logic_vector (15 downto 0);
-
+signal ALU_opcode			: std_logic_vector (5 downto 0);
+signal ALU_zero			: std_logic;
+signal ALU_lessthan		: std_logic;
+signal ALU_ovf				: std_logic;
+signal ALUSrc				: std_logic;
+signal reg_write_dest	: std_logic_vector (4 downto 0);
 --signals for mem stage portmap
-signal PCSrc			: std_logic;
+signal PCSrc				: std_logic;
+signal DM_addr				:	std_logic_vector (15 downto 0);
+signal DM_write_data 	:	std_logic_vector (15 downto 0);
+signal DM_readCtrl		:	std_logic;
+signal DM_writeCtrl		:	std_logic;
+signal DM_read_data		:	std_logic_vector (15 downto 0);
 --signals for writeback stage portmap
-
+signal Mem2Reg				: std_logic;
 
 begin
 ------------------portmaps------------------------
@@ -125,7 +135,7 @@ mem_instr: entity work.instr_memory_simulation
 adder_pc: entity work.sixteen_bits_adder
 	Port map ( 
 			  operand_a => pc_current,
-           operand_b => "0001",		--i.e. 1
+           operand_b => x"0001",		--i.e. 1
            sum 		=> pc_next,
 			  over_flow	=> ovf_pc_dummy,
            carry_in 	=> cin_pc_dummy,
@@ -176,44 +186,64 @@ mem_data: entity work.data_memory_simulation
 --------------------------------------------------
 ---------------concurrent parts and MUXes---------
 --fetch stage
-pc_current 	<= 	EXE_MEM(53 downto 38) when PCSrc='1' else
-					pc_next;
+pc_current 		<= EXE_MEM(53 downto 38) when PCSrc='1' else
+						pc_next;
 ---------------------------------------
 --exe stage
-ALUSrc		<=	ID_EXE(79);
-ALU_oprndA	<=	ID_EXE(57 downto 42);
-ALU_oprndB 	<= ID_EXE(25 downto 10)		when ALUSrc='1' else	--immediate field
-					ID_EXE(41 downto 26);	--rt register value
+ALUSrc			<=	ID_EXE(79);
+ALU_oprndA		<=	ID_EXE(57 downto 42);
+ALU_opcode		<=	'0' & ID_EXE(78 downto 74);
+RegDst			<= ID_EXE(80);
+ALU_oprndB 		<= ID_EXE(25 downto 10)		when ALUSrc='1' else	--immediate field
+						ID_EXE(41 downto 26);	--rt register value						
+reg_write_dest	<=	EXE_MEM(4 downto 0) when RegDst='1' else
+						EXE_MEM(9 downto 5);			--Reg
+---------------------------------------
+--mem stage
+PCSrc				<= EXE_MEM(37) and EXE_MEM(56);	--Branch AND gate
+DM_addr			<=	EXE_MEM (36 downto 21);
+DM_write_data 	<=	EXE_MEM (20 downto 5);
+DM_readCtrl		<=	EXE_MEM (54);
+DM_writeCtrl	<=	EXE_MEM (55);
 ---------------------------------------
 --wb stage
----------------------------------------
+Mem2Reg			<= MEM_WB(38);
+wb_output		<= MEM_WB (20 downto 5) when Mem2Reg='1' else
+						MEM_WB (36 downto 21);
 --------------------------------------------------
 fetch_process: process(clk)
 	begin
-		--if 
+		if rising_edge (clk) then
+			IF_ID(31 downto 0) 	<=	instruction;
+			IF_ID(47 downto 32) 	<=	pc_next;			
+		end if;
 	end process fetch_process;
-
-decode_process: process (clk)
-	begin
-
-	end process decode_process;
 
 execute_process: process (clk)
 	begin
-
+		if rising_edge (clk) then
+			EXE_MEM(4 downto 0) 	<=	reg_write_dest;		--write reg no.
+			EXE_MEM(20 downto 5) <=	ID_EXE(41 downto 26);--sw operation data to be written
+			EXE_MEM(36 downto 21)<=	ALU_rslt;				
+			EXE_MEM(37) 			<=	ALU_zero;
+			EXE_MEM(53 downto 38)<=	ID_EXE(73 downto 58);	--forwarded pc
+			EXE_MEM(54) 			<=	ID_EXE(81);	--MemRead
+			EXE_MEM(55) 			<=	ID_EXE(82);	--MemWrite
+			EXE_MEM(56)				<=	ID_EXE(83);	--Branch
+			EXE_MEM(57)				<=	ID_EXE(84);	--RegWrite
+			EXE_MEM(58)				<=	ID_EXE(85);	--Mem2Reg
+		end if;
 	end process execute_process;
 
 memory_access_process: process(clk)
 	begin
-
+		if rising_edge (clk) then
+			MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
+			MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
+			MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
+			MEM_WB(37)				<=	EXE_MEM(57);	--RegWrite
+			MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg
+		end if;
 	end process memory_access_process;
-
-writeback_process: process(clk)
-	begin
-
-	end process writeback_process;
-
-
-
 end Behavioral;
 

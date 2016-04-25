@@ -30,7 +30,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity data_memory_simulation is
-    Port ( address 	: in  STD_LOGIC_VECTOR (10 downto 0);
+    Port ( address 	: in  STD_LOGIC_VECTOR (15 downto 0);
            data_in 	: in  STD_LOGIC_VECTOR (15 downto 0);
            mem_read 	: in  STD_LOGIC;
            mem_write : in  STD_LOGIC;
