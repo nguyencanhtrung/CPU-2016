@@ -32,7 +32,7 @@ entity instr_memory_simulation is
 		-- name of file for initialization, formatted as lines of 32 ones or zeroes, each describing one word.
 		filename     : in string  := "program.ram";
 		-- size in words (32bit)
-		size         : in integer := 256;
+		size         : in integer := 256
 	);
 
     Port ( 	address 	: in  STD_LOGIC_VECTOR (15 downto 0);	--more than 1024 !!! error output
