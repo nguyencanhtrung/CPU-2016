@@ -1,0 +1,3 @@
+vhdl isim_temp "src/register_file.vhd"
+vhdl isim_temp "src/decode_stage.vhd"
+vhdl isim_temp "src/tb/tb_decode_stage.vhd"

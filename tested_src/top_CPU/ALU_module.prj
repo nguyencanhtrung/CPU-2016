@@ -1,7 +1,0 @@
-vhdl work "four_bits_CLA_adder.vhd"
-vhdl work "carry_look_ahead_block.vhd"
-vhdl work "sixteen_bits_adder.vhd"
-vhdl work "../../untested_src/shift_module.vhd"
-vhdl work "sixteen_bits_add_sub.vhd"
-vhdl work "logic_module.vhd"
-vhdl work "../../untested_src/ALU_module.vhd"
