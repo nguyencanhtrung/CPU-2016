@@ -121,27 +121,31 @@ Reg_Write					<= '0' when IF_ID (30 downto 26)=work.cpu_package.sw_op
 Mem2Reg					<= '0' when IF_ID (30 downto 26)=work.cpu_package.lw_op	
 									else '1';		--0 for lw operation else always 1 i.e. use ALU result
 ------------------------------------------
-update_dec_exe_process: process (clk)
+update_dec_exe_process: process (clk,rst)
 	begin
-		if rising_edge(clk)	then	--write pipeline register
-					--fixed signals; do NOT changes with instruction type
-				dec_exe(4 downto 0) 		<=	IF_ID (15 downto 11);		--rd no.
-				dec_exe(9 downto 5) 		<=	IF_ID (20 downto 16);		--rt no.
-				dec_exe(25 downto 10) 	<=	IF_ID (15 downto 0);			--immediate value
-				dec_exe(41 downto 26) 	<=	read_data_2;					--rt value
-				dec_exe(57 downto 42) 	<=	read_data_1;					--rs value
-				dec_exe(73 downto 58) 	<=	IF_ID (47 downto 32);		--pc value	
-					--DEC/EXE signals
-				dec_exe(78 downto 74)	<= IF_ID (30 downto 26);		--i.e. opcode field without MSB	 
-				dec_exe(79)					<= ALUsrc;						
-				dec_exe(80)					<=RegDst;
-					--EXE/MEM signals								
-				dec_exe(81)					<= ReadMem;
-				dec_exe(82)					<= WriteMem;
-				dec_exe(83)					<= Branch;
-					--MEM/WB signals
-				dec_exe(84)					<= Reg_Write;
-				dec_exe(85)					<= Mem2Reg;
+		if rst ='1' then
+			dec_exe								<=(others => '0');
+		else
+			if rising_edge(clk)	then	--write pipeline register
+						--fixed signals; do NOT changes with instruction type
+					dec_exe(4 downto 0) 		<=	IF_ID (15 downto 11);		--rd no.
+					dec_exe(9 downto 5) 		<=	IF_ID (20 downto 16);		--rt no.
+					dec_exe(25 downto 10) 	<=	IF_ID (15 downto 0);			--immediate value
+					dec_exe(41 downto 26) 	<=	read_data_2;					--rt value
+					dec_exe(57 downto 42) 	<=	read_data_1;					--rs value
+					dec_exe(73 downto 58) 	<=	IF_ID (47 downto 32);		--pc value	
+						--DEC/EXE signals
+					dec_exe(78 downto 74)	<= IF_ID (30 downto 26);		--i.e. opcode field without MSB	 
+					dec_exe(79)					<= ALUsrc;						
+					dec_exe(80)					<=RegDst;
+						--EXE/MEM signals								
+					dec_exe(81)					<= ReadMem;
+					dec_exe(82)					<= WriteMem;
+					dec_exe(83)					<= Branch;
+						--MEM/WB signals
+					dec_exe(84)					<= Reg_Write;
+					dec_exe(85)					<= Mem2Reg;
+				end if;
 			end if;
 	end process update_dec_exe_process;
 

@@ -26,13 +26,13 @@
          <ClosedNode>/tb_updated_reg_file - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_updated_reg_file.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ALU - ALU_module - Behavioral (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd)</SelectedItem>
+         <SelectedItem>processor_core - Behavioral (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000044c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000044c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>ALU - ALU_module - Behavioral (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd)</CurrentItem>
+      <CurrentItem>processor_core - Behavioral (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -45,13 +45,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -77,13 +77,14 @@
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU_tb - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|ALU_tb.vhd</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
+         <ClosedNode>/tb_cpu - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|tb_cpu.vhd</ClosedNode>
          <ClosedNode>/tb_decode_stage - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_decode_stage.vhd</ClosedNode>
          <ClosedNode>/tb_dual_edge_check - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_dual_edge_check.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_divider_module.vhd</ClosedNode>
@@ -96,13 +97,13 @@
          <ClosedNode>/tb_updated_reg_file - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_updated_reg_file.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_decode_stage - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/tb/tb_decode_stage.vhd)</SelectedItem>
+         <SelectedItem>tb_cpu - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000044c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000044c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_decode_stage - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/tb/tb_decode_stage.vhd)</CurrentItem>
+      <CurrentItem>tb_cpu - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -137,13 +138,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
       <ClosedNodes>
