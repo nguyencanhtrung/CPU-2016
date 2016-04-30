@@ -126,6 +126,9 @@ begin
 --instrt_memory
 
 mem_instr: entity work.instr_memory_simulation 
+	generic map(
+				filename	=> ,
+				size		=> 256)
 	port map (
 				address 	=> pc_current,
 				clk 		=> clk,
