@@ -31,8 +31,6 @@ entity instr_memory_simulation is
 	generic(
 		-- name of file for initialization, formatted as lines of 32 ones or zeroes, each describing one word.
 		filename     : in string  := "program.ram";
-		-- size in words (32bit)
-		size         : in integer := 256;
 	);
 
     Port ( 	address 	: in  STD_LOGIC_VECTOR (15 downto 0);	--more than 1024 !!! error output
@@ -101,7 +99,7 @@ architecture RTL of instr_memory_simulation is
 		return temp_mem;
 	end function;
 -------------------------------------------------------------------
-type instr_mem is array (0 to size-1) of std_logic_vector(width-1 downto 0); --256 registers, each 32 bit wide
+type instr_mem is array (0 to 1024) of std_logic_vector(31 downto 0); --1K registers, each 32 bit wide
 signal mem_cell : instr_mem:= init_mem(filename); 
 
 begin
