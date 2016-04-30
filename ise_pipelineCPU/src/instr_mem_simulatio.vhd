@@ -19,8 +19,10 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use STD.TEXTIO.ALL;
 use IEEE.NUMERIC_STD.ALL;
+
+library STD;
+use STD.textio.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -101,8 +103,8 @@ architecture RTL of instr_memory_simulation is
 		return temp_mem;
 	end function;
 -------------------------------------------------------------------
-type instr_mem is array (0 to size-1) of std_logic_vector(width-1 downto 0); --256 registers, each 32 bit wide
-signal mem_cell : instr_mem:= init_mem(filename); 
+--type memory_type is array (0 to size-1) of std_logic_vector(width-1 downto 0); --256 registers, each 32 bit wide
+signal mem_cell : memory_type:= init_mem(filename); 
 
 begin
 memory_process: process (clk)

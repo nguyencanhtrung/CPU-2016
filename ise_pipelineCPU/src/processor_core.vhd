@@ -30,7 +30,8 @@ use work.ALL;
 --use UNISIM.VComponents.all;
 
 entity processor_core is
-    Port ( 	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
+	generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
+    Port (	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
 				addr_data_bus	: out	 STD_LOGIC_VECTOR (10 downto 0);
 				data_bus 		: inout  STD_LOGIC_VECTOR (15 downto 0);
 				instr_bus 		: in  STD_LOGIC_VECTOR (31 downto 0);
@@ -127,7 +128,7 @@ begin
 
 mem_instr: entity work.instr_memory_simulation 
 	generic map(
-				filename	=> ,
+				filename	=> filename,
 				size		=> 256)
 	port map (
 				address 	=> pc_current,

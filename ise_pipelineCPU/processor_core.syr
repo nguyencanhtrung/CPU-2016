@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: processor_core.prj
@@ -117,7 +117,7 @@ Parsing architecture <Behavioral> of entity <carry_look_ahead_block>.
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/sixteen_bits_adder.vhd" into library work
 Parsing entity <sixteen_bits_adder>.
 Parsing architecture <Behavioral> of entity <sixteen_bits_adder>.
-Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/cpu_package.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/cpu_package.vhd" into library work
 Parsing package <cpu_package>.
 Parsing package body <cpu_package>.
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/sixteen_bits_add_sub.vhd" into library work
@@ -134,7 +134,7 @@ Parsing entity <logic_module>.
 Parsing architecture <Behavioral> of entity <logic_module>.
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd" into library work
 Parsing entity <instr_memory_simulation>.
-Parsing architecture <Behavioral> of entity <instr_memory_simulation>.
+Parsing architecture <RTL> of entity <instr_memory_simulation>.
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd" into library work
 Parsing entity <decode_stage>.
 Parsing architecture <Behavioral> of entity <decode_stage>.
@@ -152,9 +152,10 @@ Parsing architecture <Behavioral> of entity <processor_core>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <processor_core> (architecture <Behavioral>) from library <work>.
+Elaborating entity <processor_core> (architecture <Behavioral>) with generics from library <work>.
 
-Elaborating entity <instr_memory_simulation> (architecture <Behavioral>) from library <work>.
+Elaborating entity <instr_memory_simulation> (architecture <RTL>) with generics from library <work>.
+WARNING:HDLCompiler:1587 - "/build/xfndry10/P.20131013/rtf/vhdl/xst/src/textio.vhd" Line 34: Read failed due to size mismatch
 
 Elaborating entity <sixteen_bits_adder> (architecture <Behavioral>) from library <work>.
 
@@ -175,8 +176,8 @@ Elaborating entity <logic_module> (architecture <Behavioral>) from library <work
 Elaborating entity <shift_module> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <data_memory_simulation> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" Line 95: Net <cin_pc_dummy> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" Line 102: Net <cin_exe_dummy> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" Line 96: Net <cin_pc_dummy> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" Line 103: Net <cin_exe_dummy> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -184,13 +185,14 @@ WARNING:HDLCompiler:634 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/sr
 
 Synthesizing Unit <processor_core>.
     Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd".
+        filename = "/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt"
 WARNING:Xst:647 - Input <instr_bus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 135: Output port <over_flow> of the instance <adder_pc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 135: Output port <carry_out> of the instance <adder_pc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 156: Output port <lessthan> of the instance <ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 156: Output port <ovf> of the instance <ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 167: Output port <over_flow> of the instance <adder_exe> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 167: Output port <carry_out> of the instance <adder_exe> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 139: Output port <over_flow> of the instance <adder_pc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 139: Output port <carry_out> of the instance <adder_pc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 160: Output port <lessthan> of the instance <ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 160: Output port <ovf> of the instance <ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 171: Output port <over_flow> of the instance <adder_exe> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 171: Output port <carry_out> of the instance <adder_exe> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <cin_pc_dummy> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <cin_exe_dummy> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 59-bit register for signal <EXE_MEM>.
@@ -204,10 +206,11 @@ Unit <processor_core> synthesized.
 
 Synthesizing Unit <instr_memory_simulation>.
     Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd".
-WARNING:Xst:647 - Input <address<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+        filename = "/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt"
+        size = 256
+WARNING:Xst:647 - Input <address<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2999 - Signal 'mem_cell', unconnected in block 'instr_memory_simulation', is tied to its initial value.
-WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_cell>, simulation mismatch.
-    Found 1025x32-bit single-port Read Only RAM <Mram_mem_cell> for signal <mem_cell>.
+    Found 256x32-bit single-port Read Only RAM <Mram_mem_cell> for signal <mem_cell>.
     Found 32-bit register for signal <data_out>.
     Summary:
 	inferred   1 RAM(s).
@@ -330,7 +333,7 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 2
  1025x16-bit single-port RAM                           : 1
- 1025x32-bit single-port Read Only RAM                 : 1
+ 256x32-bit single-port Read Only RAM                  : 1
 # Registers                                            : 38
  16-bit register                                       : 33
  32-bit register                                       : 1
@@ -375,11 +378,11 @@ INFO:Xst:3226 - The RAM <mem_instr/Mram_mem_cell> will be implemented as a BLOCK
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 1025-word x 32-bit                  |          |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk>           | fall     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <pc_current<10:0>> |          |
+    |     addrA          | connected to signal <pc_current<7:0>> |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <instruction>   |          |
     -----------------------------------------------------------------------
@@ -393,7 +396,7 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 2
  1025x16-bit single-port distributed RAM               : 1
- 1025x32-bit single-port block Read Only RAM           : 1
+ 256x32-bit single-port block Read Only RAM            : 1
 # Registers                                            : 760
  Flip-Flops                                            : 760
 # Multiplexers                                         : 46
@@ -417,22 +420,6 @@ INFO:Xst:2261 - The FF/Latch <dec_exe_1> in Unit <decode_stage> is equivalent to
 INFO:Xst:2261 - The FF/Latch <dec_exe_2> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_23> 
 INFO:Xst:2261 - The FF/Latch <dec_exe_3> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_24> 
 INFO:Xst:2261 - The FF/Latch <dec_exe_4> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_25> 
-WARNING:Xst:1710 - FF/Latch <IF_ID_16> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_17> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_18> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_19> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_20> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_21> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_22> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_23> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_24> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_25> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_26> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_27> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_28> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_29> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_30> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IF_ID_31> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <processor_core> ...
 
@@ -575,6 +562,22 @@ WARNING:Xst:2677 - Node <IF_ID_12> of sequential type is unconnected in block <p
 WARNING:Xst:2677 - Node <IF_ID_13> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <IF_ID_14> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <IF_ID_15> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_16> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_17> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_18> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_19> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_20> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_21> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_22> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_23> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_24> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_25> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_26> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_27> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_28> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_29> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_30> of sequential type is unconnected in block <processor_core>.
+WARNING:Xst:2677 - Node <IF_ID_31> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <IF_ID_32> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <IF_ID_33> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <IF_ID_34> of sequential type is unconnected in block <processor_core>.
@@ -1363,13 +1366,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.22 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 10.64 secs
  
 --> 
 
 
-Total memory usage is 516348 kilobytes
+Total memory usage is 516264 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  853 (   0 filtered)
