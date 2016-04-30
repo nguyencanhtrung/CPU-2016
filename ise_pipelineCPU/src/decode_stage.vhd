@@ -64,12 +64,12 @@ signal read_register_2 	: std_logic_vector(4 downto 0);
 signal read_data_1 		: std_logic_vector(15 downto 0);
 signal read_data_2 		: std_logic_vector(15 downto 0);
 signal ALUsrc		 		: std_logic;
-signal RegDst				:std_logic;
-signal ReadMem				:std_logic;
-signal WriteMem			:std_logic;
-signal Branch				:std_logic;
-signal Reg_Write			:std_logic;
-signal Mem2Reg				:std_logic;
+signal RegDst				: std_logic;
+signal ReadMem				: std_logic;
+signal WriteMem			: std_logic;
+signal Branch				: std_logic;
+signal Reg_Write			: std_logic;
+signal Mem2Reg				: std_logic;
 
 
 -----------------------------
