@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

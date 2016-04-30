@@ -122,6 +122,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="13"/>
     </file>
     <file xil_pn:name="src/tb/tb_decode_stage.vhd" xil_pn:type="FILE_VHDL">
+<<<<<<< HEAD
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="50"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="50"/>
@@ -130,6 +131,20 @@
     <file xil_pn:name="cpu_package.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+=======
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="42"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="42"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="42"/>
+    </file>
+    <file xil_pn:name="src/cpu_package.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="52"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
+    </file>
+    <file xil_pn:name="cpu_package.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="53"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+>>>>>>> 146dd108981f3a489619b8480a4a98b411346cd5
     </file>
     <file xil_pn:name="src/tb/tb_processor_core.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="62"/>

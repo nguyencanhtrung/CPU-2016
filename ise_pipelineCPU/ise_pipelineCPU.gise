@@ -60,6 +60,7 @@
     <transform xil_pn:end_ts="1460398109" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1460398109">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+<<<<<<< HEAD
     </transform>
     <transform xil_pn:end_ts="1462037583" xil_pn:in_ck="3400829062531572851" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1462037582">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -119,6 +120,8 @@
     <transform xil_pn:end_ts="1460397709" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1460397708">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+=======
+>>>>>>> 146dd108981f3a489619b8480a4a98b411346cd5
     </transform>
     <transform xil_pn:end_ts="1461610130" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8018137289343003895" xil_pn:start_ts="1461610130">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -144,6 +147,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
+<<<<<<< HEAD
     <transform xil_pn:end_ts="1461610208" xil_pn:in_ck="8047694697760592888" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-571035265135774600" xil_pn:start_ts="1461610187">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
@@ -154,6 +158,24 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+=======
+    <transform xil_pn:end_ts="1462052771" xil_pn:in_ck="-7693995748298935534" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-571035265135774600" xil_pn:start_ts="1462052757">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="decode_stage.ngr"/>
+      <outfile xil_pn:name="processor_core.lso"/>
+      <outfile xil_pn:name="processor_core.ngc"/>
+      <outfile xil_pn:name="processor_core.ngr"/>
+      <outfile xil_pn:name="processor_core.prj"/>
+      <outfile xil_pn:name="processor_core.stx"/>
+      <outfile xil_pn:name="processor_core.syr"/>
+      <outfile xil_pn:name="processor_core.xst"/>
+      <outfile xil_pn:name="processor_core_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+>>>>>>> 146dd108981f3a489619b8480a4a98b411346cd5
     </transform>
   </transforms>
 

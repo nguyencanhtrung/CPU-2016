@@ -3,7 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pn" timeStamp="Mon Apr 25 11:49:48 2016">
+=======
+<application name="pn" timeStamp="Sat Apr 30 23:45:57 2016">
+>>>>>>> 146dd108981f3a489619b8480a4a98b411346cd5
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B04155B5A2C2686589E4D43682EBF18E" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
