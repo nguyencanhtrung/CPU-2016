@@ -1,7 +1,7 @@
 vhdl isim_temp "src/four_bits_CLA_adder.vhd"
 vhdl isim_temp "src/carry_look_ahead_block.vhd"
 vhdl isim_temp "src/sixteen_bits_adder.vhd"
-vhdl isim_temp "cpu_package.vhd"
+vhdl isim_temp "src/cpu_package.vhd"
 vhdl isim_temp "src/sixteen_bits_add_sub.vhd"
 vhdl isim_temp "src/shift_module.vhd"
 vhdl isim_temp "src/register_file.vhd"

@@ -1,6 +1,6 @@
-work	"cpu_package.vhd"
 work	"src/ALU_module.vhd"
 work	"src/carry_look_ahead_block.vhd"
+work	"src/cpu_package.vhd"
 work	"src/data_memory_simulation.vhd"
 work	"src/decode_stage.vhd"
 work	"src/four_bits_CLA_adder.vhd"

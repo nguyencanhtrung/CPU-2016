@@ -24,13 +24,8 @@ use work.ALL;
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity processor_core is
-	generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
+	generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt");
     Port (	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
 				addr_data_bus	: out	 STD_LOGIC_VECTOR (10 downto 0);
 				data_bus 		: inout  STD_LOGIC_VECTOR (15 downto 0);
