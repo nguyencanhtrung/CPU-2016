@@ -2,12 +2,12 @@ Command line:
    tb_processor_core_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  38462
+     -socket  51509
 
-Sun May  1 10:00:20 2016
+Sat May  7 11:41:28 2016
 
 
- Elaboration Time: 0.1 sec
+ Elaboration Time: 0.24 sec
 
  Current Memory Usage: 142.705 Meg
 
@@ -21,10 +21,12 @@ Sun May  1 10:00:20 2016
  Total Scalar Nets and Variables : 26643
 In process instr_mem_simulatio.vhd:memory_process 
  
+In process instr_mem_simulatio.vhd:memory_process 
+ 
 
- Total Simulation Time: 0.33 sec
+ Total Simulation Time: 0.36 sec
 
  Current Memory Usage: 152.146 Meg
 
-Sun May  1 12:12:35 2016
+Sat May  7 11:45:09 2016
 

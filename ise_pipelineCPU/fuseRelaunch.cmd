@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe" -prj "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_beh.prj" "work.tb_processor_core" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe" -prj "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_beh.prj" "work.tb_cpu" 

@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_beh.prj work.tb_processor_core 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_beh.prj work.tb_cpu 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
@@ -16,11 +16,11 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/decode_stag
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/data_memory_simulation.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" into library work
-Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core.vhd" into library work
+Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 38200 KB
-Fuse CPU Usage: 1460 ms
+Fuse Memory Usage: 38196 KB
+Fuse CPU Usage: 2000 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -38,10 +38,10 @@ Compiling architecture behavioral of entity shift_module [shift_module_default]
 Compiling architecture behavioral of entity ALU_module [alu_module_default]
 Compiling architecture behavioral of entity data_memory_simulation [data_memory_simulation_default]
 Compiling architecture behavioral of entity processor_core [\processor_core("/home/ctnguyen/...]
-Compiling architecture behavior of entity tb_processor_core
+Compiling architecture behavior of entity tb_cpu
 Time Resolution for simulation is 1ps.
 Compiled 30 VHDL Units
-Built simulation executable /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe
-Fuse Memory Usage: 54924 KB
-Fuse CPU Usage: 1620 ms
-GCC CPU Usage: 900 ms
+Built simulation executable /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe
+Fuse Memory Usage: 54940 KB
+Fuse CPU Usage: 2210 ms
+GCC CPU Usage: 1260 ms
