@@ -234,7 +234,10 @@ execute_process: process (clk,rst)
 		if rst='1' then
 			EXE_MEM 						<= (others => '0');
 			MEM_WB						<= (others => '0');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
 		else
 			if rising_edge (clk) then
 				EXE_MEM(4 downto 0) 	<=	reg_write_dest;		--write reg no.
@@ -248,7 +251,10 @@ execute_process: process (clk,rst)
 				EXE_MEM(57)				<=	ID_EXE(84);	--RegWrite
 				EXE_MEM(58)				<=	ID_EXE(85);	--Mem2Reg
 				
+<<<<<<< HEAD
 				---				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
+=======
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
 				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
 				MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
 				MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
@@ -258,7 +264,11 @@ execute_process: process (clk,rst)
 			end if;
 		end if;
 	end process execute_process;
+<<<<<<< HEAD
 --
+=======
+
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
 --memory_access_process: process(clk,rst)
 --	begin
 --		if rst <='1' then

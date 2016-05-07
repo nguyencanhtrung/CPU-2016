@@ -1,6 +1,7 @@
 Command line:
    tb_cpu_isim_beh.exe
      -simmode  gui
+<<<<<<< HEAD
      -simrunnum  1
      -socket  49386
 
@@ -29,3 +30,12 @@ Sun May  8 01:22:35 2016
 
 n May  8 01:22:29 2016
 
+=======
+     -simrunnum  0
+     -socket  48927
+
+Sat May  7 13:01:46 2016
+
+
+ Elaboration Time: 0.24 sec
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff

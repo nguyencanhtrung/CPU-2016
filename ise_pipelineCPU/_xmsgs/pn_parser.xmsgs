@@ -8,6 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd&quot; into library work</arg>
 </msg>
 
@@ -89,5 +90,10 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/unsigned_fixedpoint_divider_module.vhd&quot; into library work</arg>
 </msg>
 
+=======
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd&quot; into library work</arg>
+</msg>
+
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
 </messages>
 
