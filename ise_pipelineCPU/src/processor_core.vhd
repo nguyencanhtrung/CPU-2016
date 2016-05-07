@@ -251,11 +251,11 @@ execute_process: process (clk,rst)
 				MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
 				MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
 				MEM_WB(37)				<=	EXE_MEM(57);	--RegWrite
-				MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg
+				MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg			
+				-----
 			end if;
 		end if;
 	end process execute_process;
-
 --memory_access_process: process(clk,rst)
 --	begin
 --		if rst <='1' then

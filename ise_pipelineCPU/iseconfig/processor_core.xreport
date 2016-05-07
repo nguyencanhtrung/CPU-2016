@@ -3,9 +3,10 @@
  <header>
   <ImplementationReportsDirectory>/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/</ImplementationReportsDirectory>
   <ModuleName>processor_core</ModuleName>
-  <DateModified>2016-05-07T11:19:55</DateModified>
+  <DateModified>2016-05-07T13:29:16</DateModified>
   <SavedFilePath>/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/iseconfig/processor_core.xreport</SavedFilePath>
-  <DateInitialized>2016-05-01T09:22:15</DateInitialized>
+  <DateInitialized>2016-05-07T23:46:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
+  <SummaryTimeStamp>2016-05-08T00:15:31</SummaryTimeStamp>
  </header>
 </report-views>

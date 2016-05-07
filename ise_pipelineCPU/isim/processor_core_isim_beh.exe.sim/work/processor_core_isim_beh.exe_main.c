@@ -30,7 +30,7 @@ int main(int argc, char **argv)
     ieee_p_2592010699_init();
     ieee_p_1242562249_init();
     std_textio_init();
-    work_a_3463502252_1516540902_init();
+    work_a_0653822591_1516540902_init();
     work_a_4041684847_3212880686_init();
     work_a_1487875317_3212880686_init();
     work_a_1519929306_3212880686_init();
