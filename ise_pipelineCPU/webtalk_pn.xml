@@ -3,11 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<<<<<<< HEAD
-<application name="pn" timeStamp="Mon Apr 25 11:49:48 2016">
-=======
-<application name="pn" timeStamp="Sat Apr 30 23:45:57 2016">
->>>>>>> 146dd108981f3a489619b8480a4a98b411346cd5
+<application name="pn" timeStamp="Sat May  7 11:37:56 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B04155B5A2C2686589E4D43682EBF18E" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
@@ -21,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb_four_bits_CLA_adder" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb_processor_core" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -31,7 +27,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWbtProjectID" value="B04155B5A2C2686589E4D43682EBF18E" type="design"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.tb_four_bits_CLA_adder" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.tb_processor_core" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Artix7" type="design"/>
 <property name="PROP_DevDevice" value="xc7a100t" type="design"/>
@@ -40,7 +36,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
-<property name="FILE_VHDL" value="29" type="source"/>
+<property name="FILE_VHDL" value="31" type="source"/>
 </section>
 </application>
 </document>

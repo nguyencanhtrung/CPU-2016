@@ -1,0 +1,2 @@
+vhdl isim_temp "src/carry_look_ahead_block.vhd"
+vhdl isim_temp "src/tb/tb_carry_look_ahead_block.vhd"

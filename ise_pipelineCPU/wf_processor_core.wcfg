@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cpu_package" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_processor_core" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/tb_processor_core/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor_core/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">IF</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_processor_core/uut/pc_current" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pc_current[15:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_current[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/pc_next" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pc_next[15:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_next[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/if_id" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">if_id[47:0]</obj_property>
+         <obj_property name="ObjectShortName">if_id[47:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group60" type="group">
+      <obj_property name="label">ID</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/if_id" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">if_id[47:0]</obj_property>
+         <obj_property name="ObjectShortName">if_id[47:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/read_register_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_register_1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">read_register_1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/read_register_2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_register_2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">read_register_2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/read_data_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_data_1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">read_data_1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/read_data_2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">read_data_2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">read_data_2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/alusrc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">alusrc</obj_property>
+         <obj_property name="ObjectShortName">alusrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/regdst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">regdst</obj_property>
+         <obj_property name="ObjectShortName">regdst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/readmem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">readmem</obj_property>
+         <obj_property name="ObjectShortName">readmem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/writemem" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">writemem</obj_property>
+         <obj_property name="ObjectShortName">writemem</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/branch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">branch</obj_property>
+         <obj_property name="ObjectShortName">branch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/reg_write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_write</obj_property>
+         <obj_property name="ObjectShortName">reg_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/mem2reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mem2reg</obj_property>
+         <obj_property name="ObjectShortName">mem2reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/write_register" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">write_register[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/write_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">write_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">write_data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_processor_core/uut/DECODER/dec_exe" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dec_exe[85:0]</obj_property>
+         <obj_property name="ObjectShortName">dec_exe[85:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

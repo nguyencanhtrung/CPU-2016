@@ -22,10 +22,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity processor_core is
-	generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
+	generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt");
     Port (	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
 				addr_data_bus	: out	 STD_LOGIC_VECTOR (10 downto 0);
 				data_bus 		: inout  STD_LOGIC_VECTOR (15 downto 0);
@@ -36,6 +36,7 @@ end processor_core;
 
 architecture Behavioral of processor_core is
 
+constant pc_constant	:	std_logic_vector:=x"0001";
 -----------------piepline_registers--------------
 
 signal IF_ID	:	std_logic_vector (47 downto 0);
@@ -134,10 +135,10 @@ mem_instr: entity work.instr_memory_simulation
 adder_pc: entity work.sixteen_bits_adder
 	Port map ( 
 			  operand_a => pc_current,
-           operand_b => x"0001",		--i.e. 1
+           operand_b => pc_constant,		--i.e. 1
            sum 		=> pc_next,
 			  over_flow	=> ovf_pc_dummy,
-           carry_in 	=> cin_pc_dummy,
+           carry_in 	=> '0',
            carry_out => cout_pc_dummy);
 ----------------------------------------
 --decoder
@@ -185,8 +186,8 @@ mem_data: entity work.data_memory_simulation
 --------------------------------------------------
 ---------------concurrent parts and MUXes---------
 --fetch stage
-pc_current 		<= EXE_MEM(53 downto 38) when PCSrc='1' else
-						pc_next;
+--pc_current 		<= pc_next 					when PCSrc='0' else
+--						EXE_MEM(53 downto 38);
 ---------------------------------------
 --exe stage
 ALUSrc			<=	ID_EXE(79);
@@ -210,38 +211,56 @@ Mem2Reg			<= MEM_WB(38);
 wb_output		<= MEM_WB (20 downto 5) when Mem2Reg='1' else
 						MEM_WB (36 downto 21);
 --------------------------------------------------
-fetch_process: process(clk)
+fetch_process: process(clk,rst)
 	begin
-		if rising_edge (clk) then
-			IF_ID(31 downto 0) 	<=	instruction;
-			IF_ID(47 downto 32) 	<=	pc_next;			
+		if rst='1' then
+			IF_ID			<= (others => '0');
+			pc_current	<=x"0000";
+		else
+			if rising_edge (clk) then
+				if PCSrc ='1' then
+					pc_current 			<=	EXE_MEM(53 downto 38);
+				else 
+					pc_current 			<=	pc_next;--std_logic_vector(to_unsigned(to_integer(unsigned(pc_current))+ 1, 16));
+				end if;	
+				IF_ID(31 downto 0) 	<=	instruction;
+				IF_ID(47 downto 32) 	<=	pc_next;
+			end if;
 		end if;
 	end process fetch_process;
 
-execute_process: process (clk)
+execute_process: process (clk,rst)
 	begin
-		if rising_edge (clk) then
-			EXE_MEM(4 downto 0) 	<=	reg_write_dest;		--write reg no.
-			EXE_MEM(20 downto 5) <=	ID_EXE(41 downto 26);--sw operation data to be written
-			EXE_MEM(36 downto 21)<=	ALU_rslt;				
-			EXE_MEM(37) 			<=	ALU_zero;
-			EXE_MEM(53 downto 38)<=	ID_EXE(73 downto 58);	--forwarded pc
-			EXE_MEM(54) 			<=	ID_EXE(81);	--MemRead
-			EXE_MEM(55) 			<=	ID_EXE(82);	--MemWrite
-			EXE_MEM(56)				<=	ID_EXE(83);	--Branch
-			EXE_MEM(57)				<=	ID_EXE(84);	--RegWrite
-			EXE_MEM(58)				<=	ID_EXE(85);	--Mem2Reg
+		if rst='1' then
+			EXE_MEM 						<= (others => '0');
+		else
+			if rising_edge (clk) then
+				EXE_MEM(4 downto 0) 	<=	reg_write_dest;		--write reg no.
+				EXE_MEM(20 downto 5) <=	ID_EXE(41 downto 26);--sw operation data to be written
+				EXE_MEM(36 downto 21)<=	ALU_rslt;				
+				EXE_MEM(37) 			<=	ALU_zero;
+				EXE_MEM(53 downto 38)<=	ID_EXE(73 downto 58);	--forwarded pc
+				EXE_MEM(54) 			<=	ID_EXE(81);	--MemRead
+				EXE_MEM(55) 			<=	ID_EXE(82);	--MemWrite
+				EXE_MEM(56)				<=	ID_EXE(83);	--Branch
+				EXE_MEM(57)				<=	ID_EXE(84);	--RegWrite
+				EXE_MEM(58)				<=	ID_EXE(85);	--Mem2Reg
+			end if;
 		end if;
 	end process execute_process;
 
-memory_access_process: process(clk)
+memory_access_process: process(clk,rst)
 	begin
-		if rising_edge (clk) then
-			MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
-			MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
-			MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
-			MEM_WB(37)				<=	EXE_MEM(57);	--RegWrite
-			MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg
+		if rst <='1' then
+			MEM_WB						<= (others => '0');
+		else
+			if rising_edge (clk) then
+				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
+				MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
+				MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
+				MEM_WB(37)				<=	EXE_MEM(57);	--RegWrite
+				MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg
+			end if;
 		end if;
 	end process memory_access_process;
 end Behavioral;
