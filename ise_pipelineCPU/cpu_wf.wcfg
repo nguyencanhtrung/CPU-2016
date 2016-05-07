@@ -13,11 +13,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/tb_cpu/instr_bus" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">instr_bus[31:0]</obj_property>
-      <obj_property name="ObjectShortName">instr_bus[31:0]</obj_property>
-   </wvobject>
+   <WVObjectSize size="14" />
    <wvobject fp_name="/tb_cpu/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -26,16 +22,39 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_cpu/clk_period" type="other" db_ref_id="1">
-      <obj_property name="ElementShortName">clk_period</obj_property>
-      <obj_property name="ObjectShortName">clk_period</obj_property>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/write_register" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_register[4:0]</obj_property>
+      <obj_property name="ObjectShortName">write_register[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/instruction" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
-      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/write_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">write_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/if_id" type="array" db_ref_id="1">
+   <wvobject fp_name="/tb_cpu/uut/DECODER/alusrc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alusrc</obj_property>
+      <obj_property name="ObjectShortName">alusrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/regdst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">regdst</obj_property>
+      <obj_property name="ObjectShortName">regdst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/readmem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readmem</obj_property>
+      <obj_property name="ObjectShortName">readmem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/writemem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writemem</obj_property>
+      <obj_property name="ObjectShortName">writemem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/regFile/regfile" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regfile[0:31]</obj_property>
+      <obj_property name="ObjectShortName">regfile[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/if_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">if_id[47:0]</obj_property>
       <obj_property name="ObjectShortName">if_id[47:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
@@ -53,16 +72,6 @@
    <wvobject fp_name="/tb_cpu/uut/mem_wb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">mem_wb[38:0]</obj_property>
       <obj_property name="ObjectShortName">mem_wb[38:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/pc_current" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_current[15:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_current[15:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_cpu/uut/pc_next" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pc_next[15:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_next[15:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>

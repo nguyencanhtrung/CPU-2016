@@ -25,7 +25,7 @@ use work.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity processor_core is
-	generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt");
+	generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
     Port (	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
 				addr_data_bus	: out	 STD_LOGIC_VECTOR (10 downto 0);
 				data_bus 		: inout  STD_LOGIC_VECTOR (15 downto 0);
@@ -196,8 +196,8 @@ ALU_opcode		<=	'0' & ID_EXE(78 downto 74);
 RegDst			<= ID_EXE(80);
 ALU_oprndB 		<= ID_EXE(25 downto 10)		when ALUSrc='1' else	--immediate field
 						ID_EXE(41 downto 26);	--rt register value						
-reg_write_dest	<=	EXE_MEM(4 downto 0) when RegDst='1' else
-						EXE_MEM(9 downto 5);			--Reg
+reg_write_dest	<=	ID_EXE(4 downto 0) when RegDst='1' else
+						ID_EXE(9 downto 5);			--Reg
 ---------------------------------------
 --mem stage
 PCSrc				<= EXE_MEM(37) and EXE_MEM(56);	--Branch AND gate
@@ -233,6 +233,8 @@ execute_process: process (clk,rst)
 	begin
 		if rst='1' then
 			EXE_MEM 						<= (others => '0');
+			MEM_WB						<= (others => '0');
+
 		else
 			if rising_edge (clk) then
 				EXE_MEM(4 downto 0) 	<=	reg_write_dest;		--write reg no.
@@ -245,23 +247,31 @@ execute_process: process (clk,rst)
 				EXE_MEM(56)				<=	ID_EXE(83);	--Branch
 				EXE_MEM(57)				<=	ID_EXE(84);	--RegWrite
 				EXE_MEM(58)				<=	ID_EXE(85);	--Mem2Reg
-			end if;
-		end if;
-	end process execute_process;
-
-memory_access_process: process(clk,rst)
-	begin
-		if rst <='1' then
-			MEM_WB						<= (others => '0');
-		else
-			if rising_edge (clk) then
+				
+				---				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
 				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
 				MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
 				MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
 				MEM_WB(37)				<=	EXE_MEM(57);	--RegWrite
-				MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg
+				MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg			
+				-----
 			end if;
 		end if;
-	end process memory_access_process;
+	end process execute_process;
+--
+--memory_access_process: process(clk,rst)
+--	begin
+--		if rst <='1' then
+--			MEM_WB						<= (others => '0');
+--		else
+--			if rising_edge (clk) then
+--				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
+--				MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
+--				MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.
+--				MEM_WB(37)				<=	EXE_MEM(57);	--RegWrite
+--				MEM_WB(38)				<=	EXE_MEM(58);	--Mem2Reg
+--			end if;
+--		end if;
+--	end process memory_access_process;
 end Behavioral;
 
