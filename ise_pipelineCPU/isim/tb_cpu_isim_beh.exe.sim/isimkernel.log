@@ -1,12 +1,43 @@
 Command line:
    tb_cpu_isim_beh.exe
      -simmode  gui
+<<<<<<< HEAD
+     -simrunnum  1
+     -socket  49386
+
+Sun May  8 01:22:06 2016
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 213.971 Meg
+
+ Total Signals          : 266
+ Total Nets             : 25950
+ Total Signal Drivers   : 272
+ Total Blocks           : 32
+ Total Primitive Blocks : 24
+ Total Processes        : 266
+ Total Traceable Variables  : 46
+ Total Scalar Nets and Variables : 26653
+Total Line Count : 326
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 289.473 Meg
+
+Sun May  8 01:22:35 2016
+
+n May  8 01:22:29 2016
+
+=======
      -simrunnum  0
      -socket  57015
 
 Sat May  7 13:24:30 2016
 
 
+<<<<<<< HEAD
  Elaboration Time: 0.34 sec
 
  Current Memory Usage: 142.705 Meg
@@ -30,3 +61,7 @@ In process instr_mem_simulatio.vhd:memory_process
 
 Sat May  7 13:26:45 2016
 
+=======
+ Elaboration Time: 0.24 sec
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
+>>>>>>> ccc4bb74c43f6b2445845fe3800a889c31b74e9b

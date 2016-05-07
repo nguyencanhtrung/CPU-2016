@@ -80,7 +80,11 @@ begin
 				shamt				=> extracted_oprnd_b,
 				operation 		=>	shift_opr);
 
+<<<<<<< HEAD
+	result	<= 		addsub_result 	when opcode ="000000" or opcode ="000001" or opcode ="000010" or opcode="001001" or opcode="001010"
+=======
 	result	<= 		addsub_result 	when opcode ="000000" or opcode ="000001" or opcode ="000010" or opcode ="001001" or opcode = "001010"
+>>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
 					else	logic_result 	when opcode ="000011" or opcode ="000100" or opcode ="000101" or opcode ="000110"
 					else 	shift_result	when opcode ="000111" or opcode ="001000"
 					else x"0000";
