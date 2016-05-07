@@ -9,6 +9,9 @@
 
 <messages>
 <<<<<<< HEAD
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu.vhd&quot; into library work</arg>
+=======
+<<<<<<< HEAD
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd&quot; into library work</arg>
 </msg>
 
@@ -92,6 +95,7 @@
 
 =======
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd&quot; into library work</arg>
+>>>>>>> ccc4bb74c43f6b2445845fe3800a889c31b74e9b
 </msg>
 
 >>>>>>> 8671fa17fead913531e6bc0abce815409c943aff

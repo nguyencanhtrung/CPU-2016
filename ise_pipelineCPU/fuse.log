@@ -44,8 +44,12 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu.vhd" int
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 38196 KB
+<<<<<<< HEAD
+Fuse CPU Usage: 2980 ms
+=======
 Fuse CPU Usage: 2000 ms
 >>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
+>>>>>>> ccc4bb74c43f6b2445845fe3800a889c31b74e9b
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -78,7 +82,13 @@ Fuse CPU Usage: 1630 ms
 GCC CPU Usage: 2920 ms
 =======
 Built simulation executable /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe
+<<<<<<< HEAD
+Fuse Memory Usage: 54944 KB
+Fuse CPU Usage: 3490 ms
+GCC CPU Usage: 2230 ms
+=======
 Fuse Memory Usage: 54940 KB
 Fuse CPU Usage: 2210 ms
 GCC CPU Usage: 1260 ms
 >>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
+>>>>>>> ccc4bb74c43f6b2445845fe3800a889c31b74e9b
