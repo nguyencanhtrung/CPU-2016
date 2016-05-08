@@ -9,34 +9,11 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/decode_stage - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|decode_stage.vhd</ClosedNode>
          <ClosedNode>/decode_stage - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|decode_stage.vhd/cpu_package</ClosedNode>
-<<<<<<< HEAD
-         <ClosedNode>/processor_core - Behavioral |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/ALU - ALU_module - Behavioral</ClosedNode>
-         <ClosedNode>/processor_core - Behavioral |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/DECODER - decode_stage - Behavioral</ClosedNode>
-         <ClosedNode>/processor_core - Behavioral |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/adder_exe - sixteen_bits_adder - Behavioral</ClosedNode>
-         <ClosedNode>/processor_core - Behavioral |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/adder_pc - sixteen_bits_adder - Behavioral</ClosedNode>
-=======
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/ALU - ALU_module - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/DECODER - decode_stage - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/adder_exe - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/adder_pc - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/cpu_package</ClosedNode>
-<<<<<<< HEAD
-         <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
-         <ClosedNode>/tb_carry_look_ahead_block - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
-         <ClosedNode>/tb_dual_edge_check - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_dual_edge_check.vhd</ClosedNode>
-         <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_divider_module.vhd</ClosedNode>
-         <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_divider_module.vhd</ClosedNode>
-         <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_multiplier_module.vhd/uut - fixedpoint_multiplier_module - Behavioral</ClosedNode>
-         <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_multiplier_module.vhd</ClosedNode>
-         <ClosedNode>/tb_four_bits_CLA_adder - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_four_bits_CLA_adder.vhd</ClosedNode>
-         <ClosedNode>/tb_four_bits_CLA_adder - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_four_bits_CLA_adder.vhd</ClosedNode>
-         <ClosedNode>/tb_regFile - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_regFile.vhd</ClosedNode>
-         <ClosedNode>/tb_regFile - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_regFile.vhd</ClosedNode>
-         <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_add_sub.vhd</ClosedNode>
-         <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_add_sub.vhd</ClosedNode>
-         <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_adder.vhd</ClosedNode>
-=======
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
          <ClosedNode>/tb_dual_edge_check - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_dual_edge_check.vhd</ClosedNode>
          <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_divider_module.vhd</ClosedNode>
@@ -44,7 +21,6 @@
          <ClosedNode>/tb_four_bits_CLA_adder - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_four_bits_CLA_adder.vhd</ClosedNode>
          <ClosedNode>/tb_regFile - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_regFile.vhd</ClosedNode>
          <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_add_sub.vhd</ClosedNode>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
          <ClosedNode>/tb_sixteen_bits_adder - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_adder.vhd</ClosedNode>
          <ClosedNode>/tb_unsigned_fixedpoint_divider_module - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_unsigned_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/tb_updated_reg_file - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_updated_reg_file.vhd</ClosedNode>
@@ -54,15 +30,9 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-<<<<<<< HEAD
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002d5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002d50000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>processor_core - Behavioral (/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd)</CurrentItem>
-=======
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000044c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000044c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>processor_core - Behavioral (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd)</CurrentItem>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -87,33 +57,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-<<<<<<< HEAD
       <SelectedItems>
          <SelectedItem>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/cpu_package.vhd</SelectedItem>
       </SelectedItems>
-=======
-<<<<<<< HEAD
-      <SelectedItems>
-         <SelectedItem>tb_processor_core.vhd</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002da000000040101000100000000000000000000000064ffffffff0000008100000000000000040000019500000001000000000000005d0000000100000000000000840000000100000000000000640000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_processor_core.vhd</CurrentItem>
-=======
-      <SelectedItems/>
->>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000041f000000040101000100000000000000000000000064ffffffff000000810000000000000004000002cd00000001000000000000005d0000000100000000000000840000000100000000000000710000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-<<<<<<< HEAD
       <CurrentItem>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/cpu_package.vhd</CurrentItem>
-=======
-      <CurrentItem>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd</CurrentItem>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
->>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -123,11 +74,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-<<<<<<< HEAD
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000125000000010001000100000000000000000000000064ffffffff000000810000000000000001000001250000000100000000</ViewHeaderState>
-=======
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -136,23 +83,6 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-<<<<<<< HEAD
-         <ClosedNode>/ALU_tb - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|ALU_tb.vhd</ClosedNode>
-         <ClosedNode>/tb_carry_look_ahead_block - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
-         <ClosedNode>/tb_cpu - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|tb_cpu.vhd</ClosedNode>
-         <ClosedNode>/tb_cpu - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|tb_cpu.vhd/uut - processor_core - Behavioral</ClosedNode>
-         <ClosedNode>/tb_dual_edge_check - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_dual_edge_check.vhd</ClosedNode>
-         <ClosedNode>/tb_fixedpoint_divider_module - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_divider_module.vhd</ClosedNode>
-         <ClosedNode>/tb_fixedpoint_multiplier_module - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_fixedpoint_multiplier_module.vhd</ClosedNode>
-         <ClosedNode>/tb_four_bits_CLA_adder - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_four_bits_CLA_adder.vhd</ClosedNode>
-         <ClosedNode>/tb_processor_core - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|tb_processor_core.vhd</ClosedNode>
-         <ClosedNode>/tb_processor_core - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|tb_processor_core.vhd/uut - processor_core - Behavioral</ClosedNode>
-         <ClosedNode>/tb_regFile - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_regFile.vhd</ClosedNode>
-         <ClosedNode>/tb_sixteen_bits_add_sub - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_add_sub.vhd</ClosedNode>
-         <ClosedNode>/tb_sixteen_bits_adder - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_adder.vhd</ClosedNode>
-         <ClosedNode>/tb_unsigned_fixedpoint_divider_module - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_unsigned_fixedpoint_divider_module.vhd</ClosedNode>
-         <ClosedNode>/tb_updated_reg_file - behavior |home|ctnguyen|Works|CPU-2016|ise_pipelineCPU|src|tb|tb_updated_reg_file.vhd</ClosedNode>
-=======
          <ClosedNode>/ALU_tb - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|ALU_tb.vhd</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
@@ -171,24 +101,13 @@
          <ClosedNode>/tb_sixteen_bits_adder - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_sixteen_bits_adder.vhd</ClosedNode>
          <ClosedNode>/tb_unsigned_fixedpoint_divider_module - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_unsigned_fixedpoint_divider_module.vhd</ClosedNode>
          <ClosedNode>/tb_updated_reg_file - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_updated_reg_file.vhd</ClosedNode>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>tb_cpu - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd)</SelectedItem>
       </SelectedItems>
-<<<<<<< HEAD
       <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
-=======
-<<<<<<< HEAD
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002ba000000020000000000000000000000000200000064ffffffff000000810000000300000002000002ba0000000100000003000000000000000100000003</ViewHeaderState>
-=======
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
->>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000044c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000044c0000000100000003000000000000000100000003</ViewHeaderState>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>tb_cpu - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd)</CurrentItem>
    </ItemView>
@@ -202,11 +121,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-<<<<<<< HEAD
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000133000000010000000100000000000000000000000064ffffffff000000810000000000000001000001330000000100000000</ViewHeaderState>
-=======
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -215,25 +130,14 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
-<<<<<<< HEAD
-   <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
-</Project>
-<?xml version="1.0" encoding="utf-8"?>
-<!--This is an ISE project configuration file.-->
-<!--It holds project specific layout data for the projectmgr plugin.-->
-<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
-<Project version="2" owner="projectmgr" name="ise_pipelineCPU" >
-   <!--This is an ISE project configuration file.-->
-=======
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -261,5 +165,4 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>ise_pipelineCPU</CurrentItem>
    </ItemView>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 </Project>
