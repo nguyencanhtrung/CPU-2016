@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_beh.prj work.tb_processor_core 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_beh.prj tb_processor_core 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
@@ -18,34 +18,15 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 88: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 89: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 90: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 91: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 92: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 93: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 94: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 95: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 96: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 97: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 98: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 99: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 100: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 101: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 102: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 110: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 111: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 112: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 113: Comparison between arrays of unequal length always returns FALSE.
 Completed static elaboration
 Fuse Memory Usage: 38200 KB
-Fuse CPU Usage: 1800 ms
+Fuse CPU Usage: 1500 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package textio
 Compiling package cpu_package
-Compiling architecture rtl of entity instr_memory_simulation [\instr_memory_simulation("/home/...]
+Compiling architecture rtl of entity instr_memory_simulation [\instr_memory_simulation("../../...]
 Compiling architecture behavioral of entity four_bits_CLA_adder [four_bits_cla_adder_default]
 Compiling architecture behavioral of entity carry_look_ahead_block [carry_look_ahead_block_default]
 Compiling architecture behavioral of entity sixteen_bits_adder [sixteen_bits_adder_default]
@@ -56,11 +37,11 @@ Compiling architecture behavioral of entity logic_module [logic_module_default]
 Compiling architecture behavioral of entity shift_module [shift_module_default]
 Compiling architecture behavioral of entity ALU_module [alu_module_default]
 Compiling architecture behavioral of entity data_memory_simulation [data_memory_simulation_default]
-Compiling architecture behavioral of entity processor_core [\processor_core("/home/ctnguyen/...]
+Compiling architecture behavioral of entity processor_core [\processor_core("../../Software/...]
 Compiling architecture behavior of entity tb_processor_core
 Time Resolution for simulation is 1ps.
 Compiled 30 VHDL Units
 Built simulation executable /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe
 Fuse Memory Usage: 54944 KB
-Fuse CPU Usage: 2000 ms
-GCC CPU Usage: 3510 ms
+Fuse CPU Usage: 1640 ms
+GCC CPU Usage: 920 ms

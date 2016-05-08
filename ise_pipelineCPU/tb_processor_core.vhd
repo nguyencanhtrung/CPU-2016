@@ -33,7 +33,7 @@ USE ieee.std_logic_1164.ALL;
 --USE ieee.numeric_std.ALL;
  
 ENTITY tb_processor_core IS
-	generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program_T.txt");
+	generic 	(filename : in string :="../../Software/program.txt");
 END tb_processor_core;
  
 ARCHITECTURE behavior OF tb_processor_core IS 
@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF tb_processor_core IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT processor_core
-	 generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program_T.txt");
+	 generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt");
     PORT(
          addr_instr_bus : OUT  std_logic_vector(10 downto 0);
          addr_data_bus : OUT  std_logic_vector(10 downto 0);

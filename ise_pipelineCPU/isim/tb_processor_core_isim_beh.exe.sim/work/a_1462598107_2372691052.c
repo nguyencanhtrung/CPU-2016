@@ -160,7 +160,7 @@ LAB9:    goto LAB8;
 
 LAB11:    goto LAB9;
 
-LAB12:    t2 = (t0 + 4388);
+LAB12:    t2 = (t0 + 4364);
     xsi_report(t2, 21U, (unsigned char)3);
     goto LAB13;
 

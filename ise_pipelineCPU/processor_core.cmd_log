@@ -67,10 +67,22 @@ xst -intstyle ise -ifn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_
 xst -intstyle ise -ifn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 xst -intstyle ise -ifn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 =======
+<<<<<<< HEAD
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
+=======
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
+<<<<<<< HEAD
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
+xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
+=======
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 xst -intstyle ise -ifn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/processor_core.syr" 
 >>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+xst -intstyle ise -ifn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_core.xst" -ofn "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/processor_core.syr" 
