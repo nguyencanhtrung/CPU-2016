@@ -30,11 +30,11 @@ int main(int argc, char **argv)
     ieee_p_2592010699_init();
     ieee_p_1242562249_init();
     std_textio_init();
-    work_a_1405239736_1516540902_init();
+    work_p_1768435198_init();
+    work_a_2474727505_1516540902_init();
     work_a_4041684847_3212880686_init();
     work_a_1487875317_3212880686_init();
     work_a_1519929306_3212880686_init();
-    work_p_1768435198_init();
     work_a_2615964831_3212880686_init();
     work_a_2842394180_3212880686_init();
     work_a_3505231098_3212880686_init();
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     work_a_0799833788_3212880686_init();
     work_a_0597915860_3212880686_init();
     work_a_2033418929_3212880686_init();
-    work_a_0372449120_3212880686_init();
+    work_a_0057934168_3212880686_init();
     work_a_1462598107_2372691052_init();
 
 

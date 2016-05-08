@@ -25,11 +25,7 @@ use work.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity processor_core is
-<<<<<<< HEAD
-	generic 	(filename : in string :="../../Software/program_T.txt");
-=======
-	generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+	generic 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program_T.txt");
     Port (	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
 				addr_data_bus	: out	 STD_LOGIC_VECTOR (10 downto 0);
 				data_bus 		: inout  STD_LOGIC_VECTOR (15 downto 0);

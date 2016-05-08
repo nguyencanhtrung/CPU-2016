@@ -1,20 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/</ImplementationReportsDirectory>
   <ModuleName>processor_core</ModuleName>
-<<<<<<< HEAD
-  <DateModified>2016-05-08T11:43:40</DateModified>
+  <DateModified>2016-05-08T13:03:45</DateModified>
   <SavedFilePath>/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/iseconfig/processor_core.xreport</SavedFilePath>
   <DateInitialized>2016-05-07T23:46:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
-  <SummaryTimeStamp>2016-05-08T11:30:21</SummaryTimeStamp>
-=======
-  <DateModified>2016-05-08T22:41:28</DateModified>
-  <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/iseconfig/processor_core.xreport</SavedFilePath>
-  <DateInitialized>2016-05-07T23:46:10</DateInitialized>
-  <EnableMessageFiltering>false</EnableMessageFiltering>
-  <SummaryTimeStamp>2016-05-08T00:15:31</SummaryTimeStamp>
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+  <SummaryTimeStamp>2016-05-08T11:44:11</SummaryTimeStamp>
  </header>
 </report-views>

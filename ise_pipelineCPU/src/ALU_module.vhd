@@ -20,6 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.ALL;
+use work.cpu_package.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -79,12 +80,11 @@ begin
 				result 			=> shift_result,
 				shamt				=> extracted_oprnd_b,
 				operation 		=>	shift_opr);
-<<<<<<< HEAD
 
-	result	<= 		addsub_result 	when opcode ="000000" or opcode ="000001" or opcode ="000010" or opcode="001001" or opcode="001010"
-					else	logic_result 	when opcode ="000011" or opcode ="000100" or opcode ="000101" or opcode ="000110"
-					else 	shift_result	when opcode ="000111" or opcode ="001000"
-=======
+--	result	<= 		addsub_result 	when opcode ="000000" or opcode ="000001" or opcode ="000010" or opcode="001001" or opcode="001010"
+--					else	logic_result 	when opcode ="000011" or opcode ="000100" or opcode ="000101" or opcode ="000110"
+--					else 	shift_result	when opcode ="000111" or opcode ="001000"
+--=======
 	result	<= 		addsub_result 	when 	opcode =work.cpu_package.add_op	or 
 														opcode =work.cpu_package.addi_op or 
 														opcode =work.cpu_package.sub_op 	or  
@@ -100,7 +100,6 @@ begin
 														opcode =work.cpu_package.and_op
 					else 	shift_result	when  opcode =work.cpu_package.sll_op	or 
 														opcode =work.cpu_package.srl_op
->>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 					else x"0000";
 	
 	extracted_oprnd_b <=	operand_b(11 downto 7);
