@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_isim_beh.exe -prj /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core_beh.prj work.tb_processor_core 
+=======
+Running: /home/waseemh/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe -prj /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu_beh.prj work.tb_cpu 
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 1
-Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+<<<<<<< HEAD
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/carry_look_ahead_block.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/sixteen_bits_adder.vhd" into library work
@@ -17,9 +22,48 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/data_memory
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" into library work
 Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_core.vhd" into library work
+=======
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/four_bits_CLA_adder.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/carry_look_ahead_block.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/sixteen_bits_adder.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/cpu_package.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/sixteen_bits_add_sub.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/shift_module.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/register_file.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/logic_module.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/decode_stage.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/data_memory_simulation.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" into library work
+Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd" into library work
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 Starting static elaboration
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 82: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 83: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 84: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 85: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 86: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 87: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 88: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 89: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 90: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 91: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 92: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 93: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 94: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 95: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 96: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 104: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 105: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 106: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 107: Comparison between arrays of unequal length always returns FALSE.
 Completed static elaboration
+<<<<<<< HEAD
 Fuse Memory Usage: 38200 KB
+=======
+Fuse Memory Usage: 97504 KB
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 Fuse CPU Usage: 1460 ms
 Compiling package standard
 Compiling package std_logic_1164
@@ -37,7 +81,19 @@ Compiling architecture behavioral of entity logic_module [logic_module_default]
 Compiling architecture behavioral of entity shift_module [shift_module_default]
 Compiling architecture behavioral of entity ALU_module [alu_module_default]
 Compiling architecture behavioral of entity data_memory_simulation [data_memory_simulation_default]
+<<<<<<< HEAD
 Compiling architecture behavioral of entity processor_core [\processor_core("../../Software/...]
 Compiling architecture behavior of entity tb_processor_core
 Time Resolution for simulation is 1ps.
 ERROR:Simulator:861 - Failed to link the design
+=======
+Compiling architecture behavioral of entity processor_core [\processor_core("/home/waseemh/X...]
+Compiling architecture behavior of entity tb_cpu
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 30 VHDL Units
+Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe
+Fuse Memory Usage: 673544 KB
+Fuse CPU Usage: 1620 ms
+GCC CPU Usage: 1410 ms
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436

@@ -25,7 +25,11 @@ use work.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity processor_core is
+<<<<<<< HEAD
 	generic 	(filename : in string :="../../Software/program_T.txt");
+=======
+	generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
     Port (	addr_instr_bus : out  STD_LOGIC_VECTOR (10 downto 0);
 				addr_data_bus	: out	 STD_LOGIC_VECTOR (10 downto 0);
 				data_bus 		: inout  STD_LOGIC_VECTOR (15 downto 0);
@@ -234,6 +238,7 @@ execute_process: process (clk,rst)
 		if rst='1' then
 			EXE_MEM 						<= (others => '0');
 			MEM_WB						<= (others => '0');
+
 		else
 			if rising_edge (clk) then
 				EXE_MEM(4 downto 0) 	<=	reg_write_dest;		--write reg no.
@@ -246,7 +251,6 @@ execute_process: process (clk,rst)
 				EXE_MEM(56)				<=	ID_EXE(83);	--Branch
 				EXE_MEM(57)				<=	ID_EXE(84);	--RegWrite
 				EXE_MEM(58)				<=	ID_EXE(85);	--Mem2Reg
-				
 				MEM_WB(4 downto 0) 	<=	EXE_MEM(4 downto 0);	--write reg no.
 				MEM_WB(20 downto 5)	<=	EXE_MEM(36 downto 21);	--ALU result
 				MEM_WB(36 downto 21)	<=	DM_read_data;		--read data for lw instrc.

@@ -40,6 +40,7 @@ ARCHITECTURE behavior OF tb_cpu IS
     -- Component Declaration for the Unit Under Test (UUT)
  
     COMPONENT processor_core
+	 generic 	(filename : in string :="/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt");
     PORT(
          addr_instr_bus : OUT  std_logic_vector(10 downto 0);
          addr_data_bus : OUT  std_logic_vector(10 downto 0);
@@ -70,7 +71,11 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: processor_core 
+<<<<<<< HEAD
 	--generic map 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt")
+=======
+--	generic map 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt")
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 	PORT MAP (
           addr_instr_bus => addr_instr_bus,
           addr_data_bus => addr_data_bus,

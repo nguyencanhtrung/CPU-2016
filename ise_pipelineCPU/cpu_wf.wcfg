@@ -13,7 +13,11 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
+<<<<<<< HEAD
    <WVObjectSize size="14" />
+=======
+   <WVObjectSize size="15" />
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
    <wvobject fp_name="/tb_cpu/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -41,18 +45,32 @@
    <wvobject fp_name="/tb_cpu/uut/DECODER/readmem" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">readmem</obj_property>
       <obj_property name="ObjectShortName">readmem</obj_property>
+<<<<<<< HEAD
    </wvobject>
    <wvobject fp_name="/tb_cpu/uut/DECODER/reg_write" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">reg_write</obj_property>
       <obj_property name="ObjectShortName">reg_write</obj_property>
    </wvobject>
+=======
+   </wvobject>
+   <wvobject fp_name="/tb_cpu/uut/DECODER/reg_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write</obj_property>
+      <obj_property name="ObjectShortName">reg_write</obj_property>
+   </wvobject>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
    <wvobject fp_name="/tb_cpu/uut/DECODER/writemem" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">writemem</obj_property>
       <obj_property name="ObjectShortName">writemem</obj_property>
    </wvobject>
+<<<<<<< HEAD
    <wvobject fp_name="/tb_cpu/uut/DECODER/regFile/regfile" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">regfile[0:31]</obj_property>
       <obj_property name="ObjectShortName">regfile[0:31]</obj_property>
+=======
+   <wvobject fp_name="/tb_cpu/uut/DECODER/mem2reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem2reg</obj_property>
+      <obj_property name="ObjectShortName">mem2reg</obj_property>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
    </wvobject>
    <wvobject fp_name="/tb_cpu/uut/DECODER/if_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">if_id[47:0]</obj_property>
@@ -74,4 +92,12 @@
       <obj_property name="ObjectShortName">mem_wb[38:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
+<<<<<<< HEAD
+=======
+   <wvobject fp_name="/tb_cpu/uut/ALU/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 </wave_config>
