@@ -5,7 +5,15 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
+<<<<<<< HEAD
   <application stringID="Xst" timeStamp="Mon May  9 00:14:57 2016">
+=======
+<<<<<<< HEAD
+  <application stringID="Xst" timeStamp="Sun May  8 11:43:52 2016">
+=======
+  <application stringID="Xst" timeStamp="Sun May  8 23:47:26 2016">
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -32,8 +40,17 @@
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
+<<<<<<< HEAD
+          <item stringID="arch" value="Intel(R) Core(TM) i5-2415M CPU @ 2.30GHz"/>
+          <item stringID="speed" value="2292.676 MHz"/>
+=======
           <item stringID="arch" value="Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz"/>
+<<<<<<< HEAD
           <item stringID="speed" value="2600.000 MHz"/>
+=======
+          <item stringID="speed" value="2099.804 MHz"/>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
         </row>
       </table>
     </section>
@@ -95,9 +112,21 @@
         <item dataType="int" stringID="XST_16BIT_REGISTER" value="34"/>
         <item dataType="int" stringID="XST_32BIT_REGISTER" value="1"/>
       </item>
+<<<<<<< HEAD
       <item dataType="int" stringID="XST_MULTIPLEXERS" value="13">
         <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="1"/>
         <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="8"/>
+=======
+<<<<<<< HEAD
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="13">
+        <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="1"/>
+        <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="8"/>
+=======
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="7">
+        <item dataType="int" stringID="XST_1BIT_2TO1_MULTIPLEXER" value="1"/>
+        <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="3"/>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
         <item dataType="int" stringID="XST_5BIT_2TO1_MULTIPLEXER" value="1"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="98">
@@ -109,8 +138,18 @@
       <item dataType="int" stringID="XST_REGISTERS" value="776">
         <item dataType="int" stringID="XST_FLIPFLOPS" value="776"/>
       </item>
+<<<<<<< HEAD
       <item dataType="int" stringID="XST_MULTIPLEXERS" value="42">
         <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="8"/>
+=======
+<<<<<<< HEAD
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="42">
+        <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="8"/>
+=======
+      <item dataType="int" stringID="XST_MULTIPLEXERS" value="36">
+        <item dataType="int" stringID="XST_16BIT_2TO1_MULTIPLEXER" value="3"/>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
         <item dataType="int" stringID="XST_5BIT_2TO1_MULTIPLEXER" value="1"/>
       </item>
       <item dataType="int" stringID="XST_XORS" value="98">
@@ -144,8 +183,18 @@
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
+<<<<<<< HEAD
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="867"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="19"/>
+=======
+<<<<<<< HEAD
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="866"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="19"/>
+=======
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="872"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="22"/>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
     </section>
   </application>
 

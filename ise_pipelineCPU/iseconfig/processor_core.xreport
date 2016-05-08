@@ -3,9 +3,25 @@
  <header>
   <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/</ImplementationReportsDirectory>
   <ModuleName>processor_core</ModuleName>
+<<<<<<< HEAD
   <DateInitialized>2016-05-09T00:06:29</DateInitialized>
   <DateModified>2016-05-09T00:14:33</DateModified>
+=======
+<<<<<<< HEAD
+  <DateModified>2016-05-08T11:43:40</DateModified>
+  <SavedFilePath>/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/iseconfig/processor_core.xreport</SavedFilePath>
+  <DateInitialized>2016-05-07T23:46:10</DateInitialized>
+  <EnableMessageFiltering>false</EnableMessageFiltering>
+  <SummaryTimeStamp>2016-05-08T11:30:21</SummaryTimeStamp>
+=======
+  <DateModified>2016-05-08T22:41:28</DateModified>
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
   <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/iseconfig/processor_core.xreport</SavedFilePath>
   <EnableMessageFiltering>false</EnableMessageFiltering>
+<<<<<<< HEAD
+=======
+  <SummaryTimeStamp>2016-05-08T00:15:31</SummaryTimeStamp>
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
  </header>
 </report-views>

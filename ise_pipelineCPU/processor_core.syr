@@ -5,14 +5,27 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
+<<<<<<< HEAD
+Total CPU time to Xst completion: 0.07 secs
+=======
 Total CPU time to Xst completion: 0.06 secs
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
  
 --> 
 Parameter xsthdpdir set to xst
 
 
+<<<<<<< HEAD
 Total REAL time to Xst completion: 0.00 secs
+=======
+<<<<<<< HEAD
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+=======
+Total REAL time to Xst completion: 1.00 secs
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 Total CPU time to Xst completion: 0.06 secs
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
  
 --> 
 Reading design: processor_core.prj
@@ -176,13 +189,33 @@ Elaborating entity <logic_module> (architecture <Behavioral>) from library <work
 Elaborating entity <shift_module> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <data_memory_simulation> (architecture <Behavioral>) from library <work>.
+<<<<<<< HEAD
+WARNING:HDLCompiler:634 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" Line 99: Net <cin_exe_dummy> does not have a driver.
+=======
 WARNING:HDLCompiler:634 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" Line 99: Net <cin_exe_dummy> does not have a driver.
+<<<<<<< HEAD
+=======
+WARNING:Xst:2972 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" line 68. All outputs of instance <logic> of block <logic_module> are unconnected in block <ALU_module>. Underlying logic will be removed.
+WARNING:Xst:2972 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" line 75. All outputs of instance <shift> of block <shift_module> are unconnected in block <ALU_module>. Underlying logic will be removed.
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <processor_core>.
+<<<<<<< HEAD
+    Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd".
+        filename = "../../Software/program_T.txt"
+WARNING:Xst:647 - Input <instr_bus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 135: Output port <over_flow> of the instance <adder_pc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 135: Output port <carry_out> of the instance <adder_pc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 156: Output port <lessthan> of the instance <ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 156: Output port <ovf> of the instance <ALU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 167: Output port <over_flow> of the instance <adder_exe> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 167: Output port <carry_out> of the instance <adder_exe> is unconnected or connected to loadless signal.
+=======
     Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd".
         filename = "/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt"
 WARNING:Xst:647 - Input <instr_bus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -192,6 +225,7 @@ INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processo
 INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 156: Output port <ovf> of the instance <ALU> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 167: Output port <over_flow> of the instance <adder_exe> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 167: Output port <carry_out> of the instance <adder_exe> is unconnected or connected to loadless signal.
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 WARNING:Xst:653 - Signal <cin_exe_dummy> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 48-bit register for signal <IF_ID>.
     Found 59-bit register for signal <EXE_MEM>.
@@ -204,8 +238,13 @@ INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal pc_next may hinde
 Unit <processor_core> synthesized.
 
 Synthesizing Unit <instr_memory_simulation>.
+<<<<<<< HEAD
+    Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd".
+        filename = "../../Software/program_T.txt"
+=======
     Related source file is "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd".
         filename = "/home/waseemh/Xilinx_Proj/CPU-2016/Software/program.txt"
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
         size = 256
 WARNING:Xst:647 - Input <address<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2999 - Signal 'mem_cell', unconnected in block 'instr_memory_simulation', is tied to its initial value.
@@ -326,6 +365,18 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_cel
 	inferred   1 Multiplexer(s).
 Unit <data_memory_simulation> synthesized.
 
+Synthesizing Unit <data_memory_simulation>.
+    Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/data_memory_simulation.vhd".
+WARNING:Xst:647 - Input <address<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <mem_cell>, simulation mismatch.
+    Found 1025x16-bit single-port RAM <Mram_mem_cell> for signal <mem_cell>.
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <data_memory_simulation> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
@@ -340,9 +391,21 @@ Macro Statistics
  48-bit register                                       : 1
  59-bit register                                       : 1
  86-bit register                                       : 1
+<<<<<<< HEAD
 # Multiplexers                                         : 13
  1-bit 2-to-1 multiplexer                              : 1
  16-bit 2-to-1 multiplexer                             : 8
+=======
+<<<<<<< HEAD
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 8
+=======
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
  16-bit 32-to-1 multiplexer                            : 2
  16-bit 7-to-1 multiplexer                             : 1
  5-bit 2-to-1 multiplexer                              : 1
@@ -379,7 +442,11 @@ INFO:Xst:3217 - HDL ADVISOR - Register <MEM_WB> currently described with an asyn
     | Port A                                                              |
     |     aspect ratio   | 1025-word x 16-bit                  |          |
     |     clkA           | connected to signal <clk>           | fall     |
+<<<<<<< HEAD
+    |     weA            | connected to signal <mem_write_GND_34_o_MUX_128_o_0> | high     |
+=======
     |     weA            | connected to internal node          | high     |
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
     |     addrA          | connected to signal <address>       |          |
     |     diA            | connected to signal <data_in>       |          |
     |     doA            | connected to internal node          |          |
@@ -414,6 +481,10 @@ Macro Statistics
  256x32-bit single-port block Read Only RAM            : 1
 # Registers                                            : 776
  Flip-Flops                                            : 776
+<<<<<<< HEAD
+# Multiplexers                                         : 42
+=======
+<<<<<<< HEAD
 # Multiplexers                                         : 42
  1-bit 32-to-1 multiplexer                             : 32
  16-bit 2-to-1 multiplexer                             : 8
@@ -422,6 +493,21 @@ Macro Statistics
 # Logic shifters                                       : 1
  16-bit shifter logical left                           : 1
 # Xors                                                 : 98
+=======
+# Multiplexers                                         : 36
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
+ 1-bit 32-to-1 multiplexer                             : 32
+ 16-bit 2-to-1 multiplexer                             : 8
+ 16-bit 7-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+<<<<<<< HEAD
+# Logic shifters                                       : 1
+ 16-bit shifter logical left                           : 1
+# Xors                                                 : 98
+=======
+# Xors                                                 : 97
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
  1-bit xor2                                            : 97
  16-bit xor2                                           : 1
 
@@ -435,6 +521,30 @@ INFO:Xst:2261 - The FF/Latch <dec_exe_1> in Unit <decode_stage> is equivalent to
 INFO:Xst:2261 - The FF/Latch <dec_exe_2> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_23> 
 INFO:Xst:2261 - The FF/Latch <dec_exe_3> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_24> 
 INFO:Xst:2261 - The FF/Latch <dec_exe_4> in Unit <decode_stage> is equivalent to the following FF/Latch, which will be removed : <dec_exe_25> 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+INFO:Xst:2261 - The FF/Latch <EXE_MEM_21> in Unit <processor_core> is equivalent to the following 15 FFs/Latches, which will be removed : <EXE_MEM_22> <EXE_MEM_23> <EXE_MEM_24> <EXE_MEM_25> <EXE_MEM_26> <EXE_MEM_27> <EXE_MEM_28> <EXE_MEM_29> <EXE_MEM_30> <EXE_MEM_31> <EXE_MEM_32> <EXE_MEM_33> <EXE_MEM_34> <EXE_MEM_35> <EXE_MEM_36> 
+WARNING:Xst:1710 - FF/Latch <EXE_MEM_21> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_20> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_19> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_18> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_17> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_16> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_15> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_14> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_13> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_12> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_11> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_10> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_9> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_8> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_7> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_6> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MEM_WB_5> (without init value) has a constant value of 0 in block <processor_core>. This FF/Latch will be trimmed during the optimization process.
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 
 Optimizing unit <processor_core> ...
 
@@ -443,6 +553,11 @@ Optimizing unit <decode_stage> ...
 Optimizing unit <register_file> ...
 
 Optimizing unit <data_memory_simulation> ...
+<<<<<<< HEAD
+
+Optimizing unit <sixteen_bits_adder> ...
+=======
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
 
 Optimizing unit <sixteen_bits_adder> ...
 
@@ -502,6 +617,10 @@ WARNING:Xst:2677 - Node <MEM_WB_1> of sequential type is unconnected in block <p
 WARNING:Xst:2677 - Node <MEM_WB_2> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_3> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_4> of sequential type is unconnected in block <processor_core>.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 WARNING:Xst:2677 - Node <MEM_WB_5> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_6> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_7> of sequential type is unconnected in block <processor_core>.
@@ -518,6 +637,11 @@ WARNING:Xst:2677 - Node <MEM_WB_17> of sequential type is unconnected in block <
 WARNING:Xst:2677 - Node <MEM_WB_18> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_19> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_20> of sequential type is unconnected in block <processor_core>.
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 WARNING:Xst:2677 - Node <MEM_WB_21> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_22> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <MEM_WB_23> of sequential type is unconnected in block <processor_core>.
@@ -557,6 +681,10 @@ WARNING:Xst:2677 - Node <EXE_MEM_17> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <EXE_MEM_18> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_19> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_20> of sequential type is unconnected in block <processor_core>.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 WARNING:Xst:2677 - Node <EXE_MEM_21> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_22> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_23> of sequential type is unconnected in block <processor_core>.
@@ -573,6 +701,11 @@ WARNING:Xst:2677 - Node <EXE_MEM_33> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <EXE_MEM_34> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_35> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_36> of sequential type is unconnected in block <processor_core>.
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 WARNING:Xst:2677 - Node <EXE_MEM_37> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_38> of sequential type is unconnected in block <processor_core>.
 WARNING:Xst:2677 - Node <EXE_MEM_39> of sequential type is unconnected in block <processor_core>.
@@ -1399,15 +1532,41 @@ Cross Clock Domains Report:
 =========================================================================
 
 
+<<<<<<< HEAD
 Total REAL time to Xst completion: 13.00 secs
 Total CPU time to Xst completion: 12.13 secs
+=======
+<<<<<<< HEAD
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 12.49 secs
+=======
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.35 secs
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
  
 --> 
 
 
+<<<<<<< HEAD
 Total memory usage is 516416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  867 (   0 filtered)
 Number of infos    :   19 (   0 filtered)
+=======
+<<<<<<< HEAD
+Total memory usage is 204488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  866 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+=======
+Total memory usage is 515972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  872 (   0 filtered)
+Number of infos    :   22 (   0 filtered)
+>>>>>>> 7e1f9b9caa46348cc8ce47eb7b994141ac738436
+>>>>>>> d64a02783250adb6c37677edf055cc8297029b0b
 
