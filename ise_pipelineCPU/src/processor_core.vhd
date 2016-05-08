@@ -256,7 +256,6 @@ execute_process: process (clk,rst)
 			end if;
 		end if;
 	end process execute_process;
-
 --memory_access_process: process(clk,rst)
 --	begin
 --		if rst <='1' then

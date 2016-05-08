@@ -10,6 +10,7 @@
          <ClosedNode>/decode_stage - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|decode_stage.vhd</ClosedNode>
          <ClosedNode>/decode_stage - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|decode_stage.vhd/cpu_package</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/ALU - ALU_module - Behavioral</ClosedNode>
+         <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/DECODER - decode_stage - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/adder_exe - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/adder_pc - sixteen_bits_adder - Behavioral</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd/cpu_package</ClosedNode>
@@ -56,12 +57,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/cpu_package.vhd</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000041f000000040101000100000000000000000000000064ffffffff000000810000000000000004000002cd00000001000000000000005d0000000100000000000000840000000100000000000000710000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd</CurrentItem>
+      <CurrentItem>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/cpu_package.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -83,6 +86,7 @@
          <ClosedNode>/ALU_tb - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|ALU_tb.vhd</ClosedNode>
          <ClosedNode>/processor_core - Behavioral |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|processor_core.vhd</ClosedNode>
          <ClosedNode>/tb_carry_look_ahead_block - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|src|tb|tb_carry_look_ahead_block.vhd</ClosedNode>
+         <ClosedNode>/tb_cpu - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|tb_cpu.vhd</ClosedNode>
          <ClosedNode>/tb_cpu - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|tb_cpu.vhd/uut - processor_core - Behavioral/ALU - ALU_module - Behavioral</ClosedNode>
          <ClosedNode>/tb_cpu - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|tb_cpu.vhd/uut - processor_core - Behavioral/DECODER - decode_stage - Behavioral</ClosedNode>
          <ClosedNode>/tb_cpu - behavior |home|waseemh|Xilinx_Proj|CPU-2016|ise_pipelineCPU|tb_cpu.vhd/uut - processor_core - Behavioral/adder_exe - sixteen_bits_adder - Behavioral</ClosedNode>
@@ -101,7 +105,7 @@
       <SelectedItems>
          <SelectedItem>tb_cpu - behavior (/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000044c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000044c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -126,13 +130,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem>Behavioral Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f4000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f40000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem>Behavioral Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>

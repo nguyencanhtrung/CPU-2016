@@ -71,7 +71,7 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: processor_core 
---	generic map 	(filename : in string :="/home/ctnguyen/Works/CPU-2016/Software/program.txt")
+
 	PORT MAP (
           addr_instr_bus => addr_instr_bus,
           addr_data_bus => addr_data_bus,

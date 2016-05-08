@@ -20,6 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.ALL;
+use work.cpu_package;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -79,32 +80,33 @@ begin
 				result 			=> shift_result,
 				shamt				=> extracted_oprnd_b,
 				operation 		=>	shift_opr);
-	result	<= 		addsub_result 	when 	opcode =work.cpu_package.add_op	or 
-														opcode =work.cpu_package.addi_op or 
-														opcode =work.cpu_package.sub_op 	or  
-														opcode =work.cpu_package.sw_op	or
-														opcode =work.cpu_package.lw_op	or
-														opcode =work.cpu_package.beq_op	or
-														opcode =work.cpu_package.bne_op	or
-														opcode =work.cpu_package.slt_op	or
-														opcode =work.cpu_package.slti_op
-					else	logic_result 	when  opcode =work.cpu_package.nor_op 	or 
-														opcode =work.cpu_package.or_op 	or 
-														opcode =work.cpu_package.xor_op	or 
-														opcode =work.cpu_package.and_op
-					else 	shift_result	when  opcode =work.cpu_package.sll_op	or 
-														opcode =work.cpu_package.srl_op
-					else x"0000";
+
+	result	<= 		addsub_result 	when 	opcode ='0' & work.cpu_package.add_op	or 
+														opcode ='0' & work.cpu_package.addi_op or 
+														opcode ='0' & work.cpu_package.sub_op 	or  
+														opcode ='0' & work.cpu_package.sw_op	or
+														opcode ='0' & work.cpu_package.lw_op	or
+														opcode ='0' & work.cpu_package.beq_op	or
+														opcode ='0' & work.cpu_package.bne_op	or
+														opcode ='0' & work.cpu_package.slt_op	or
+														opcode ='0' & work.cpu_package.slti_op
+					else	logic_result 	when  opcode ='0' & work.cpu_package.nor_op 	or 
+														opcode ='0' & work.cpu_package.or_op 	or 
+														opcode ='0' & work.cpu_package.xor_op	or 
+														opcode ='0' & work.cpu_package.and_op
+					else 	shift_result	when  opcode ='0' & work.cpu_package.sll_op	or 
+														opcode ='0' & work.cpu_package.srl_op
+					else x"0123";
 	
 	extracted_oprnd_b <=	operand_b(11 downto 7);
 	lessthan				<= addsub_result(15) xor (ALU_over_flow_dummy);
 	zero 					<= '1' when addsub_result = x"0000" else '0'; 
 
 			--control signals for internal muxes
-	mode_sub				<= '0' when opcode =work.cpu_package.add_op or 
-											opcode =work.cpu_package.addi_op or 
-											opcode =work.cpu_package.sw_op or
-											opcode =work.cpu_package.lw_op 											
+	mode_sub				<= '0' when opcode ='0' & work.cpu_package.add_op or 
+											opcode ='0' & work.cpu_package.addi_op or 
+											opcode ='0' & work.cpu_package.sw_op or
+											opcode ='0' & work.cpu_package.lw_op 											
 								else  '1';
 	logic_opr			<= opcode (2 downto 0);
 	shift_opr			<=	opcode (3);

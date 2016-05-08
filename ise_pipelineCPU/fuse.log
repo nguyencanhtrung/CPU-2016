@@ -18,28 +18,9 @@ Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_mo
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" into library work
 Parsing VHDL file "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu.vhd" into library work
 Starting static elaboration
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 82: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 83: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 84: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 85: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 86: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 87: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 88: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 89: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 90: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 91: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 92: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 93: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 94: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 95: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 96: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 104: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 105: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 106: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/src/ALU_module.vhd" Line 107: Comparison between arrays of unequal length always returns FALSE.
 Completed static elaboration
 Fuse Memory Usage: 97504 KB
-Fuse CPU Usage: 1460 ms
+Fuse CPU Usage: 1400 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -62,6 +43,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 7 sub-compilation(s) to finish...
 Compiled 30 VHDL Units
 Built simulation executable /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe
-Fuse Memory Usage: 673544 KB
-Fuse CPU Usage: 1620 ms
-GCC CPU Usage: 1410 ms
+Fuse Memory Usage: 673564 KB
+Fuse CPU Usage: 1590 ms
+GCC CPU Usage: 1420 ms
