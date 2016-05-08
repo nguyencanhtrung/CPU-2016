@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: processor_core.prj
@@ -183,7 +183,7 @@ WARNING:HDLCompiler:634 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/pro
 
 Synthesizing Unit <processor_core>.
     Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd".
-        filename = "../../Software/program.txt"
+        filename = "../../Software/program_T.txt"
 WARNING:Xst:647 - Input <instr_bus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 135: Output port <over_flow> of the instance <adder_pc> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/processor_core.vhd" line 135: Output port <carry_out> of the instance <adder_pc> is unconnected or connected to loadless signal.
@@ -204,7 +204,7 @@ Unit <processor_core> synthesized.
 
 Synthesizing Unit <instr_memory_simulation>.
     Related source file is "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/src/instr_mem_simulatio.vhd".
-        filename = "../../Software/program.txt"
+        filename = "../../Software/program_T.txt"
         size = 256
 WARNING:Xst:647 - Input <address<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2999 - Signal 'mem_cell', unconnected in block 'instr_memory_simulation', is tied to its initial value.
@@ -1398,13 +1398,13 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 29.00 secs
-Total CPU time to Xst completion: 18.32 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 12.49 secs
  
 --> 
 
 
-Total memory usage is 204520 kilobytes
+Total memory usage is 204488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  866 (   0 filtered)

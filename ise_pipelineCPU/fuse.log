@@ -20,12 +20,12 @@ Parsing VHDL file "/home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_processor_co
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 38200 KB
-Fuse CPU Usage: 1860 ms
+Fuse CPU Usage: 1460 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package textio
-Compiling architecture rtl of entity instr_memory_simulation [\instr_memory_simulation("/home/...]
+Compiling architecture rtl of entity instr_memory_simulation [\instr_memory_simulation("../../...]
 Compiling architecture behavioral of entity four_bits_CLA_adder [four_bits_cla_adder_default]
 Compiling architecture behavioral of entity carry_look_ahead_block [carry_look_ahead_block_default]
 Compiling architecture behavioral of entity sixteen_bits_adder [sixteen_bits_adder_default]
@@ -37,7 +37,7 @@ Compiling architecture behavioral of entity logic_module [logic_module_default]
 Compiling architecture behavioral of entity shift_module [shift_module_default]
 Compiling architecture behavioral of entity ALU_module [alu_module_default]
 Compiling architecture behavioral of entity data_memory_simulation [data_memory_simulation_default]
-Compiling architecture behavioral of entity processor_core [\processor_core("/home/ctnguyen/...]
+Compiling architecture behavioral of entity processor_core [\processor_core("../../Software/...]
 Compiling architecture behavior of entity tb_processor_core
 Time Resolution for simulation is 1ps.
 ERROR:Simulator:861 - Failed to link the design
