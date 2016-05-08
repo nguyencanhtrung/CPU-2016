@@ -1,10 +1,5 @@
 ISim log file
-<<<<<<< HEAD
 Running: /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
-=======
-Running: /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ctnguyen/Works/CPU-2016/ise_pipelineCPU/tb_cpu_isim_beh.wdb 
->>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -20,37 +15,3 @@ at 0 ps, Instance /tb_cpu/uut/DECODER/regFile/ : Warning: NUMERIC_STD.TO_INTEGER
 at 0 ps, Instance /tb_cpu/uut/ALU/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 at 0 ps, Instance /tb_cpu/uut/ALU/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-<<<<<<< HEAD
-# restart
-# run all
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_cpu/uut/DECODER/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tb_cpu/uut/DECODER/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tb_cpu/uut/ALU/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 0 ps, Instance /tb_cpu/uut/ALU/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ERROR: Index 256 out of bound 0 to 255. 
-ERROR: In process instr_mem_simulatio.vhd:memory_process 
- 
-INFO: Simulator is stopped.
-# restart
-# run all
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_cpu/uut/DECODER/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tb_cpu/uut/DECODER/regFile/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /tb_cpu/uut/ALU/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-Finished circuit initialization process.
-at 0 ps, Instance /tb_cpu/uut/ALU/shift/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-ERROR: Index 256 out of bound 0 to 255. 
-ERROR: In process instr_mem_simulatio.vhd:memory_process 
- 
-INFO: Simulator is stopped.
-# exit 0
-=======
-<<<<<<< HEAD
-# restart
-# exit 0
-# exit 0
-=======
->>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
->>>>>>> ccc4bb74c43f6b2445845fe3800a889c31b74e9b

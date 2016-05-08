@@ -46,7 +46,6 @@ begin
 memory_process: process (clk)
 begin
 	if falling_edge (clk) then	--synch read write!
-		if clk ='0' then
 			if mem_read ='1' then
 				data_out <= mem_cell(to_integer(unsigned(address)));	
 			elsif mem_write ='1' then
@@ -54,7 +53,6 @@ begin
 			else
 				null;
 			end if;
-		end if;
 	end if;
 end process memory_process;
 

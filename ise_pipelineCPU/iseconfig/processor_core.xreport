@@ -3,7 +3,7 @@
  <header>
   <ImplementationReportsDirectory>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/</ImplementationReportsDirectory>
   <ModuleName>processor_core</ModuleName>
-  <DateModified>2016-05-08T01:22:44</DateModified>
+  <DateModified>2016-05-08T22:41:28</DateModified>
   <SavedFilePath>/home/waseemh/Xilinx_Proj/CPU-2016/ise_pipelineCPU/iseconfig/processor_core.xreport</SavedFilePath>
   <DateInitialized>2016-05-07T23:46:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>

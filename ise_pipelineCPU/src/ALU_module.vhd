@@ -44,7 +44,7 @@ architecture Behavioral of ALU_module is
 
 signal mode_sub 				:	std_logic;
 signal logic_opr 				:	std_logic_vector (2 downto 0);
-signal extracted_oprnd_b	: std_logic_vector(4 downto 0);
+signal extracted_oprnd_b	:  std_logic_vector(4 downto 0);
 signal shift_opr 				:	std_logic;
 signal ovf_dummy				:	std_logic;
 signal ALU_over_flow_dummy	: 	std_logic;
@@ -79,14 +79,21 @@ begin
 				result 			=> shift_result,
 				shamt				=> extracted_oprnd_b,
 				operation 		=>	shift_opr);
-
-<<<<<<< HEAD
-	result	<= 		addsub_result 	when opcode ="000000" or opcode ="000001" or opcode ="000010" or opcode="001001" or opcode="001010"
-=======
-	result	<= 		addsub_result 	when opcode ="000000" or opcode ="000001" or opcode ="000010" or opcode ="001001" or opcode = "001010"
->>>>>>> 8671fa17fead913531e6bc0abce815409c943aff
-					else	logic_result 	when opcode ="000011" or opcode ="000100" or opcode ="000101" or opcode ="000110"
-					else 	shift_result	when opcode ="000111" or opcode ="001000"
+	result	<= 		addsub_result 	when 	opcode =work.cpu_package.add_op	or 
+														opcode =work.cpu_package.addi_op or 
+														opcode =work.cpu_package.sub_op 	or  
+														opcode =work.cpu_package.sw_op	or
+														opcode =work.cpu_package.lw_op	or
+														opcode =work.cpu_package.beq_op	or
+														opcode =work.cpu_package.bne_op	or
+														opcode =work.cpu_package.slt_op	or
+														opcode =work.cpu_package.slti_op
+					else	logic_result 	when  opcode =work.cpu_package.nor_op 	or 
+														opcode =work.cpu_package.or_op 	or 
+														opcode =work.cpu_package.xor_op	or 
+														opcode =work.cpu_package.and_op
+					else 	shift_result	when  opcode =work.cpu_package.sll_op	or 
+														opcode =work.cpu_package.srl_op
 					else x"0000";
 	
 	extracted_oprnd_b <=	operand_b(11 downto 7);
@@ -94,7 +101,11 @@ begin
 	zero 					<= '1' when addsub_result = x"0000" else '0'; 
 
 			--control signals for internal muxes
-	mode_sub				<=	opcode (1);	
+	mode_sub				<= '0' when opcode =work.cpu_package.add_op or 
+											opcode =work.cpu_package.addi_op or 
+											opcode =work.cpu_package.sw_op or
+											opcode =work.cpu_package.lw_op 											
+								else  '1';
 	logic_opr			<= opcode (2 downto 0);
 	shift_opr			<=	opcode (3);
 	ovf					<= ALU_over_flow_dummy;
